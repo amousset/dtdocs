@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/eo/</link>
+    <description>Recent content on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/eo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>superrigardo</title>
+      <link>https://darktable-org.github.io/dtdocs/eo/print/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/eo/print/overview/</guid>
+      <description>Ĉi tiu vido temas pri presado de viaj bildoj. Ĉar presado ne facilas, estas multaj teknikaj aspektoj konsiderindaj.
+Post elekto de bildo en la lumtabla vido oni povas eniri la modulon print settings por ĝustigi presilajn agordojn kaj komenci presadon.
+Ĉi tiu modulo subtenas la ICC-profilon de la presilo, kiu estas iom deviga se vi volas fari altkvalitan presaĵon same al la bildo montrata sur la ekrano.
+Gravas noti, ke ICC-profiloj donitaj de la fabrikantoj de papero kaj / aŭ presilo ne povas esti uzataj ĉe GNU / Linukso, ĉar ili dependas de la presila pelilo.</description>
+    </item>
+    
+    <item>
+      <title>aranĝo de pres-vido</title>
+      <link>https://darktable-org.github.io/dtdocs/eo/print/print-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/eo/print/print-view-layout/</guid>
+      <description>La centra areo montras la aranĝon de bildo sur la papero (la blanka areo). Iom da grizaj bordoj povas esti montrataj ĉirkaŭ la bildo por reprezenti la presotan areon (la paĝa areo sen la bordoj) ne plenigitan de la bildo.
+La filmbendo sub la bildo ebligas al vi elekti pli da bildoj.
+🔗maldekstra panelo  kolektoj Filtri la liston de bildoj montrataj en la lumtablo. bildan informon Montri bildan informon  🔗dekstra panelo  print settings Ĝustigi presajn agordojn kaj komenci presadon.</description>
+    </item>
+    
+    <item>
+      <title>etikedado</title>
+      <link>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/shared/tagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/shared/tagging/</guid>
+      <description>Administri etikedojn ligitajn al bildoj.
+Etikedoj ebligas metodon por aldoni informojn al bildoj per ŝlosilvortvortaro. Vi ankaŭ povas administri etikedojn kiel hierarkian arbon, kiu povas esti utila kiam ilia nombro fariĝas granda.
+Etikedoj estas fizike stokitaj en XMP-kromĉaraj dosieroj same kiel en la biblioteka datumbazo de darktable kaj povas esti inkluzivitaj en eksportotaj bildoj.
+🔗difinoj La jenaj difinoj supozas, ke vi starigis ununuran etikedon nomatan &amp;ldquo;lokoj|Francujo|Nord|Lille&amp;rdquo;.
+ etikedo Etikedo estas priskriba ĉeno, kiu povas esti ligita al bildo.</description>
+    </item>
+    
+    <item>
+      <title>fotilaj agordoj</title>
+      <link>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/tethering/camera-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/tethering/camera-settings/</guid>
+      <description>Starigu bildan kaptan taskon.
+Ĉi tio povas inkluzivi sekvencon, krampon kaj malfruajn kaptojn. Vi ankaŭ povas regi aliajn fotilajn agordojn kiel fokusa reĝimo, aperturo, eksponrapideco, ISO kaj blanka ekvilibro.</description>
+    </item>
+    
+    <item>
+      <title>sesio</title>
+      <link>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/tethering/session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/tethering/session/</guid>
+      <description>Agordi sesian taskkodon por permesi la kreon de nova filmrulo.
+Sesio estas vico de malkovroj prenitaj en la ligita reĝimo kaj metitaj en ununuran filmon. Nova sesio signifas kreon de nova filmrulo.
+La sesia modulo ebligas al vi agordi laborkodon, uzeblan por krei vian novan filmrolulon. Vidu preferoj&amp;gt; importi&amp;gt; sesiaj opcioj por detaloj pri kiel krei novajn filmojn per la variablo $ (JOBCODE) en la sesia modulo.</description>
+    </item>
+    
+    <item>
+      <title>templinio</title>
+      <link>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/lighttable/timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/lighttable/timeline/</guid>
+      <description>Rigardu viajn bildojn laŭ la dato/horo, kiam ili estis kaptitaj.
+  En la lumtabla dosieradministrilo, vi povas montri/kaŝi la templinian modulon en la malsupra panelo per la klavkombino Stir+F.
+En la templinio, vi povas montri la sekvan kaj antaŭan datojn per rulumado de via muso; Stir+rulumi por zomi en/el.
+You can also use the timeline to select images by date range by clicking and dragging your mouse.</description>
+    </item>
+    
+    <item>
+      <title>viva vido</title>
+      <link>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/tethering/live-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/tethering/live-view/</guid>
+      <description>Regi la vivvidan reĝimon de via fotilo
+Funkcioj kiel fokusa agordo, rotacio, gvidiloj kaj surmetaĵoj estas subtenataj.</description>
+    </item>
+    
+  </channel>
+</rss>

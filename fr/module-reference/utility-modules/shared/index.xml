@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>partagé on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/</link>
+    <description>Recent content in partagé on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>détection de focus</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/focus-peaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/focus-peaking/</guid>
+      <description>Identifie quelles parties de l&amp;rsquo;image contiennent des bords nets, ce qui indique généralement que ces zones sont au point.
+Le module s&amp;rsquo;active en cliquant sur l&amp;rsquo;icône (  ). Il met en évidence les parties nettes de l&amp;rsquo;image avec un affichage en surbrillance jaune, vert et bleu :
+Le module fonctionne en filtrant le bruit de l&amp;rsquo;image, en mesurant les gradients d&amp;rsquo;intensité dans l&amp;rsquo;image et en calculant des statistiques de moyenne et d&amp;rsquo;écart type.</description>
+    </item>
+    
+    <item>
+      <title>géolocalisation</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/geotagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/geotagging/</guid>
+      <description>Importe et applique les données de traces GPX à une sélection d&amp;rsquo;images.
+Ce module est commun aux vues table lumineuse et carte. La vue carte fournit un mode avancé qui vous permet de prévisualiser la position des images le long des traces GPS tout en ajustant la date/heure (décalage) et le fuseau horaire des images.
+🔗présentation des flux de travail Un récepteur GPS calcule sa position courante à partir des informations qu&amp;rsquo;il reçoit des satellites et les enregistre – avec la date et l&amp;rsquo;heure courante – dans un fichier GPX.</description>
+    </item>
+    
+    <item>
+      <title>informations de l&#39;image</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/image-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/image-information/</guid>
+      <description>Affiche les informations contenues dans les données EXIF d&amp;rsquo;une image ainsi qu&amp;rsquo;un certain nombre de champs spécifiques à darktable.
+Lorsque vous passez la souris sur les vignettes des images, les données affichées sont automatiquement mises à jour avec les informations de l&amp;rsquo;image actuellement sous le curseur de la souris.
+Lorsque plusieurs images sont sélectionnées et que le focus n&amp;rsquo;est pas sur une seule image, le module n&amp;rsquo;affiche que des informations qui sont les mêmes pour toutes les images.</description>
+    </item>
+    
+    <item>
+      <title>pellicule</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/filmstrip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/filmstrip/</guid>
+      <description>La pellicule peut être utilisée pour basculer rapidement entre les images dans n&amp;rsquo;importe quelle vue de darktable. Les images dont les miniatures sont affichées dans la pellicules sont les mêmes que celles qui sont affichées dans la vue table lumineuse et sont définies par la collection actuellement sélectionnée.
+  La pellicule peut être activée et désactivée à l&amp;rsquo;aide du raccourci Ctrl+F. La hauteur du panneau de la pellicule peut être modifiée en cliquant et en faisant glisser sa bordure supérieure.</description>
+    </item>
+    
+    <item>
+      <title>éditeur de métadonnées</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/metadata-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/metadata-editor/</guid>
+      <description>Modifie les métadonnées des images sélectionnées.
+Les métadonnées sont du texte au format libre (titre, description, créateur, éditeur, droits, etc.) décrivant vos images.
+🔗les contrôles du module  champs de saisie des métadonnées Un champ distinct est affiché pour chaque élément des métadonnées. Maintenez la touche CTRL enfoncée tout en déroulant avec la molette souris pour augmenter la hauteur d&amp;rsquo;un champ. Appuyez sur CTRL + Entrée pour insérer une nouvelle ligne.</description>
+    </item>
+    
+  </channel>
+</rss>

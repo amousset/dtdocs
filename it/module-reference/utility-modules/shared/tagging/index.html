@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="it">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - etichettatura</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/it\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="it" role="option" lang="it" href="https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/tagging/">Italian</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/shared/tagging/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/shared/tagging/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="eo" role="option" lang="eo" href="https://darktable-org.github.io/dtdocs/eo/module-reference/utility-modules/shared/tagging/">Esperanto</a>
+		    
+		      <a class="dropdown-item" hreflang="es" role="option" lang="es" href="https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/shared/tagging/">Espanol</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/module-reference/utility-modules/shared/tagging/">Português</a>
+		    
+		      <a class="dropdown-item" hreflang="uk" role="option" lang="uk" href="https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/shared/tagging/">Ukrainian</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/" class="">
+          Stampa
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/print-view-layout/" class="">
+          Disposizione visualizzazione Stampa
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/" class="">
+          Darkrooms
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/" class="">
+          maschere &amp; fusione
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/" class="">
+          maschere
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn/" class="">
+          maschere disegnate
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="">
+          maschere parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="">
+          combinare maschere disegnate &amp; parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/" class="">
+          rifinitura maschere &amp; controlli aggiuntivi
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/raster/" class="">
+          maschere raster
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+<a href='/dtdocs/it/'>darktable 3.7 (development) user manual</a> / <a href='/dtdocs/it/module-reference/'>Module-references</a> / <a href='/dtdocs/it/module-reference/utility-modules/shared/'>condivisi</a> / etichettatura
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/module-reference/" class="next">&lt; Module-references</a>
+	
+    </div>
+    <div class="col-6">
+    
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        etichettatura
+    </h1>
+
+    
+
+    <p>Gestisce le etichette allegate alle immagini.</p>
+<p>Le etichette forniscono un modo di aggiungere informazioni alle immagini usando un dizionario di parole chiavi. Puoi anche gestire le etichette in gerarchia, il ché può essere utile quando diventano molte.</p>
+<p>Le etichette vengono salvate fisicamente nei <a href="../../../overview/sidecar-files/_index.md">file &ldquo;sidecar&rdquo; XMP</a>, ma anche nel database di darktable, e possono essere incluse nelle immagini <a href="/dtdocs/it/module-reference/utility-modules/shared/export/">esportate</a>.</p>
+<h1 id="definizioni"><a href="#definizioni">🔗</a>definizioni</h1>
+<p>Le seguenti definizioni presuppongono che tu abbia impostato una singola etichetta &ldquo;<code>luoghi|Italia|Toscana|Rio Marina</code>&rdquo;.</p>
+<dl>
+<dt>etichetta</dt>
+<dd>Un&rsquo;etichetta è un testo descrittivo che può essere allegata ad un&rsquo;immagine. Un&rsquo;etichetta può essere un singolo termine o una sequenza di termini che formano un percorso, separati dal simbolo &ldquo;<em>pipe</em> <code>|</code>&rdquo;. Per esempio, &ldquo;<code>luoghi|Italia|Toscana|Rio Marina</code>&rdquo; definisce un&rsquo;etichetta singola, dove ogni termine nel percorso identifica un sottoinsieme dell&rsquo;insieme definito dal termine che lo precede. Puoi allegare ad un&rsquo;immagine quante etichette desideri.</dd>
+<dd>
+<p>Puoi assegnare proprietà alle etichette (nome, privata, categoria, sinonimo e ordine immagine).</p>
+</dd>
+<dt>nodo</dt>
+<dd>Qualsiasi percorso che è parte di un&rsquo;etichetta è un nodo. Nell&rsquo;esempio di cui sopra &ldquo;<code>luoghi</code>&rdquo;, &ldquo;<code>luoghi|Italia</code>&rdquo;, &ldquo;<code>luoghi|Italia|Toscana</code>&rdquo; e &ldquo;<code>luoghi|Italia|Toscana|Rio Marina</code>&rdquo; sono tutti nodi. Nella visualizzazione ad albero gerarchico i nodi costituiscono i rami e le foglie dell&rsquo;albero.</dd>
+<dt>nodo libero</dt>
+<dd>Qualsiasi nodo che non è stato esplicitamente definito come etichetta è chiamato nodo libero. Nell&rsquo;esempio precedente &ldquo;<code>luoghi</code>&rdquo;, &ldquo;<code>luoghi|Italia</code>&rdquo; e&quot;<code>luoghi|Italia|Toscana</code>&quot; sono tutti nodi liberi. Per i nodi liberi non puoi impostare alcuna proprietà al di fuori di &ldquo;nome&rdquo;, e non possono essere aggiunti alle immagini. Controlla la sezione &ldquo;etichette multiple&rdquo; più in basso per maggiori informazioni.</dd>
+<dt>categoria</dt>
+<dd>Ogni etichetta può essere contrassegnata dall&rsquo;utente per essere una &ldquo;categoria&rdquo;.</dd>
+</dl>
+<h1 id="etichette-multiple"><a href="#etichette-multiple">🔗</a>etichette multiple</h1>
+<p>Gli esempi proposti finora hanno considerato un caso semplice - un&rsquo;etichetta singola con le sue proprietà. Consideriamo invece lo scenario dove le quattro seguenti etichette, delimitate da <em>pipe</em>, sono definite separatamente in darktable.</p>
+<pre><code>luoghi|Italia|Toscana|Rio Marina
+luoghi|Italia|Toscana
+luoghi|Italia
+luoghi|Paesi Bassi|Amsterdam
+</code></pre><p>In questo caso i nodi sono</p>
+<pre><code>luoghi
+luoghi|Italia
+luoghi|Italia|Toscana
+luoghi|Italia|Toscana|Rio Marina
+luoghi|Paesi Bassi
+luoghi|Paesi Bassi|Amsterdam
+</code></pre><p>I soldi nodi liberi sono &ldquo;<code>luoghi</code>&rdquo; e &ldquo;<code>luoghi|Paesi Bassi</code>&rdquo;. Di conseguenza sono entrambi sono anche categorie.</p>
+<p>Puoi allegare qualsiasi di queste etichette a qualsiasi immagine. Qualsiasi etichetta allegata ad un&rsquo;immagine, ad esclusione delle categorie, può essere inclusa quando l&rsquo;immagine viene <a href="/dtdocs/it/module-reference/utility-modules/shared/export/">esportata</a>.</p>
+<p>Se alleghi l&rsquo;etichetta &ldquo;<code>luoghi|Italia|Toscana|Rio Marina</code>&rdquo; ad un&rsquo;immagine le etichette &ldquo;<code>luoghi|Italia|Toscana</code>&rdquo; e &ldquo;<code>luoghi|Italia</code>&rdquo; verranno allegate implicitamente all&rsquo;immagine (non devi farlo manualmente). Notare che questo è possibile solo perché queste etichette aggiuntive sono state definite separatamente &ndash; il nodo &ldquo;<code>luoghi</code>&rdquo; non è incluso poiché è un &ldquo;nodo libero&rdquo; (non un&rsquo;etichetta).</p>
+<h1 id="sezioni-del-modulo"><a href="#sezioni-del-modulo">🔗</a>sezioni del modulo</h1>
+<p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/tagging/tagging-overview.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/tagging/tagging-overview.png" alt="tagging-overview"  class="w33"    /></a>
+
+</p>
+<p>Il modulo etichettatura è formato da due sezioni</p>
+<ol>
+<li>
+<p>La sezione superiore <em>etichette allegate</em> (con il pulsante <em>allega/rimuovi</em> in basso)</p>
+</li>
+<li>
+<p>La sezione in basso <em>dizionario etichette</em> (con i pulsanti <em>nuova/importa&hellip;/esporta&hellip;</em> in basso)</p>
+</li>
+</ol>
+<h2 id="sezione-etichette-allegate"><a href="#sezione-etichette-allegate">🔗</a>sezione etichette allegate</h2>
+<p>La sezione <em>etichette allegate</em> mostra le etichette allegate all&rsquo;immagine o alle immagini, quando queste immagini sono</p>
+<ul>
+<li>
+<p>sotto la freccetta del mouse (quando ci si sposta col mouse sopra un&rsquo;immagine nel Tavolo Luminoso); oppure</p>
+</li>
+<li>
+<p>attualmente selezionate (se non si sta passando il mouse sopra un&rsquo;immagine)</p>
+</li>
+</ul>
+<p>In basso alla sezione <em>etichette allegate</em> ci sono i seguenti pulsanti, da sinistra a destra:</p>
+<dl>
+<dt>allega</dt>
+<dd>se un&rsquo;etichetta è selezionata nella sezione <em>dizionario etichette</em>, allega quest&rsquo;etichetta all&rsquo;immagine selezionata.</dd>
+<dt>rimuovi</dt>
+<dd>Se un&rsquo;etichetta è selezionata nella lista <em>etichette allegate</em>, la rimuove dall&rsquo;immagine selezionata. Un&rsquo;etichetta può essere rimossa anche cliccando con destro sul nome dell&rsquo;etichetta e selezionando <em>rimuovi</em> dal menù a comparsa.</dd>
+<dt>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/tagging/check-icon.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/tagging/check-icon.png" alt="check-icon"  class="icon"    /></a>
+
+ etichette nascoste</dt>
+<dd>Scegli di mostrare le etichette nascoste che darktable ha allegato automaticamente alle immagini selezionate.</dd>
+<dt>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/tagging/sort-icon.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/tagging/sort-icon.png" alt="sort-icon"  class="icon"    /></a>
+
+ ordinamento</dt>
+<dd>Scegli se l&rsquo;ordinamento delle <em>etichette allegate</em> debba essere alfabetico o basato sul conteggio mostrato tra parentesi vicino all&rsquo;etichetta (questo numero indica quante immagini selezionate hanno l&rsquo;etichetta allegata).</dd>
+<dt>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/tagging/minus-icon.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/tagging/minus-icon.png" alt="minus-icon"  class="icon"    /></a>
+
+ genitori</dt>
+<dd>Scegli se visualizzare o meno le categorie &ldquo;genitori&rdquo; dell&rsquo;etichetta.</dd>
+</dl>
+<p>Puoi modificare l&rsquo;altezza della finestra <em>etichette allegata</em> tenendo premuto Ctrl e scrollando con la rotellina del mouse.</p>
+<h2 id="sezione-dizionario-etichette"><a href="#sezione-dizionario-etichette">🔗</a>sezione dizionario etichette</h2>
+<p>La sezione <em>dizionario etichette</em> mostra tutte le etichette disponibili nel database di darktable. In alto nella sezione <em>dizionario etichette</em> c&rsquo;è un campo di testo dove puoi inserire i nomi dell&rsquo;etichette. Sotto c&rsquo;è la lista delle etichette disponibili, che possono includere un simbolo alla sinistra del nome etichetta. Il significato di questi simboli è come segue:</p>
+<ul>
+<li>
+<p>il segno di spunta [✓] indica che l&rsquo;etichetta è allegata a tutte le immagini selezionate</p>
+</li>
+<li>
+<p>il segno meno [&ndash;] indica che l&rsquo;etichetta è allegata almeno ad una delle immagini selezionate. Se il simbolo è vicino ad un nodo nella vista ad <em>albero</em> gerarchico, significa che una delle etichette figlie di quel nodo è allegata almeno ad una delle immagini selezionate.</p>
+</li>
+<li>
+<p>se nessun simbolo è presente, significa che tale etichetta non è allegata a nessuna delle immagini selezionate, o che il nodo non ha etichette figlie allegate a nessuna delle immagini selezionate.</p>
+</li>
+</ul>
+<p>Nella vista ad <em>albero</em> gerarchico, un nome in corsivo (italic) può rappresentare sia un nodo libero che una categoria.</p>
+<p>Sotto la lista del <em>dizionario etichette</em> ci sono i seguenti pulsati, da sinistra a destra:</p>
+<dl>
+<dt>nuovo</dt>
+<dd>Crea una nuova etichetta, usando il nome che è stato inserito nel campo di testo nella parte superiore della sezione <em>dizionario etichette</em>.</dd>
+<dt>importa&hellip;</dt>
+<dd>Importa le etichette da un file con le parole chiavi di Ligthroom.</dd>
+<dt>esporta&hellip;</dt>
+<dd>Esporta tutte le etichette in un file di parole chiavi di Lightroom.</dd>
+<dt>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/tagging/plus-icon.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/tagging/plus-icon.png" alt="plus-icon"  class="icon"    /></a>
+
+ sottoinsieme</dt>
+<dd>Mostra la lista delle etichette che sono state allegate solo ad alcune delle immagini selezionate, ma non a tutte. Può essere utile per decidere di usare o meno qualcuna di queste etichette sulle restanti immagini selezionate.</dd>
+<dt>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/tagging/list-tree-icon.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/tagging/list-tree-icon.png" alt="list-tree-icon"  class="icon"    /></a>
+
+ lista/albero</dt>
+<dd>Alterna la visualizzazione delle etichette tra la semplice <em>lista</em> e la vista ad <em>albero gerarchico</em>.</dd>
+</dl>
+<p>Puoi aggiustare l&rsquo;altezza della finestra <em>dizionario etichette</em> tenendo premuto Ctrl mentre scrolli con la rotellina del mouse.</p>
+<h1 id="utilizzo"><a href="#utilizzo">🔗</a>utilizzo</h1>
+<p>La seguente sezione descrive le operazioni che possono essere effettuate con le etichette.</p>
+<h2 id="inserimento-testo"><a href="#inserimento-testo">🔗</a>inserimento testo</h2>
+<p>Il campo di testo (mostrato sotto i pulsanti <em>allega/rimuovi</em>) ha differenti scopi.</p>
+<ul>
+<li>
+<p>Se la lista <em>dizionario etichette</em> è in modalità <em>lista</em> (piuttosto che in modalità <em>albero</em>), allora, digitando le prime lettere di un&rsquo;etichetta, verrà mostrata una lista di suggerimenti. Potrai quindi scorrere la lista con i tasti freccia e premere Invio per scegliere il suggerimento. Premendo Invio una seconda volta l&rsquo;etichetta verrà allegata all&rsquo;immagine selezionata. Puoi anche modificare il nome dell&rsquo;etichetta prima di premere Invio &ndash; in questo caso l&rsquo;etichetta verrà creata se già non esiste nel database.</p>
+</li>
+<li>
+<p>Oltre ai suggerimenti di completamento automatico, scrivendo un testo parziale nel campo di testo ti permette di filtrare l&rsquo;insieme delle etichette mostrate nella finestra <em>dizionario etichette</em> per ottenere quelle il cui nome o sinonimo corrisponde al testo inserito. Premi Invio per allegare un&rsquo;etichetta con il nome inserito alle immagini selezionate. Se l&rsquo;etichetta selezionata non esiste nel database, verrà creata prima di essere allegata.</p>
+</li>
+<li>
+<p>La voce &ldquo;copia nel campo&rdquo; del menù a comparsa può essere usata per copiare l&rsquo;etichetta selezionata nel campo di testo. Puoi quindi modificare il nome e premere Invio per creare una nuova etichetta con quel name, rendendo più facile la creazione di più etichette con nomi simili.</p>
+</li>
+</ul>
+<hr>
+<p><strong>Nota:</strong> Se trovi fastidiosa la funzione di completamento automatico, può essere disabilitata in <a href="../../../preferences-settings/miscellaneous.md#tags">preferenze &gt; altro &gt; etichette &gt; disabilita il completamento automatico</a>.</p>
+<hr>
+<h2 id="crea-etichetta"><a href="#crea-etichetta">🔗</a>crea etichetta</h2>
+<p>Esistono diverse maniere per creare una nuova etichetta:</p>
+<ul>
+<li>
+<p><em>Importare un file di testo</em>. Puoi importare uno o più file di testo nel formato di Lightroom per le etichette. Puoi anche esportare le tue etichette, modificare il file esportato, e quindi re-importarlo. La funzione di import aggiorna le etichette esistenti e crea nuove etichette se necessario, Se cambi il nome di un&rsquo;etichetta in un file importato, questa verrà trattata come una nuova etichetta.</p>
+</li>
+<li>
+<p><em>Importare immagini già etichettate</em>. Questo metodo non offre alcuna possibilità di cambiare nomi delle etichette o delle categorie durante la fase di import.</p>
+</li>
+<li>
+<p><em>Usa il sotto menù &ldquo;crea etichetta&rdquo;</em>. Un&rsquo;etichetta può essere creata manualmente, sotto un&rsquo;etichetta già esistente (gerarchia) o al primo livello.</p>
+</li>
+<li>
+<p><em>Usa il sotto menù &ldquo;imposta come etichetta&rdquo;</em>. Puoi impostare un nodo libero (es. &ldquo;<code>luoghi|Paesi Bassi</code>&quot;) come etichetta, in modo tale che venga allegata implicitamente a tutte le immagini etichettate con una sotto-etichetta (es: &ldquo;<code>luoghi|Paesi Bassi|Amsterdam</code>&quot;).</p>
+</li>
+<li>
+<p><em>Digita qualcosa nel campo di testo e premi il pulsante &ldquo;nuovo&rdquo;</em> Le etichette gerarchiche possono essere create usando il simbolo &ldquo;pipe&rdquo; &ldquo;<code>|</code>&rdquo; per separare i nodi. Nota che l&rsquo;etichetta inserta viene anche allegata a tutte le immagini selezionate.</p>
+</li>
+</ul>
+<p>Un certo numero di etichette viene generata automaticamente da darktable quando vengono intraprese alcune azioni. Ad esempio, l&rsquo;etichetta &ldquo;<code>darktable|exported</code>&rdquo; e &ldquo;<code>darktable|styles|tuo_stile</code>&rdquo; possono essere usate per identificare rispettivamente le immagini che sono state esportate e a cui è stato applicato uno stile.</p>
+<h2 id="modificarinomina-etichetta"><a href="#modificarinomina-etichetta">🔗</a>modifica/rinomina etichetta</h2>
+<p>The <em>tag dictionary</em> can be maintained via the &ldquo;edit&hellip;&rdquo; and &ldquo;change path&hellip;&rdquo; items in the right-click pop-up menu.</p>
+<p>L&rsquo;operazione di &ldquo;Modifica&hellip;&rdquo; ti permette di cambiare il nome dell&rsquo;etichetta, ma non potrai cambiare il nodo a cui a appartiene (non puoi usare il simbolo &ldquo;pipe&rdquo; &ldquo;<code>|</code>&rdquo; nel campo del nome etichetta). Il comando viene annullato se provi a inserire un nome etichetta che già esiste. Puoi contrassegnare l&rsquo;etichetta come <em>privata</em> o come <em>categoria</em> e puoi definirne i <em>sinonimi</em> (vedi sotto). Questi attributi verranno salvati rispettivamente nei metadati <code>XMP-dc Subject</code> e <code>XMP-lr Hierarchical Subject</code>. Puoi controllare quali etichette vengono incluse nell&rsquo;export utilizzando le impostazioni nel modulo <a href="/dtdocs/it/module-reference/utility-modules/shared/export/">esporta</a>.</p>
+<ul>
+<li>
+<p>Un&rsquo;etichetta contrassegnata come &ldquo;privata&rdquo; non viene esportata di default.</p>
+</li>
+<li>
+<p>Un&rsquo;etichetta contrassegnata come &ldquo;categoria&rdquo; non viene esportata in <code>XMP-dc Subject</code>. Nonostante ciò viene esportata <code>XMP-lr Hierarchical Subject</code> in quanto questo metadato XMP contiene l&rsquo;organizzazione delle tue etichette.</p>
+</li>
+<li>
+<p>&ldquo;sinonimi&rdquo; arricchisce l&rsquo;etichetta con informazioni utili ai motori di ricerca. Per esempio &ldquo;giovane&rdquo;, &ldquo;ragazzo&rdquo;, &ldquo;gioventù&rdquo; possono essere impostati come sinonimi di &ldquo;bambino&rdquo;- I sinonimi possono essere usati anche per tradurre i nomi delle etichette in altre lingue.</p>
+</li>
+</ul>
+<p>L&rsquo;operazione &ldquo;cambia percorso&hellip;&rdquo; è disponibile soltanto nella visualizzazione ad <em>albero</em>, e mostra il numero delle immagini etichettate che verrebbero interessate dalla modifica del nome del nodo. La finestra di cambio percorso permette all&rsquo;utente di cambiare il percorso completo del nodo, inclusi i nodi a cui appartiene (i nodi possono essere specificati usando il simbolo &ldquo;pipe&rdquo; &ldquo;<code>|</code>&quot;). Quest&rsquo;operazione è potente, e presta attenzione poiché può avere un impatto significativo sui metadati delle tue immagini. L&rsquo;operazione viene annullata se il cambiamento richiesto è in conflitto con un&rsquo;etichetta già esistente.</p>
+<p>Un modo rapido per organizzare la struttura delle etichette è il trascinando i nodi. Nella modalità di visualizzazione ad albero puoi trascinare qualsiasi nodo al di sopra di qualsiasi altro nodo. Il primo nodo e i suoi discendenti (se presenti) diventeranno discendenti del secondo nodo. Quando si trascina sopra un nodo, questo verrà aperto automaticamente. Per inserire un nodo alla radice (primo livello), trascinalo sulla parte superiore della finestra di etichettatura. Se la modifica è in conflitto con un&rsquo;etichetta già esistente l&rsquo;operazione viene annullata.</p>
+<h2 id="allegare-etichetta"><a href="#allegare-etichetta">🔗</a>allegare etichetta</h2>
+<p>Esistono diversi metodi per allegare un&rsquo;etichetta esistente ad un gruppo di immagini selezionate:</p>
+<ul>
+<li>
+<p>fai click su un&rsquo;etichetta nella finestra <em>dizionario tag</em> per selezionarla, quindi fai click sul pulsante <em>allega</em>.</p>
+</li>
+<li>
+<p>click di destro su un&rsquo;etichetta nella finestra <em>dizionario etichette</em> per mostrare un menù a comparsa, quindi seleziona la voce &ldquo;allega etichetta&rdquo;.</p>
+</li>
+<li>
+<p>doppio click su un&rsquo;etichetta nella finestra <em>dizionario etichette</em>.</p>
+</li>
+<li>
+<p>click di destra su un&rsquo;etichetta nella finestra delle <em>etichette allegate</em> per mostrare il menù a comparsa. Se alcune delle immagini selezionate non hanno al momento quella determinata etichetta, puoi usare la voce &ldquo;allega etichetta a tutte le immagini&rdquo; per allegare l&rsquo;etichetta a tutte le immagini selezionate.</p>
+</li>
+<li>
+<p>Scrivi qualcosa nel campo di testo e clicca sul pulsante &ldquo;nuovo&rdquo; o premi Invio. Questo creerà l&rsquo;etichetta se non esiste già, e l&rsquo;allegherà alle immagini selezionate.</p>
+</li>
+<li>
+<p>Premi Ctrl+T per aprire un piccolo campo di testo in basso al pannello centrale del Tavolo Luminoso. Scrivi il nome dell&rsquo;etichetta e premi Invio. L&rsquo;etichetta verrà creata se non esiste e allegata a tutte le immagini selezionate.</p>
+</li>
+<li>
+<p>Trascina un&rsquo;immagine o un gruppo di immagini sull&rsquo;etichetta desiderata.</p>
+</li>
+</ul>
+<p>Quando passi il mouse sopra le immagini nel Tavolo Luminoso, puoi controllare quali etichette sono allegate all&rsquo;immagine, sia guardando la finestra <em>immagini allegate</em> nel modulo <em>etichettatura</em>, sia nell&rsquo;attributo <em>etichette</em> nel modulo <a href="/dtdocs/it/module-reference/utility-modules/shared/image-information/">informazioni immagine</a>.</p>
+<h2 id="rimuovi-etichetta"><a href="#rimuovi-etichetta">🔗</a>rimuovi etichetta</h2>
+<p>Esistono diverse maniere per rimuovere un&rsquo;etichetta da un gruppo di immagini selezionate.</p>
+<ul>
+<li>
+<p>fai click su un&rsquo;etichetta nella finestra <em>etichette allegate</em> del modulo <em>etichettatura</em> per selezionare l&rsquo;etichetta, quindi premi il pulsante <em>rimuovi</em>.</p>
+</li>
+<li>
+<p>doppio click su un&rsquo;etichetta nella finestra <em>etichette allegate</em>.</p>
+</li>
+<li>
+<p>click di destro su un&rsquo;etichetta nella finestra <em>etichette allegate</em> per mostrare il menù a comparsa, poi seleziona &ldquo;rimuovi etichetta&rdquo;.</p>
+</li>
+</ul>
+<h2 id="elimina-etichetta"><a href="#elimina-etichetta">🔗</a>elimina etichetta</h2>
+<p>E' possibile rimuovere completamente un&rsquo;etichetta da tutte le immagini (che siano selezionate o meno) ed eliminare l&rsquo;etichetta dal database. Siccome questo può avere un impatto su un grande numero di immagini, verrà mostrato un avvertimento riportante il numero di immagini che hanno al momento l&rsquo;etichetta allegata. Prendi questo avvertimento seriamente in quanto non c&rsquo;è possibilità di tornare indietro (ad eccezione di ripristinare il tuo database e/o i sidecar file XMP da un backup). Un&rsquo;etichetta nella finestra <em>dizionario etichette</em> può essere eliminata nelle seguenti maniere:</p>
+<ul>
+<li>
+<p>click di destro sull&rsquo;etichetta nella finestra <em>dizionario etichette</em> per mostrare il menù a comparsa, quindi selezionare &ldquo;elimina etichetta&rdquo;.</p>
+</li>
+<li>
+<p>click di destro sul nodo di un ramo nella finestra <em>dizionario etichette</em> per mostrare il menù a comparsa, e scegliere &ldquo;elimina il nodo&rdquo; per eliminare il nodo e tutti i suoi discendenti.</p>
+</li>
+</ul>
+<h2 id="importa--esporta"><a href="#importa--esporta">🔗</a>importa / esporta</h2>
+<p>Il pulsante &ldquo;importa&rdquo; ti permette di selezionare un file di testo (che deve essere conforme al formato di testo di Lightroom per le etichette) e importare il suo contenuto. Se un&rsquo;etichetta nel file già esiste, verranno aggiornate le sue proprietà, altrimenti verrà creata una nuova etichetta.</p>
+<p>Il pulsante &ldquo;esporta&rdquo; esporta l&rsquo;intero dizionario delle etichette in un file di testo a tua scelta (nel formato di testo di Lightroom per le etichette).</p>
+<h2 id="navigazione"><a href="#navigazione">🔗</a>navigazione</h2>
+<p>Per vedere le immagini appartenenti ad una particolare etichetta nella finestra <em>dizionario etichette</em>, fai click di destro sull&rsquo;etichetta e scegli la voce &ldquo;vai a raccolta etichette&rdquo; nel menù a comparsa. Questo aprirà una raccolta nel modulo <a href="/dtdocs/it/module-reference/utility-modules/shared/collections/">raccolte</a> che mostrerà tutte le immagini che contengono l&rsquo;etichetta. Puoi anche selezionare altre etichette nel modulo <em>raccolte</em> con il doppio click sulla raccolta delle altre etichette.</p>
+<p>Per ritornare alla raccolta selezionata prima di aprire la raccolta etichette, scegli &ldquo;torna al lavoro&rdquo; dal menù a comparsa. Questo ti porterà alla raccolta originale, purché tu non abbia selezionato altre raccolte nel frattempo.</p>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/module-reference/utility-modules/shared/tagging/">
+            English: tagging
+        </a></li>
+        
+        <li><a href="/dtdocs/de/module-reference/utility-modules/shared/tagging/">
+            German: Verschlagwortung
+        </a></li>
+        
+        <li><a href="/dtdocs/eo/module-reference/utility-modules/shared/tagging/">
+            Esperanto: etikedado
+        </a></li>
+        
+        <li><a href="/dtdocs/es/module-reference/utility-modules/shared/tagging/">
+            Espanol: etiquetado
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/module-reference/utility-modules/shared/tagging/">
+            Português: etiquetas
+        </a></li>
+        
+        <li><a href="/dtdocs/uk/module-reference/utility-modules/shared/tagging/">
+            Ukrainian: теги
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/module-reference/" class="next">&lt; Module-references</a>
+	
+    </div>
+    <div class="col-6">
+    
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

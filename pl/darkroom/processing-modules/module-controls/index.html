@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - kontrolki modułów</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/pl\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="pl" role="option" lang="pl" href="https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/module-controls/">Polish</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/darkroom/processing-modules/module-controls/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/module-controls/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="es" role="option" lang="es" href="https://darktable-org.github.io/dtdocs/es/darkroom/processing-modules/module-controls/">Espanol</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/darkroom/processing-modules/module-controls/">Português</a>
+		    
+		      <a class="dropdown-item" hreflang="uk" role="option" lang="uk" href="https://darktable-org.github.io/dtdocs/uk/darkroom/processing-modules/module-controls/">Ukrainian</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/overview/" class="">
+          Przegląd
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/" class="">
+          Stół podświetlany
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-view-layout/" class="">
+          układ widoku stołu podświetlanego
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/undo-redo/" class="">
+          cofnij/ponów
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/" class="">
+          tryby stołu podświetlanego
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/filemanager/" class="">
+          manager plików
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/culling/" class="">
+          układ selektywny
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/" class="">
+          zarządzanie zasobami cyfrowymi
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/collections/" class="">
+          kolekcje i rolki filmu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/thumbnails/" class="">
+          miniaturki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/star-color/" class="">
+          gwiazdki i kolorowe etykiety
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/metadata-tagging/" class="">
+          metadane i znaczniki
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/" class="">
+          Ciemnia
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/darkroom-view-layout/" class="">
+          układ widoku ciemni
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/" class="">
+          kolejka przetwarzania
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/" class="">
+          anatomia modułu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/the-pixelpipe-and-module-order/" class="">
+          potok przetwarzania i kolejność modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/history-stack/" class="">
+          historia
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/undo-redo/" class="">
+          cofnij i ponów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/" class="">
+          moduły przetwarzające
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/module-header/" class="">
+          nagłówek modułu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/multiple-instances/" class="">
+          wiele instancji
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/presets/" class="">
+          presety
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/module-controls/" class=" active">
+          kontrolki modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/curves/" class="">
+          krzywe
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/wavelets/" class="">
+          falki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/deprecated/" class="">
+          moduły przestarzałe
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/" class="">
+          maski i mieszanie
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/blend-modes/" class="">
+          tryby mieszania
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/" class="">
+          maski
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/" class="">
+          maski wektorowe
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/" class="">
+          maski parametryczne
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="">
+          łączenie masek wektorowych i parametrycznych
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/" class="">
+          uszczegóławianie maski i dodatkowe kontrolki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/raster/" class="">
+          maski rastrowe
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/" class="">
+          organizacja pracy z modułami
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/module-groups/" class="">
+          grupy modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/quick-access-panel/" class="">
+          panel szybkiego dostępu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/manage-module-layouts/" class="">
+          zarządzaj układem modułów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/tethering/" class="">
+          Tethering
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/tethering/troubleshooting/" class="">
+          rozwiązywanie problemów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/map/" class="">
+          Mapa
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/slideshow/" class="">
+          Pokaz slajdów
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/print/" class="">
+          Wydruk
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/print/print-view-layout/" class="">
+          układ widoku wydruku
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/preferences-settings/" class="">
+          Ustawienia darktable
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/" class="">
+          Skrypty Lua
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/a-simple-example/" class="">
+          prosty przykład lua
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/calling-from-dbus/" class="">
+          wywołanie lua z dbus
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/darktable-from-lua/" class="">
+          użycie darktable ze skryptu lua
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/api/" class="">
+          API lua
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/" class="">
+          Przewodniki i tutoriale
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/monochrome/" class="">
+          wywoływanie zdjęć monochromatycznych
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/other-resources/" class="">
+          inne zasoby
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/" class="">
+          Tematy specjalne
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/color-management/" class="">
+          zarządzanie kolorem
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/opencl/" class="">
+          opencl
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/darktable-chart/" class="">
+          użycie darktable-chart
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/program-invocation/" class="">
+          uruchomienie programu
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/" class="">
+          moduły przetwarzające
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/graduated-density/" class="">
+          filtr połówkowy
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/colorize/" class="">
+          koloryzacja
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/grain/" class="">
+          ziarno
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+<a href='/dtdocs/pl/'>darktable</a> / <a href='/dtdocs/pl/darkroom/'>Ciemnia</a> / <a href='/dtdocs/pl/darkroom/processing-modules/'>moduły przetwarzające</a> / kontrolki modułów
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/processing-modules/presets/" class="next">&lt; presety</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/processing-modules/curves/" class="prev">krzywe &gt;</a>
+	
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        kontrolki modułów
+    </h1>
+
+    
+
+    <p>Ten rozdział opisuje sposoby interakcji z kontrolkami modułów.</p>
+<h1 id="suwaki"><a href="#suwaki">🔗</a>suwaki</h1>
+<p>Suwaki oferują pięć różnych metod interakcji, w zależności od poziomu dokładności, którego potrzebujesz.</p>
+<dl>
+<dt>kliknięcie LPM</dt>
+<dd>Kliknij gdziekolwiek w obszarze suwaka dla ustawienia jego wartości. Możesz również kliknąć i przesunąć suwak w celu zmiany jego wartości. Nie musisz klikać dokładnie w trójkąt czy linię &ndash; możesz kliknąć gdziekolwiek w obszarze suwaka, nawet na jego etykietę.</dd>
+<dt>kółko myszy</dt>
+<dd>Najedź kursorem na obszar suwaka i przy użyciu kółka myszy ustaw wartość kontrolki.</dd>
+<dt>klawisze strzałek na klawiaturze</dt>
+<dd>Kiedy suwak jest wybrany, możesz przesunąć nad niego kursor myszy, by przy pomocy klawiszy strzałek (←/↓ oraz →/↑) określić wskazywaną wartość. W celu wyboru suwaka bez zmiany bieżącej wartości kliknij dwa razy PPM.</dd>
+<dt>PPM</dt>
+<dd>Kiedy kursor znajduje się nad suwakiem, PPM wyświetli pod suwakiem kontrolkę, którą możesz sterować przy użyciu myszki lub klawiszy numerycznych z klawiatury.</dd>
+<dd>
+<p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/processing-modules/module-controls/bauhaus.png"><img src="/dtdocs/en/darkroom/processing-modules/module-controls/bauhaus.png" alt="bauhaus"  class="w33"    /></a>
+
+</p>
+</dd>
+<dd>
+<p>Krzywa, rozciągająca się od trójkątnego znacznika, zmienia kształt wraz z ruchem kursora. Im bliżej znacznika znajduje się kursor, tym mniejsza kontrola nad finalną wartością; im dalej od znacznika znajduje się kursor, tym precyzyjniejsza kontrola wartości. LPM zatwierdza nową wartość i zamyka kontrolkę.</p>
+</dd>
+<dd>
+<p>Możesz też wpisać nową wartość przy użyciu klawiatury i zatwierdzić ją klawiszem Enter. Możesz nawet wpisać ją w postaci wyrażenia arytmetycznego, które darktable obliczy za ciebie – poprzednią wartość możesz oznaczyć jako &ldquo;x&rdquo;.</p>
+</dd>
+<dt>podwójne kliknięcie</dt>
+<dd>Podwójne kliknięcie na suwaku bądź jego etykiecie spowoduje reset do jego wartości domyślnej.</dd>
+</dl>
+<p>Dodatkowo masz wpływ na precyzję operacji z rolką myszy bądź klawiszami strzałek:</p>
+<ul>
+<li>
+<p>przytrzymaj Shift przy określaniu wartości, aby <em>zwiększyć</em> skok wartości dziesięciokrotnie.</p>
+</li>
+<li>
+<p>przytrzymaj Ctrl przy określaniu wartości, aby <em>zmniejszyć</em> skok wartości dziesięciokrotnie.</p>
+</li>
+</ul>
+<p>Obie wartości mnożników mogą zostać zmienione w pliku <code>$HOME/.config/darktablerc</code>:</p>
+<pre><code>darkroom/ui/scale_rough_step_multiplier=10.0
+darkroom/ui/scale_precise_step_multiplier=0.1
+</code></pre><h1 id="listy-rozwijalne"><a href="#listy-rozwijalne">🔗</a>listy rozwijalne</h1>
+<p>Kliknij na liście, aby zobaczyć listę dostępnych opcji do wyboru. Niekiedy lista otworzy się blisko górnej lub dolnej krawędzi ekranu wskazując, że nie wszystkie opcje są widoczne – użycie rolki myszy pozwoli przewinąć wszystkie opcje. Możesz również skorzystać z kółka myszy i klawiatury, aby wybrać opcję, lub zacząć pisać, jeśli chcesz filtrować listę wartości.</p>
+<h1 id="próbniki-koloru"><a href="#pr%c3%b3bniki-koloru">🔗</a>próbniki koloru</h1>
+<p>Część modułów pozwala na wybór parametrów przy użyciu próbników (oznaczonych ikoną 
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/processing-modules/module-controls/color-picker.png"><img src="/dtdocs/en/darkroom/processing-modules/module-controls/color-picker.png" alt="color-picker-icon"  class="icon"    /></a>
+
+). Korzystają one ze standardowego interfejsu, a większość operuje w trybie punktowym bądź obszarowym. Tryb punktowy może być aktywowany przez kliknięcie na ikonie próbnika. Tryb obszarowy – przez Ctrl+LPM lub PPM.</p>
+<h1 id="skróty-klawiszowe"><a href="#skr%c3%b3ty-klawiszowe">🔗</a>skróty klawiszowe</h1>
+<p>Parametry modułów mogą być również ustawiane przy użyciu skrótów klawiaturowych. Zob. <a href="../../preferences-settings/shortcuts.md">ustawienia &gt; skróty</a>.</p>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/darkroom/processing-modules/module-controls/">
+            English: module controls
+        </a></li>
+        
+        <li><a href="/dtdocs/de/darkroom/processing-modules/module-controls/">
+            German: Moduleinstellungen
+        </a></li>
+        
+        <li><a href="/dtdocs/es/darkroom/processing-modules/module-controls/">
+            Espanol: controles del módulo
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/darkroom/processing-modules/module-controls/">
+            Português: controles do módulo
+        </a></li>
+        
+        <li><a href="/dtdocs/uk/darkroom/processing-modules/module-controls/">
+            Ukrainian: елементи керування модулем
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/processing-modules/presets/" class="next">&lt; presety</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/processing-modules/curves/" class="prev">krzywe &gt;</a>
+	
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

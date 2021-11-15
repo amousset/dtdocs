@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cuarto oscuro on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/</link>
+    <description>Recent content in cuarto oscuro on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>advertencia de sobreexposición en RAW</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/raw-overexposed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/raw-overexposed/</guid>
+      <description>Resalte las áreas de la imagen donde se recortan los canales de color del archivo de entrada sin procesar.
+Los canales de color recortados implican una imagen sobreexpuesta con pérdida de información en las zonas afectadas. Parte de esta información se puede recuperar usando _reconstrucción de luces altas _, _recosntrucción de color _ o el módulo _película rgb _.
+Haga clic en el icono  para mostrar/ocultar la superposición de advertencia.</description>
+    </item>
+    
+    <item>
+      <title>alerta de recorte</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/clipping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/clipping/</guid>
+      <description>Resalta las áreas de la imagen que pueden presentar recorte de luminancia o gama.
+Cuando se envía una imagen a un dispositivo de visualización, cada píxel se representa normalmente como un conjunto de 3 números, que representan la intensidad de los colores primarios rojo, verde y azul en el espacio de color de salida. Debido a que el espacio de color de salida suele estar estrechamente relacionado con el hardware con limitaciones físicas, existe un valor máximo permitido para los canales [R, G, B], que representa la intensidad máxima disponible para ese espacio de color.</description>
+    </item>
+    
+    <item>
+      <title>evaluación del color</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/color-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/color-assessment/</guid>
+      <description>Evalúe los colores y el brillo de su imagen utilizando las condiciones de visualización recomendadas por ISO 12646: 2008.
+Al revelar una imagen, la forma en que percibimos el brillo, el contraste y la saturación está influenciada por las condiciones ambientales circundantes. Si una imagen se muestra sobre un fondo oscuro, como con el tema predeterminado en darktable, esto puede tener una serie de efectos adversos en nuestra percepción de esa imagen:</description>
+    </item>
+    
+    <item>
+      <title>gestor de máscaras</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/mask-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/mask-manager/</guid>
+      <description>Administra todas las máscaras y formas de la imagen actual.
+  Este módulo se puede utilizar para crear, renombrar, editar y eliminar formas. Puede agregar y eliminar formas de una máscara, agrupar formas y combinarlas usando operadores de conjunto.
+La línea superior del panel del administrador de máscaras contiene botones que se pueden usar para crear nuevas formas. Estos son los mismos que en la interfaz máscara dibujada de los módulos de procesamiento.</description>
+    </item>
+    
+    <item>
+      <title>historial de acciones</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/history-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/history-stack/</guid>
+      <description>Ver y modificar el historial de la imágen actual de la sala oscura.
+This module lists every change of state (activate/de-activate/move/change parameters) for all processing modules that have been modified for the current image. Select a point in the stack to return to that point in the development history of the image. Shift+click an item in the history stack to expand that module in the right-hand module panel without changing the current edit.</description>
+    </item>
+    
+    <item>
+      <title>instantáneas</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/snapshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/snapshots/</guid>
+      <description>Almacene instantáneas de desarrollo y compárelas con la edición actual.
+Una instantánea es un mapa de bits almacenado de la imagen central en la vista del cuarto oscuro. Las instantáneas se pueden tomar en cualquier punto del proceso de desarrollo y luego superponerse en la vista central actual. Esto le permite realizar una comparación lado a lado (por defecto, izquierda = instantánea, derecha = edición activa) mientras ajusta los parámetros de un módulo.</description>
+    </item>
+    
+    <item>
+      <title>línea de información de imagen</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/image-info-line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/image-info-line/</guid>
+      <description>Muestra información sobre la imagen actual en un panel de cuarto oscuro.
+El contenido de esta línea se puede configurar en preferencias&amp;gt; cuarto oscuro. Consulte la sección variables para obtener información sobre las variables que se pueden utilizar aquí. También puede insertar una nueva línea con $(NL).
+La línea de información de la imagen se puede mostrar en el panel superior, inferior, izquierdo o derecho, dependiendo de un elemento de configuración adicional en preferencias&amp;gt; cuarto oscuro.</description>
+    </item>
+    
+    <item>
+      <title>navegación</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/navigation/</guid>
+      <description>Zoom y desplazamiento por la imagen actual.
+En la parte superior izquierda del cuarto oscuro, el panel de navegación muestra una vista previa completa de la imagen actual con un rectángulo que muestra el área que es actualmente visible en el panel central. Arrastre el rectángulo para desplazar la vista ampliada. La escala de zoom actual se muestra a la derecha de la imagen de vista previa. Haga clic en esa figura para acceder rápidamente a algunos niveles de zoom comunes.</description>
+    </item>
+    
+    <item>
+      <title>Pruebas en pantalla</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/soft-proof/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/soft-proof/</guid>
+      <description>Vea su imagen renderizada usando un perfil de color seleccionado.
+Haga clic en el icono  para activar el modo de visualización de prueba en pantalla en su imagen. Esto le permite obtener una vista previa de su imagen renderizada usando un perfil de impresora para ver cómo terminarán los colores en la impresión final. También puede activar la prueba en pantalla con el atajo de teclado Ctrl+S. Un mensaje de &amp;ldquo;prueba en pantalla&amp;rdquo; en la parte inferior izquierda de su imagen le indica que se encuentra en el modo de visualización de prueba en pantalla.</description>
+    </item>
+    
+    <item>
+      <title>revisión de gama</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/gamut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/darkroom/gamut/</guid>
+      <description>Resalta las áreas de la imagen que pueden presentar recortes de gama.
+Haga clic en el icono  para activar el modo de revisión de gama para su imagen. Esta función resalta, en cian, todos los píxeles que están fuera de gama con respecto al perfil de prueba en pantalla seleccionado. También puede activar la verificación de gama con el atajo de teclado Ctrl+G. Un mensaje &amp;ldquo;revisión de gama&amp;rdquo; en la parte inferior izquierda de la imagen le indica que se encuentra en el modo de revisión de gama.</description>
+    </item>
+    
+  </channel>
+</rss>

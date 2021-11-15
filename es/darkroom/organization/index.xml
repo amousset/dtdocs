@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>organización on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/es/darkroom/organization/</link>
+    <description>Recent content in organización on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/es/darkroom/organization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resumen</title>
+      <link>https://darktable-org.github.io/dtdocs/es/darkroom/organization/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/darkroom/organization/overview/</guid>
+      <description>Los módulos de procesamiento se organizan y se accede a ellos a través del panel de la derecha en el cuarto oscuro:
+  Haga clic en los iconos en la parte superior de este panel para revelar, de izquierda a derecha,
+   panel de acceso rápido Un panel personalizable que permite un acceso rápido a los controles del módulo de uso común.   active modules A group containing the modules that are currently active in the pixelpipe.</description>
+    </item>
+    
+    <item>
+      <title>grupos de módulos</title>
+      <link>https://darktable-org.github.io/dtdocs/es/darkroom/organization/module-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/darkroom/organization/module-groups/</guid>
+      <description>Varios grupos de módulos predefinidos se envían con darktable y se pueden seleccionar como preajustes. Estos se resumen a continuación.
+Todos estos ajustes preestablecidos (con la excepción de modules: obsoletos y búsqueda solo) también incluyen el panel de acceso rápido. Todos excepto el grupo modules: obsoletos incluyen la barra de búsqueda.
+🔗módulos: todos Este ajuste preestablecido contiene todos los módulos, ordenados de acuerdo con las agrupaciones de módulos tradicionales utilizadas antes de darktable 3.</description>
+    </item>
+    
+    <item>
+      <title>panel de acceso rápido</title>
+      <link>https://darktable-org.github.io/dtdocs/es/darkroom/organization/quick-access-panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/darkroom/organization/quick-access-panel/</guid>
+      <description>El panel de acceso rápido le permite acceder a los widgets de varios módulos de procesamiento, todo en un solo lugar.
+  Puede agregar nuevos widgets haciendo clic con el botón derecho en el icono en la parte superior izquierda o usando la pantalla administrar diseños de módulos.
+Haga clic en el icono a la derecha del nombre del módulo para abrir la versión completa de ese módulo. Haga clic en el icono a la izquierda del nombre del módulo para habilitar/deshabilitar el módulo.</description>
+    </item>
+    
+    <item>
+      <title>administrar disposición de módulos</title>
+      <link>https://darktable-org.github.io/dtdocs/es/darkroom/organization/manage-module-layouts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/darkroom/organization/manage-module-layouts/</guid>
+      <description>Gestione el diseño y la agrupación de los módulos de procesamiento y el panel de acceso rápido.
+  This maintenance screen can be accessed from the presets menu beside the module search box or module group icons (below the scopes module in the darkroom view). Ctrl+click on the preset menu to open this screen directly.
+Los ajustes se guardan automáticamente cuando sale de la pantalla. Haga clic en reiniciar para abandonar cualquier cambio realizado en la sesión de edición actual.</description>
+    </item>
+    
+  </channel>
+</rss>

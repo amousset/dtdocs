@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>condivisi on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/</link>
+    <description>Recent content in condivisi on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>editor metadati</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/metadata-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/metadata-editor/</guid>
+      <description>Modifica i metadati delle immagini selezionate.
+I metadati sono del testo in formato libero (titolo, descrizione, autore, editore, diritti etc&amp;hellip;) che descrive le tue immagini.
+🔗Controlli modulo  campi di inserimento metadati Per ciascuno elemento di metadati viene mostrato un campo separato. Scrolla con la rotellina del mouse mentre tieni premuto il tasto Ctrl per incrementare l&amp;rsquo;altezza di un campo. Premi Ctrl+Invio per inserire un ritorno a capo. Premi Invio per applicare qualsiasi testo inserito nel campo metadati corrente alle immagini selezionate.</description>
+    </item>
+    
+    <item>
+      <title>esporta</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/export/</guid>
+      <description>Esporta le immagini selezionate.
+Quando viene usato nella Camera Oscura, l&amp;rsquo;immagine correntemente in lavorazione verrà esportata se nessun&amp;rsquo;altra immagine è selezionata nei provini.
+Si possono esportare le immagini su file su disco, via email, su vari servizi online, come album web o come modello di libro.
+🔗Controlli modulo 🔗opzioni di salvataggio  destinazione E&#39; il tipo di destinazione per l&amp;rsquo;esportazione delle immagini selezionate. Sono implementati un certo numero di tipologie, incluse file su disco, modello libro LaTeX e vari web album.</description>
+    </item>
+    
+    <item>
+      <title>etichettatura</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/tagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/tagging/</guid>
+      <description>Gestisce le etichette allegate alle immagini.
+Le etichette forniscono un modo di aggiungere informazioni alle immagini usando un dizionario di parole chiavi. Puoi anche gestire le etichette in gerarchia, il ché può essere utile quando diventano molte.
+Le etichette vengono salvate fisicamente nei file &amp;ldquo;sidecar&amp;rdquo; XMP, ma anche nel database di darktable, e possono essere incluse nelle immagini esportate.
+🔗definizioni Le seguenti definizioni presuppongono che tu abbia impostato una singola etichetta &amp;ldquo;luoghi|Italia|Toscana|Rio Marina&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>focus peaking</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/focus-peaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/focus-peaking/</guid>
+      <description>Identifica quali parti dell&amp;rsquo;immagine contiene bordi nitidi, che di solito indica che quelle aree sono a fuoco.
+Attivare il modulo cliccando sull&amp;rsquo;icona  . La parte a fuoco dell&amp;rsquo;immagine verrà evidenziata con una sovrapposizione di giallo, verde e blu.
+Il focus peaking lavora filtrando il rumore della foto, misurando l&amp;rsquo;intensità del gradiente nell&amp;rsquo;immagine a calcolando medie e deviazioni standard. Quando il gradiente di un bordo si scosta in maniera significativa dalla media, i pixel associati vengono contrassegnati attraverso una &amp;ldquo;heat map&amp;rdquo; che mostra quanto un bordo sia nitido.</description>
+    </item>
+    
+    <item>
+      <title>geotagging</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/geotagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/geotagging/</guid>
+      <description>Importa usa i dati di tracciamento nel GPX alle immagini selezionate.
+Questo modulo è in comune alle viste Tavolo Luminoso e Mappa. La mappa fornisce una modalità avanzata che ti permette di avere un&amp;rsquo;anteprima della posizione dell&amp;rsquo;immagine lungo il percorso GPS mentre aggiusti la compensazione data/ora e il fuso orario.
+🔗panoramica del processo Il ricevitore GPS calcola la posizione corrente basandosi sulle informazioni che riceve dai satelliti e la registra in un file GPX assieme alla data/ora corrente.</description>
+    </item>
+    
+    <item>
+      <title>informazioni immagine</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/image-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/image-information/</guid>
+      <description>Mostra le informazioni incluse nei dati Exif dell&amp;rsquo;immagine assieme ad altri campi aggiuntivi definiti da darktable.
+Quando si passa il mouse sulla miniatura di un&amp;rsquo;immagine, i dati mostrati vengono automaticamente aggiornati per mostrare le informazioni dell&amp;rsquo;immagine attualmente sotto il cursore del mouse.
+Quando è selezionata più di un&amp;rsquo;immagine e il fuoco è su nessuna delle immagini, il modulo mostra soltanto le informazioni che sono le stesse per tutte le immagini. Se uno dei campi differisce tra le immagini, viene visualizzato il testo alternativo &amp;ldquo;&amp;lt;various values&amp;gt;&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>provini</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/filmstrip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/filmstrip/</guid>
+      <description>I provini possono essere usati per passare tra un&amp;rsquo;immagine e l&amp;rsquo;altra in tutte le viste di darktable. Le immagini mostrate sono le stesse mostrate nella vista Tavolo Luminoso e sono definite dalla raccolta correntemente selezionata.
+  I provini possono essere abilitati/disabilitati usando la scorciatoia da tastiera Ctrl+F. L&amp;rsquo;altezza del pannello dei provini può essere cambiata cliccando e trascinando il suo bordo superiore.
+Puoi navigare velocemente le immagini nei provini utilizzando la rotellina del mouse.</description>
+    </item>
+    
+    <item>
+      <title>raccolte</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/collections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/collections/</guid>
+      <description>Filtra le immagini mostrate nel tavolo luminoso e nel pannello dei provini utilizzando le proprietà delle immagini. L&amp;rsquo;insieme delle immagini filtrate è chiamato una raccolta.
+Importing images into darktable stores information about them (filename, path, Exif data, data from XMP sidecar files etc.) in darktable&amp;rsquo;s library database. A collection may be defined by applying filtering rules to these attributes, thus creating a subset of images to display in the lighttable view and the filmstrip module.</description>
+    </item>
+    
+  </channel>
+</rss>

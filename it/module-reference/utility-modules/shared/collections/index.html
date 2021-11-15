@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="it">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - raccolte</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/it\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="it" role="option" lang="it" href="https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/collections/">Italian</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/shared/collections/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/shared/collections/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="es" role="option" lang="es" href="https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/shared/collections/">Espanol</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/module-reference/utility-modules/shared/collections/">Português</a>
+		    
+		      <a class="dropdown-item" hreflang="uk" role="option" lang="uk" href="https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/shared/collections/">Ukrainian</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/" class="">
+          Stampa
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/print-view-layout/" class="">
+          Disposizione visualizzazione Stampa
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/" class="">
+          Darkrooms
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/" class="">
+          maschere &amp; fusione
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/" class="">
+          maschere
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn/" class="">
+          maschere disegnate
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="">
+          maschere parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="">
+          combinare maschere disegnate &amp; parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/" class="">
+          rifinitura maschere &amp; controlli aggiuntivi
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/raster/" class="">
+          maschere raster
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+<a href='/dtdocs/it/'>darktable 3.7 (development) user manual</a> / <a href='/dtdocs/it/module-reference/'>Module-references</a> / <a href='/dtdocs/it/module-reference/utility-modules/shared/'>condivisi</a> / raccolte
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/module-reference/" class="next">&lt; Module-references</a>
+	
+    </div>
+    <div class="col-6">
+    
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        raccolte
+    </h1>
+
+    
+
+    <p>Filtra le immagini mostrate nel tavolo luminoso e nel pannello dei provini utilizzando le proprietà delle immagini. L&rsquo;insieme delle immagini filtrate è chiamato una <em>raccolta</em>.</p>
+<p>Importing images into darktable stores information about them (filename, path, Exif data, data from XMP sidecar files etc.) in darktable&rsquo;s library database. A collection may be  defined by applying filtering rules to these attributes, thus creating a subset of images to display in the lighttable view and the filmstrip module.</p>
+<p>La raccolta predefinita si basa sull&rsquo;attributo <em>rullino</em> e mostra tutte le immagini dell&rsquo;ultimo rullino importato o selezionato.</p>
+<h1 id="filtrare-gli-attributi"><a href="#filtrare-gli-attributi">🔗</a>filtrare gli attributi</h1>
+<p>Le immagini in una raccolta possono essere filtrate usando i seguenti attributi dell&rsquo;immagine:</p>
+<h2 id="file"><a href="#file">🔗</a>file</h2>
+<dl>
+<dt>film roll</dt>
+<dd>The name of the film roll to which the image belongs (which is the same as the name of the folder in which the image resides). Ctrl+Shift+click on a film roll to switch to the corresponding folder. Right-click to remove the contents of the film roll from the darktable library or tell darktable that its location has changed in the file system.</dd>
+<dt>folder</dt>
+<dd>The folder (file path) where the image file is located. Click on a folder to include the contents of that folder and all sub-folders in the collection; Shift+click to include only the images in the selected folder; Ctrl+click to show only the images from any sub-folders; Ctrl+Shift+click to switch to the corresponding film roll. Right-click on a folder name to remove its contents from the darktable library or tell darktable that its location has changed in the file system.</dd>
+<dt>nome file</dt>
+<dd>Il nome file dell&rsquo;immagine</dd>
+</dl>
+<h2 id="metadati"><a href="#metadati">🔗</a>metadati</h2>
+<dl>
+<dt>etichette</dt>
+<dd>Qualsiasi etichetta allegata all&rsquo;immagine. Immagini non etichettate vengono raggruppate sotto la voce &ldquo;Non etichettate&rdquo;. La lista gerarchica delle etichette conosciute viene mostrata quando è attiva.</dd>
+<dt>titolo</dt>
+<dd>Il campo &ldquo;titolo&rdquo; dei metadati dell&rsquo;immagine.</dd>
+<dt>descrizione</dt>
+<dd>Il campo &ldquo;descrizione&rdquo; dei metadati dell&rsquo;immagine.</dd>
+<dt>autore</dt>
+<dd>Il campo &ldquo;Autore&rdquo; dei metadati dell&rsquo;immagine.</dd>
+<dt>editore</dt>
+<dd>Il campo &ldquo;Editore&rdquo; dei metadati dell&rsquo;immagine.</dd>
+<dt>diritti</dt>
+<dd>Il campo &ldquo;diritti&rdquo; dei metadati dell&rsquo;immagine.</dd>
+<dt>note</dt>
+<dd>Il campo &ldquo;note&rdquo; dei metadati dell&rsquo;immagine.</dd>
+<dt>version name</dt>
+<dd>The image&rsquo;s metadata &ldquo;version name&rdquo; field.</dd>
+<dt>rating</dt>
+<dd>The image&rsquo;s star rating</dd>
+<dt>color label</dt>
+<dd>Any color label attached to the image (&ldquo;red&rdquo;, &ldquo;yellow&rdquo;, &ldquo;green&rdquo;, &ldquo;blue&rdquo;, &ldquo;purple&rdquo;).</dd>
+<dt>georeferenziazione</dt>
+<dd>La località geografica dell&rsquo;immagine (controlla <a href="../map/locations.md">località</a>).</dd>
+</dl>
+<h2 id="orari"><a href="#orari">🔗</a>orari</h2>
+<dl>
+<dt>data di scatto</dt>
+<dd>La data in cui la foto è stata scattata, nel formato <code>YYYY:MM:DD</code>.</dd>
+<dt>data e ora di scatto</dt>
+<dd>La data e l&rsquo;ora in cui la foto è stata scattata, nel formato <code>YYYY:MM:DD hh:mm:ss</code>.</dd>
+<dt>data e ora importazione</dt>
+<dd>La data e ora in cui il file è stato importato, nel formato <code>YYYY:MM:DD hh:mm:ss</code>.</dd>
+<dt>modifica data e ora</dt>
+<dd>La data e ora in cui il file è stato modificato l&rsquo;ultima volta, nel formato <code>YYYY:MM:DD hh:mm:ss</code>.</dd>
+<dt>esporta data e ora</dt>
+<dd>La data e ora in cui il file è stato esportato, nel formato <code>YYYY:MM:DD hh:mm:ss</code>.</dd>
+<dt>stampa data e ora</dt>
+<dd>La data e ora in cui il file è stato stampato, nel formato <code>YYYY:MM:DD hh:mm:ss</code>.</dd>
+</dl>
+<h2 id="dettagli-di-scatto"><a href="#dettagli-di-scatto">🔗</a>dettagli di scatto</h2>
+<dl>
+<dt>fotocamera</dt>
+<dd>Le voci dei dati Exif che descrivono marca e modello della fotocamera.</dd>
+<dt>obiettivo</dt>
+<dd>La descrizione dell&rsquo;obiettivo, come specificato nei dati Exif.</dd>
+<dt>apertura</dt>
+<dd>L&rsquo;apertura, come specificato nei dati Exif.</dd>
+<dt>esposizione</dt>
+<dd>La velocità dell&rsquo;otturatore, come specificao nei dati Exif.</dd>
+<dt>lunghezza focale</dt>
+<dd>La lunghezza focale, come specificata nei dati Exif.</dd>
+<dt>ISO</dt>
+<dd>Il valore ISO, come specificato nei dati Exif.</dd>
+<dt>proporzioni</dt>
+<dd>Le proporzioni dell&rsquo;immagine, incluso il ritaglio all&rsquo;interno di darktable.</dd>
+</dl>
+<h2 id="darktable"><a href="#darktable">🔗</a>darktable</h2>
+<dl>
+<dt>raggruppa</dt>
+<dd>Scegli tra &ldquo;identificatore di gruppo&rdquo; e &ldquo;seguaci gruppo&rdquo;.</dd>
+<dt>copia locale</dt>
+<dd>Mostra i file che sono copiati (o meno) localmente.</dd>
+<dt>coda di sviluppo</dt>
+<dd>Scegli immagini la cui coda di sviluppo è stata modificata o meno</dd>
+<dt>modulo</dt>
+<dd>Filtro basato sui moduli di lavorazione che sono stati applicati all&rsquo;immagine.</dd>
+<dt>ordine moduli</dt>
+<dd>Scegli le immagini con ordine moduli &ldquo;v3.0&rdquo;, &ldquo;legacy&rdquo; o &ldquo;personalizzato&rdquo;.</dd>
+</dl>
+<h1 id="controlli-modulo"><a href="#controlli-modulo">🔗</a>Controlli modulo</h1>
+<h2 id="definire-i-criteri-di-filtro"><a href="#definire-i-criteri-di-filtro">🔗</a>definire i criteri di filtro</h2>
+<p>La riga in alto del modulo può essere usata per definire i criteri dei filtri per la raccolta come segue:</p>
+<dl>
+<dt>attributi dell&rsquo;immagine</dt>
+<dd>Il campo sulla sinistra ti permette di scegliere quale <a href="#filtering-attributes">attributo</a> usare per filtrare la raccolta.</dd>
+<dt>modello di ricerca</dt>
+<dd>Nel campo di testo alla destra della selezione dell&rsquo;attributo puoi scrivere una modello di ricerca. Il modello viene confrontato con i valori dell&rsquo;attributo selezionato all&rsquo;interno del database. Il meccanismo di filtraggio individua una corrispondenza se uno degli attributi dell&rsquo;immagine contiene il testo del modello di ricerca per intero. Puoi usare <code>%</code> come carattere jolly. La raccolta verrà limitata alle sole immagini corrispondenti. Lasciando il campo vuoto corrisponde ad avere tutte le immagini che hanno quell&rsquo;attributo. Dove applicabile, un tooltip apparirà passando con il mouse sopra l&rsquo;attributo o il modello di ricerca per fornire ulteriori informazioni.</dd>
+<dd>
+<p>Attributi numerici o di tipo data/ora possono essere usati in combinazione con operatori di eguaglianza e per gli intervalli. Usa <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;&gt;</code> oppure <code>=</code> per selezionare immagini con attributi, rispettivamente, minori di, minori o uguali di, maggiori di, maggiori o uguali di, diversi da e uguali al valore specificato. In caso di intervallo di valori si può usare un&rsquo;espressione nella forma <code>[da;a]</code>.</p>
+</dd>
+<dt>seleziona per valore</dt>
+<dd>Oltre a definire un filtro usando un modello di ricerca, puoi anche selezionare manualmente dalla lista di valori (per l&rsquo;attributo selezionato) estratta dall&rsquo;insieme delle immagini correntemente selezionate. In questo modo il campo &ldquo;modello di ricerca&rdquo; verrà popolato automaticamente.</dd>
+<dd>
+<p>L&rsquo;area sottostante il <em>modello di ricerca</em> elencherà i valori per gli attributi selezionati che sono presenti nelle immagini correntemente selezionate. Questa lista viene continuamente aggiornata mentre scrivi. Puoi anche selezionare un criterio di ordinamento e facendo doppio click.</p>
+</dd>
+<dd>
+<p>Se abiliti la modalità &ldquo;usa singolo click&rdquo; (vedi <a href="../../../preferences-settings/lighttable.md">preferenze &gt; Tavolo Luminoso</a>) puoi selezionare con un singolo click piuttosto che con il doppio click. Questa modalità ti permette inoltre di selezionare un intervallo di valori con il mouse. Questo funziona soltanto per attributi numerici e data/ora.</p>
+</dd>
+</dl>
+<h2 id="combinare-filtri-multipli"><a href="#combinare-filtri-multipli">🔗</a>combinare filtri multipli</h2>
+<p>Puoi combinare più filtri assieme per creare raccolte di immagini più complicate utilizzando una serie di regole. Una regola è una combinazione di un criterio di filtro assieme ad un operatore logico che definisce come questo criterio viene combinato con le regole precedenti.</p>
+<p>Fai click sul pulsante 
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/collections/collect-expander.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/collections/collect-expander.png" alt="collect-expander-icon"  class="icon"    /></a>
+
+ (alla destra del campo di ricerca) per aprire un menù con le seguenti opzioni:</p>
+<dl>
+<dt>pulisci questa regola</dt>
+<dd>Rimuove la regola corrente, oppure la azzera se è l&rsquo;unica definita.</dd>
+<dt>restringi campo di ricerca</dt>
+<dd>Crea una nuova regola, che viene combinata alle regole precedenti in un&rsquo;operazione logica <em>E</em> (<code>AND</code>). Un&rsquo;immagine viene mantenuta nella raccolta solo se ha corrispondenza anche per la nuova regola.</dd>
+<dt>aggiungi più immagini</dt>
+<dd>Crea una nuova regola, che viene combinata alle regole precedenti in un&rsquo;operazione logica <em>O</em> (<code>OR</code>). Le immagini che hanno corrispondenza con la nuova regola vengono aggiunge alla raccolta.</dd>
+<dt>escludi immagini</dt>
+<dd>Crea una nuova regola, che viene combinata alle regole precedenti in un&rsquo;operazione logica <em>ESCLUDI</em>. Le immagini che hanno corrispondenza con la nuova regola vengono rimosse dalla raccolta.</dd>
+</dl>
+<p>Gli operatori logici stabiliscono come le regole vengono combinate tra di loro, e sono indicati con le icone alla destra di ciascuna regola: <em>E</em> (<code>AND</code>) con il simbolo 
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/collections/collect-and.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/collections/collect-and.png" alt="collect-and-icon"  class="icon"    /></a>
+
+, <em>O</em> (<code>OR</code>) con il simbolo 
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/collections/collect-or.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/collections/collect-or.png" alt="collect-or-icon"  class="icon"    /></a>
+
+, e <em>ESCLUDI</em> con il simbolo 
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/module-reference/utility-modules/shared/collections/collect-except.png"><img src="/dtdocs/en/module-reference/utility-modules/shared/collections/collect-except.png" alt="collect-except-icon"  class="icon"    /></a>
+
+. Fai click su una qualsiasi di queste icone per cambiare l&rsquo;operatore logico della regola.</p>
+<h2 id="aggiornare-la-cartella-delle-immagini-spostate"><a href="#aggiornare-la-cartella-delle-immagini-spostate">🔗</a>aggiornare la cartella delle immagini spostate</h2>
+<p>Nonostante sia preferibile non toccare i file importati all&rsquo;insaputa di darktable, questo modulo può aiutarti a recuperare situazioni dove hai spostato o rinominato cartelle di immagini dopo averle importate. Il modulo <em>Raccolte</em> ha una funzionalità che ti permette di aggiornare il database di darktable con la nuova posizione della cartella. Il procedimento è il seguente:</p>
+<ol>
+<li>
+<p>Imposta il campo <em>attributo immagine</em> a &ldquo;cartella&rdquo; o &ldquo;rullino&rdquo;.</p>
+</li>
+<li>
+<p>Il nome del rullino o della cartella originale verrà visualizzato <del>barrato</del> per enfatizzare che non può essere localizzato.</p>
+</li>
+<li>
+<p>Right-click on the folder or film roll name, select “search filmroll&hellip;”, and then select the new location of the folder.</p>
+</li>
+</ol>
+<h2 id="preferenze"><a href="#preferenze">🔗</a>preferenze</h2>
+<p>L&rsquo;opzione &ldquo;preferenze&hellip;&rdquo; nel menù dei preset ti permette di correggere il comportamento del modulo <em>Raccolte</em> come segue:</p>
+<dl>
+<dt>non impostare la voce &lsquo;senza categoria&rsquo; per le etichette</dt>
+<dd>Non imposta la categoria &lsquo;senza categoria&rsquo; per le etichette che non hanno figli (predefinito: disattivato).</dd>
+<dt>etichette sensibili alle maiuscole</dt>
+<dd>Imposta se le etichette debbano essere o meno sensibili alle maiuscole/minuscole &ndash; senza l&rsquo;estensione ICU di <code>sqlite</code> questo si applica soltanto alle 26 lettere latine (predefinito: non sensibili).</dd>
+<dt>numero di livelli di cartella da mostrare nelle liste</dt>
+<dd>Il numero dei livelli di una cartella da mostrare nel nomi rullini, partendo dalla destra (predefinito: 1).</dd>
+<dt>ordinamento rullino per</dt>
+<dd>Ordina i rullini sia per &ldquo;cartella&rdquo; (percorso) o &ldquo;ID&rdquo; (indicativamente equivalente alla data in cui il rullino è stato importato la prima volta) (predefinito: ID).</dd>
+<dt>ordina in modo decrescente la raccolta</dt>
+<dd>Usa per la seguente raccolta l&rsquo;ordine discendente: &ldquo;rullino&rdquo; (quando ordinato per cartella), &ldquo;cartella&rdquo;, data/ora (es. data/ora scatto) (predefinito: abilitato)</dd>
+</dl>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/module-reference/utility-modules/shared/collections/">
+            English: collections
+        </a></li>
+        
+        <li><a href="/dtdocs/de/module-reference/utility-modules/shared/collections/">
+            German: Sammlungen
+        </a></li>
+        
+        <li><a href="/dtdocs/es/module-reference/utility-modules/shared/collections/">
+            Espanol: colecciones
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/module-reference/utility-modules/shared/collections/">
+            Português: coleções
+        </a></li>
+        
+        <li><a href="/dtdocs/uk/module-reference/utility-modules/shared/collections/">
+            Ukrainian: колекції
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/module-reference/" class="next">&lt; Module-references</a>
+	
+    </div>
+    <div class="col-6">
+    
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

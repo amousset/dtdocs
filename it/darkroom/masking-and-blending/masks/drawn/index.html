@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="it">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - maschere disegnate</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/it\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="it" role="option" lang="it" href="https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn/">Italian</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/masks/drawn/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/masks/drawn/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="es" role="option" lang="es" href="https://darktable-org.github.io/dtdocs/es/darkroom/masking-and-blending/masks/drawn/">Espanol</a>
+		    
+		      <a class="dropdown-item" hreflang="pl" role="option" lang="pl" href="https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/">Polish</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/darkroom/masking-and-blending/masks/drawn/">Português</a>
+		    
+		      <a class="dropdown-item" hreflang="uk" role="option" lang="uk" href="https://darktable-org.github.io/dtdocs/uk/darkroom/masking-and-blending/masks/drawn/">Ukrainian</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/" class="">
+          Stampa
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/print-view-layout/" class="">
+          Disposizione visualizzazione Stampa
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/" class="">
+          Darkrooms
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/" class="">
+          maschere &amp; fusione
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/" class="">
+          maschere
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn/" class=" active">
+          maschere disegnate
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="">
+          maschere parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="">
+          combinare maschere disegnate &amp; parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/" class="">
+          rifinitura maschere &amp; controlli aggiuntivi
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/raster/" class="">
+          maschere raster
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+
+<a href='/dtdocs/it/'>darktable 3.7 (development) user manual</a> / <a href='/dtdocs/it/darkroom/'>Darkrooms</a> / <a href='/dtdocs/it/darkroom/masking-and-blending/'>maschere & fusione</a> / <a href='/dtdocs/it/darkroom/masking-and-blending/masks/'>maschere</a> / maschere disegnate
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/overview/" class="next">&lt; Introduzione</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="prev">maschere parametriche &gt;</a>
+	
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        maschere disegnate
+    </h1>
+
+    
+
+    <p>Con le maschere disegnate puoi costruire una maschera disegnando forme direttamente sopra l&rsquo;immagine. Le forme possono essere usate da sole o in combinazione. Dopo che una forma è stata disegnata su un&rsquo;immagine può essere regolata, rimossa, o riutilizzata in altri moduli.</p>
+<p>Shapes are stored internally as vectors and are rendered with the required resolution during pixelpipe processing. Shapes are expressed in the coordinate system of the original image and are transformed along with the rest of the image by any active distorting modules in the pipe (<a href="../../../module-reference/processing-modules/lens-correction.md"><em>lens correction</em></a>, <a href="../../../module-reference/processing-modules/rotate-perspective.md"><em>rotate and perspective</em></a> for example). This means that a shape will always work on the same image area regardless of any modifications that may be subsequently applied.</p>
+<p>Gli strumenti necessari per creare e modificare una maschera disegnata possono essere abilitati selezionando l&rsquo;icona &ldquo;maschera disegnata&rdquo; o &ldquo;maschera parametrica e disegnata&rdquo; posizionate in basso di ogni modulo. Puoi anche creare e modificare le forme utilizzando il modulo <a href="../../../module-reference/utility-modules/darkroom/mask-manager.md">gestore maschere</a>.</p>
+<h1 id="creare-le-forme"><a href="#creare-le-forme">🔗</a>creare le forme</h1>
+<p>Seleziona una forma cliccando sulla relativa icona (dalla sinistra: forma circolare, ellissi, tracciato, pennello, gradiente).</p>
+<p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/shape-icons.png"><img src="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/shape-icons.png" alt="icone forma"   /></a>
+
+</p>
+<p>Questo ti metterà nella modalità creazione per quella forma. Dopo che hai finito di disegnare la forma verrai automaticamente portato nella modalità modifica.</p>
+<p>Fai Ctrl+click sull&rsquo;icona della forma per disegnare forme multiple dello stesso tipo &ndash; ogni volta che una forma è completa, verrai riportato alla modalità creazione per una nuova istanza di quella forma. Quando sei in modalità creazione continua, click destro sull&rsquo;immagine per smettere di disegnare forme ed entrare nella modalità modifica.</p>
+<p>Per tutte le forme disegnate, puoi tenere premuto Maius mentre ruoti la rotella del mouse per variare l&rsquo;estensione della sfumatura della forma (la parte sfocata al bordo della forma) e usare Ctrl+(rotella mouse) per cambiare l&rsquo;opacità della forma (la sua trasparenza). Queste operazioni sono disponibili sia in modalità creazione e modifica (fintantoché il mouse è sopra la forma in questione).</p>
+<p>By default, scrolling your mouse up increases the value of the relevant shape parameters. This behavior can be changed in <a href="../../../preferences-settings/darkroom.md">preferences &gt; darkroom &gt; scroll down to increase mask parameters</a>.</p>
+<hr>
+<p><strong>Nota:</strong> le precedenti operazioni con la rotella del mouse, se usate in modalità creazione della forma, cambiano anche la sfumatura e l&rsquo;opacità predefinita. I nuovi valori predefiniti saranno usati la prossima volta che crei una nuova forma.</p>
+<hr>
+<h1 id="modificare-le-forme"><a href="#modificare-le-forme">🔗</a>modificare le forme</h1>
+<p>Fai click sull&rsquo;icona &lsquo;visualizza e modifica elementi maschera&rsquo; 
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/shape-edit.png"><img src="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/shape-edit.png" alt="show-and-edit-masks-icon"  class="icon"    /></a>
+
+ per entrare nella modalità modifica forma. Questo visualizza tutte le maschere disegnate in uso dal modulo corrente e ti permette di modificarne le forme. Ctrl+click sulla stessa icona per entrare nella modalità modifica ristretta, dove alcune operazioni (es: spostare una forma o cambiare la sua dimensione) sono bloccate. Questo è particolarmente utile per evitare errori dolorosi quando si modificano tracciati e forme pennello.</p>
+<p>Clicca e trascina una forma per muoverla sull&rsquo;area dell&rsquo;immagine</p>
+<h1 id="rimuovere-le-forme"><a href="#rimuovere-le-forme">🔗</a>rimuovere le forme</h1>
+<p>Quando si è in modalità modifica, fare click di destro su una forma per rimuoverla.</p>
+<h1 id="riutilizzare-le-forme"><a href="#riutilizzare-le-forme">🔗</a>riutilizzare le forme</h1>
+<p>Puoi riutilizzare le forme che hai disegnato in altri moduli. Fai click sul drop-down &lsquo;maschera disegnata&rsquo; (vicino al pulsante &lsquo;mostra e modifica elementi della maschera&rsquo;) per selezionare individualmente una delle forme disegnate in precedenza, o per usare lo stesso gruppo di forme usate da un altro modulo. Le seguenti opzioni sono disponibili per la selezione:</p>
+<dl>
+<dt>aggiungi forma esistente</dt>
+<dd>Scegli sia una forma individualmente o un gruppo di forme che hai disegnato precedentemente (sia all&rsquo;interno del modulo <a href="../../../module-reference/utility-modules/darkroom/mask-manager.md">gestione maschere</a> o dalla sezione maschere disegnate di un altro modulo). Se quella forma o gruppo è stato usato altrove, qualsiasi modifica avrà effetto in tutti i punti dove la forma o il gruppo è usato.</dd>
+<dt>usa la stessa forma di</dt>
+<dd>Aggiunge una lista di forme usate in un altro modulo alla maschera del modulo corrente. Questo differisce dall&rsquo;opzione precedente nel fatto che crea un nuovo gruppo di forme, permettendo di aggiungere o rimuovere forme dal gruppo, indipendentemente dal modulo da cui sono state copiate. Tutte le forme in comune a più gruppi rimangono collegate.</dd>
+</dl>
+<h1 id="combinare-e-gestire-le-forme"><a href="#combinare-e-gestire-le-forme">🔗</a>combinare e gestire le forme</h1>
+<p>Il modulo <a href="../../../module-reference/utility-modules/darkroom/mask-manager.md">gestione maschere</a> può essere usato per gestire le tue forme disegnate. Questo modulo ti permette inoltre di raggruppare le maschere disegnate e combinarle utilizzando operatori di insiemi (unione, intersezione, differenza, esclusione).</p>
+<h1 id="distorsione-delle-forme"><a href="#distorsione-delle-forme">🔗</a>distorsione delle forme</h1>
+<p>Al fine di garantire un sistema di coordinate consistente, quando posizioni una forma sull&rsquo;immagine, questa viene realmente disegnata sul file original in RAW. Questa forma passa quindi attraverso il pixelpipe prima di essere usata dal modulo e mostrata a schermo. Questo significa che, se hai abilitato qualsiasi modulo di distorsione (ad esempio la correzione obiettivo), le forme disegnate potrebbero apparire distorte sullo schermo e sull&rsquo;immagine finale. Ciò può portare, ad esempio, ai cerchi di essere renderizzati come ellissi, e ai gradienti di essere curvati. Se necessiti di creare forme più accurate (per sopperire alla distorsione) si raccomanda di evitare le forme semplici (cerchi, ellissi) in favore della forma tracciato (che può essere disegnata usando più punti, riducendo quindi le distorsioni). Puoi aggiustare la curva delle linee gradienti per sopperire ad una distorsione semplice introdotta dalla correzione obiettivo.</p>
+<h1 id="forme-disponibili"><a href="#forme-disponibili">🔗</a>forme disponibili</h1>
+<dl>
+<dt>forma circolare</dt>
+<dd>Fai click sull&rsquo;area dell&rsquo;immagine per posizionare la forma circolare. Usa la rotella del mouse mentre sei sopra la forma circolare per variare il suo diametro. Usa la rotella del mouse mentre sei sul bordo della forma circolare per variare l&rsquo;ampiezza della sfumatura (si ottiene lo stesso effetto tenendo premuto il tasto Maiusc mentre si usa la rotella del mouse quando si è sopra la forma).</dd>
+<dt>ellissi</dt>
+<dd>Il funzionamento generale è lo stesso descritto per la forma circolare. In più, quattro nodi vengono mostrati sulla linea dell&rsquo;ellissi. Fai click sui nodi per modificare l&rsquo;eccentricità dell&rsquo;ellissi. Ctrl+click e trascina il nodo o usa Maiusc+Ctrl+rotella del mouse per ruotare l&rsquo;ellissi. Maiusc+click all&rsquo;interno della forma per alternare la modalità di decadimento della sfumatura tra equidistante e proporzionale.</dd>
+<dt>tracciato</dt>
+<dd>Click sull&rsquo;immagine per posizionare tre o più nodi e costruire una forma chiusa in formato libero. Chiudi il tracciato con il click di destro dopo aver posizionato l&rsquo;ultimo punto. I nodi sono connessi di default con linee morbide. Se vuoi che un nodo definisca invece un angolo netto, puoi farlo creandolo con Ctrl+click.</dd>
+<dd>
+<p>In modalità modifica, fare Ctrl+click su un nodo esistente lo converte da morbido a angolo netto e viceversa. Ctrl+click su uno dei segmenti per inserire un nodo aggiuntivo. Click di destro su un nodo per eliminarlo. Assicurati che il puntatore del mouse sia sopra il nodo desiderato, e che questo sia evidenziato, per evitare di eliminare accidentalmente l&rsquo;intero tracciato.</p>
+</dd>
+<dd>
+<p>La dimensione dell&rsquo;intera forma può essere modifica utilizzando la rotella del mouse. Stesso discorso per lo spesso del bordo (l&rsquo;area con la sfumatura dell&rsquo;opacità) che può essere cambiata utilizzando Maiusc+rotella del mouse in qualsiasi punto all&rsquo;interno della forma. Tanto i segmenti del tracciato quanto i nodi possono essere trascinati col mouse. Quando un nodo viene selezionato cliccandoci, viene mostrato un punto di controllo aggiuntivo che ti permette di modificare la curvatura della linea (ripristino del valore predefinito con click di destro). Trascinando uno dei punti di controllo sul bordo si regola il bordo solo in quella parte del tracciato.</p>
+</dd>
+<dd>
+<p>Considera anche di poter mettere a punto i tracciati in modalità modifica ristretta (abilitata con Ctrl+click sull&rsquo;icona &lsquo;mostra e modifica gli elementi della maschera&rsquo;). Questo ti permette di correggere i singoli nodi e segmenti senza il rischio di spostare o ridimensionare accidentalmente l&rsquo;intera forma.</p>
+</dd>
+<dt>pennello</dt>
+<dd>Inizia disegnando una pennellata con il click del mouse sull&rsquo;immagine e muovi il mouse mentre tieni il pulsante premuto. La pennellata si conclude quando rilasci il pulsante del mouse. Utilizza la rotella del mouse per cambiare la dimensione della forma, sia prima di iniziare a disegnare o durante l&rsquo;operazione. Allo stesso modo puoi usare i tasti &ldquo;<code>{</code>&rdquo; e &ldquo;<code>}</code>&rdquo; per incrementare/decrementare la sfumatura, e i tasti &ldquo;<code>&lt;</code>&rdquo; e &ldquo;<code>&gt;</code>&rdquo; per incrementare/decrementare l&rsquo;opacità.</dd>
+<dd>
+<p>Se possiedi una tavoletta grafica con sensore di pressione, darktable può usare la pressione applicata dalla penna su alcuni attributi della pennellata. Questa operazione può essere controllata in <a href="../../../preferences-settings/darkroom.md">preferenze &gt; camera oscura &gt; Controllo pressione penna per maschera pennello</a>.</p>
+</dd>
+<dd>
+<p>Quando si alza la penna dalla tavoletta grafica o si rilascia il pulsante del mouse, la pennellata viene convertita in un certo numero di nodi collegati tra loro, che stabiliscono la forma finale. L&rsquo;opzione di configurazione <a href="../../../preferences-settings/darkroom.md">preferenze &gt; camera oscura &gt; morbidezza pennellate</a> controlla quanta morbidezza deve essere applicata. Un livello più alto di morbidezza porta alla creazione di un numero minore di nodi - ciò facilita le modifiche successive, a spese di una minore accuratezza.</p>
+</dd>
+<dd>
+<p>I nodi e i segmenti di una pennellata possono essere modificati individualmente. Controlla più in alto la documentazione sulle forme per maggiori dettagli.</p>
+</dd>
+</dl>
+<hr>
+<p><strong>Nota:</strong> il rendering di pennellate complesse può impegnare un numero notevole di cicli della CPU. Considera invece l&rsquo;uso di cerchi, ellissi o tracciati dove possibile.</p>
+<hr>
+<dl>
+<dt>gradiente</dt>
+<dd>La forma gradiente è una sfumatura lineare che si estende da un determinato punto fino al bordo dell&rsquo;immagine.</dd>
+<dd>
+<p>Fai click sull&rsquo;immagine per posizionare la linea che stabilisce il 50% di opacità. Le linee tratteggiate indicano la distanza oltre la quale l&rsquo;opacità è il 100% o lo 0%. Tra queste due linee tratteggiate l&rsquo;opacità cambia linearmente.</p>
+</dd>
+<dd>
+<p>La linea ha due nodi àncora che puoi trascinare per cambiare la rotazione del gradiente. Puoi impostare l&rsquo;angolo di rotazione anche quando posizioni la forma gradiente, cliccando e trascinando la forma.</p>
+</dd>
+<dd>
+<p>Le linee di gradiente possono essere curvate utilizzando la rotella quando col mouse si è vicini alla linea centrale. Questo può essere utile per controbilanciare la distorsione causata dal modulo <a href="../../../module-reference/processing-modules/lens-correction.md"><em>correzione obiettivo</em></a>.</p>
+</dd>
+<dd>
+<p>In base al modulo e all&rsquo;immagine sottostante, usare una forma gradiente potrebbe portare ad artefatti (banding). Dovresti considerare di attivare il modulo <a href="../../../module-reference/processing-modules/dithering.md"><em>dithering</em></a> per alleviare il problema.</p>
+</dd>
+</dl>
+<h1 id="invertire-la-polarità-di-una-maschera-disegnata"><a href="#invertire-la-polarit%c3%a0-di-una-maschera-disegnata">🔗</a>invertire la polarità di una maschera disegnata</h1>
+<p>Fai click sul pulsante &ldquo;<code>+/-</code>&rdquo; per invertire la polarità di tutta la maschera disegnata. Per esempio una maschera circolare, di impostazione predefinita, farà in modo che il modulo venga applicato soltanto nell&rsquo;area interna del cerchio disegnato. Invertendo la sua polarità il modulo verrà applicato all&rsquo;intera immagine <em>ad eccezione</em> del cerchio.</p>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/">
+            English: drawn masks
+        </a></li>
+        
+        <li><a href="/dtdocs/de/darkroom/masking-and-blending/masks/drawn/">
+            German: Gezeichnete Masken
+        </a></li>
+        
+        <li><a href="/dtdocs/es/darkroom/masking-and-blending/masks/drawn/">
+            Espanol: máscaras dibujadas
+        </a></li>
+        
+        <li><a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/">
+            Polish: maski wektorowe
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/darkroom/masking-and-blending/masks/drawn/">
+            Português: máscaras desenhadas
+        </a></li>
+        
+        <li><a href="/dtdocs/uk/darkroom/masking-and-blending/masks/drawn/">
+            Ukrainian: намальовані маски
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/overview/" class="next">&lt; Introduzione</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="prev">maschere parametriche &gt;</a>
+	
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

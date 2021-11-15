@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Préférences et réglages on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/fr/preferences-settings/</link>
+    <description>Recent content in Préférences et réglages on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/fr/preferences-settings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>présentation</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/preferences-settings/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/preferences-settings/overview/</guid>
+      <description>darktable est livré avec un certain nombre de préférences configurables par l&amp;rsquo;utilisateur. Celles-ci peuvent être ajustées dans la boîte de dialogue des préférences, accessible en cliquant sur l&amp;rsquo;icône d&amp;rsquo;engrenage à droite du panneau supérieur. Les préférences sont séparées en onglets, dont chacun est décrit plus en détail dans les sections suivantes.
+Lorsqu&amp;rsquo;il est ouvert depuis les vues table lumineuse ou chambre noire, l&amp;rsquo;onglet approprié sera chargé par défaut pour vous permettre de modifier les paramètres de cette vue.</description>
+    </item>
+    
+    <item>
+      <title>importer</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/preferences-settings/import/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/preferences-settings/import/</guid>
+      <description>Control default file naming conventions used when importing images.
+🔗options de session The following options define the default naming pattern for use in the &amp;ldquo;copy &amp;amp; import&amp;rdquo; or &amp;ldquo;copy &amp;amp; import from camera&amp;rdquo; options in the import module, or when taking photos in the tethering view.
+Le modèle de nommage se compose de trois parties : une partie de base définissant le dossier parent, une partie session définissant un sous-répertoire (qui est spécifique à la session d&amp;rsquo;importation individuelle) et une partie nom de fichier définissant la structure de nom de fichier pour chaque image importée.</description>
+    </item>
+    
+    <item>
+      <title>table lumineuse</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/preferences-settings/lighttable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/preferences-settings/lighttable/</guid>
+      <description>Control functionality in the lighttable view and modules.
+🔗général  cacher les préréglages internes des modules utilitaires Si cette option est activée, seuls les préréglages définis par l&amp;rsquo;utilisateur seront affichés dans le menu des préréglages des modules utilitaires &amp;ndash; les préréglages intégrés seront masqués (par défaut désactivé).  utiliser un seul clic pour les collections : Activer le mode &amp;ldquo;simple clic&amp;rdquo; dans le module filtres de collection. Cela permet aussi de sélectionner des plages de dates et de valeurs numériques (désactivée par défaut).</description>
+    </item>
+    
+    <item>
+      <title>options lua</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/preferences-settings/lua-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/preferences-settings/lua-options/</guid>
+      <description> ne plus montrer l&amp;rsquo;installeur de scripts lua Cochez cette case pour masquer dans la table lumineuse le programme d&amp;rsquo;installation des scripts lua si aucun script lua n&amp;rsquo;est installé.  </description>
+    </item>
+    
+  </channel>
+</rss>

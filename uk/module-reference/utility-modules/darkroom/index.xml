@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>темна кімната on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/</link>
+    <description>Recent content in темна кімната on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>екранна кольоропроба</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/soft-proof/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/soft-proof/</guid>
+      <description>Перегляд зображення, відтвореного за допомогою вибраного кольорового профілю.
+Натисніть на значок  , щоб активувати режим екранної кольоропроби для вашого зображення. Це дозволяє попередньо переглянути зображення, відтворене за допомогою профілю принтера, щоб побачити, як кольори потраплять на остаточний друк. Ви також можете активувати екранну кольоропробу за допомогою комбінації клавіш Ctrl+S. Повідомлення &amp;ldquo;екранна кольоропроба&amp;rdquo; у нижньому лівому куті зображення повідомляє, що ви перебуваєте в режимі екранної кольоропроби.
+Клікніть правою кнопкою миші на значку, щоб відкрити діалогове вікно з наступними параметрами конфігурації.</description>
+    </item>
+    
+    <item>
+      <title>менеджер масок</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/mask-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/mask-manager/</guid>
+      <description>Керує всіма масками та фігурами для поточного зображення.
+  Цей модуль можна використовувати для створення, перейменування, редагування та видалення фігур. Ви можете додавати фігури до маски та видаляти фігури з неї, групувати фігури разом та комбінувати їх за допомогою операторів набору.
+У верхньому рядку панелі менеджера масок містяться кнопки, які можна використовувати для створення нових фігур. Це те саме, що і в інтерфейсі намальована маска в модулях обробки.
+На панелі під цими кнопками відображається список усіх масок та окремих фігур, визначених для поточного зображення.</description>
+    </item>
+    
+    <item>
+      <title>миттєві знімки</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/snapshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/snapshots/</guid>
+      <description>Зберігає миттєві знімки стану обробки зображення та надає можливість порівнювати з поточним редагуванням.
+Миттєвий знімок &amp;ndash; це збережене растрове зображення з центральної панелі в режимі темної кімнати. Знімки можна робити в будь-який момент процесу обробки, а потім накладати на поточний вигляд центральної панелі. Це дозволяє виконувати порівняння біч-о-біч (за замовчуванням зліва = знімок, справа = активне редагування) під час налаштування параметрів модуля. Це також можна поєднати з модулем історії для порівняння миттєвого знімка з різними стадіями обробки.</description>
+    </item>
+    
+    <item>
+      <title>навігація</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/navigation/</guid>
+      <description>Масштабування та панорамування поточного зображення.
+У верхній лівій частині темної кімнати навігаційна панель відображає повний попередній перегляд поточного зображення із прямокутником, що показує область, яку в даний час видно на центральній панелі. Перетягуйте цей прямокутник, щоб панорамувати збільшений вигляд. Поточний масштаб відображається праворуч від зображення попереднього перегляду. Клікніть на це значення для швидкого доступу до деяких загальних рівнів масштабування.
+Навігаційну панель можна вмикати/вимикати за допомогою комбінації клавіш (за замовчуванням Ctrl+Shift+N).</description>
+    </item>
+    
+    <item>
+      <title>оцінка кольорів</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/color-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/color-assessment/</guid>
+      <description>Оцініть кольори та яскравість зображення, використовуючи рекомендовані умови перегляду ISO 12646:2008.
+При обробці зображення на сприйняття яскравості, контрасту та насиченості впливають умови навколишнього середовища. Якщо зображення відображається на темному тлі, як за замовчуванням у darktable, це може мати ряд негативних наслідків для нашого сприйняття цього зображення:
+  Перебільшення сприйнятої експозиції робить зображення більш яскравим, ніж є насправді. Це чудово проілюстровано [Ілюзією з тінню на шаховій дошці Адельсона] (https://en.wikipedia.org/wiki/Checker_shadow_illusion).
+  Зменшення сприйнятої насиченості зображення змушує кольори здаватися менш &amp;ldquo;багатими&amp;rdquo;, ніж вони є насправді (ефект Ханта).</description>
+    </item>
+    
+    <item>
+      <title>перевірка охоплення</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/gamut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/gamut/</guid>
+      <description>Виділити ділянки зображення, на яких може бути відсікання охоплення.
+Клікніть на значок  , щоб активувати режим відображення перевірки охоплення для вашого зображення. Ця функція виділяє блакитним (&amp;ldquo;ціановим&amp;rdquo;) кольором усі пікселі, які знаходяться поза охопленням щодо вибраного профілю екранної кольоропроби. Ви також можете активувати перевірку охоплення за допомогою комбінації клавіш Ctrl+G. Повідомлення “перевірка охоплення” в нижньому лівому куті вашого зображення повідомляє, що ви перебуваєте в режимі відображення перевірки охоплення. Перевірка охоплення та екранна кольоропроба є взаємовиключними режимами.</description>
+    </item>
+    
+    <item>
+      <title>попередження про кліппінг</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/clipping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/clipping/</guid>
+      <description>Виділення ділянок зображення, які можуть мати відсікання по яскравості або охопленню кольорів.
+Коли зображення надсилається на пристрій відображення, кожен піксель зазвичай представляється у вигляді набору з 3 чисел, що представляють інтенсивність червоного, зеленого та синього основних кольорів у вихідному колірному просторі. Оскільки вихідний колірний простір, як правило, тісно пов&amp;rsquo;язаний з апаратним забезпеченням, яке має фізичні обмеження, існує максимально допустиме значення для каналів [R, G, B], що представляє максимальну доступну інтенсивність для цього колірного простору.</description>
+    </item>
+    
+    <item>
+      <title>попередження про переекспозицію в raw</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/raw-overexposed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/raw-overexposed/</guid>
+      <description>Виділити ділянки зображення, де обрізані кольорові канали raw файлу.
+Обрізані кольорові канали означають переекспоноване зображення із втратою інформації в уражених зонах. Частина цієї інформації може бути відновлена за допомогою модулів відновлення перекспонованих ділянок, відновлення кольору або filmic rgb.
+Клікніть на значку  , щоб показати/приховати накладення попередження. Клікніть правою кнопкою миші на значку, щоб відкрити діалогове вікно, що містить наступні параметри конфігурації.
+ режим Виберіть спосіб позначення обрізаних областей:   позначити кольором обрізаного каналу: Відображає шаблон відповідних основних кольорів (червоний, зелений та синій), щоб вказати, які кольорові канали відсікаються.</description>
+    </item>
+    
+    <item>
+      <title>рядок інформації про зображення</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/image-info-line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/image-info-line/</guid>
+      <description>Показує інформацію про поточне зображення в центральній панелі темної кімнати.
+Вміст цього рядка можна встановити в налаштування &amp;gt; темна кімната. Інформацію про змінні, які тут можна використовувати, дивіться у розділі змінні. Ви також можете вставити новий рядок з $(NL).
+Рядок з інформацією про зображення може відображатися у верхній, нижній, лівій або правій панелях залежно від додаткового елемента конфігурації в налаштування &amp;gt; темна кімната.</description>
+    </item>
+    
+    <item>
+      <title>історія змін</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/history-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/darkroom/history-stack/</guid>
+      <description>Переглянути та змінити стек історії поточного зображення темної кімнати.
+This module lists every change of state (activate/de-activate/move/change parameters) for all processing modules that have been modified for the current image. Select a point in the stack to return to that point in the development history of the image. Shift+click an item in the history stack to expand that module in the right-hand module panel without changing the current edit.
+ Увага: Якщо ви виберете модуль у стеку історії, а потім внесете подальші зміни в зображення, усі редагування над поточно вибраним кроком будуть відкинуті.</description>
+    </item>
+    
+  </channel>
+</rss>

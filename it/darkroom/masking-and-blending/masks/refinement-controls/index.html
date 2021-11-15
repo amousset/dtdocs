@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="it">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - rifinitura maschere &amp; controlli aggiuntivi</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/it\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="it" role="option" lang="it" href="https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/">Italian</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/masks/refinement-controls/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/masks/refinement-controls/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="es" role="option" lang="es" href="https://darktable-org.github.io/dtdocs/es/darkroom/masking-and-blending/masks/refinement-controls/">Espanol</a>
+		    
+		      <a class="dropdown-item" hreflang="pl" role="option" lang="pl" href="https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/">Polish</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/darkroom/masking-and-blending/masks/refinement-controls/">Português</a>
+		    
+		      <a class="dropdown-item" hreflang="uk" role="option" lang="uk" href="https://darktable-org.github.io/dtdocs/uk/darkroom/masking-and-blending/masks/refinement-controls/">Ukrainian</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/" class="">
+          Stampa
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/print-view-layout/" class="">
+          Disposizione visualizzazione Stampa
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/" class="">
+          Darkrooms
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/" class="">
+          maschere &amp; fusione
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/" class="">
+          maschere
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn/" class="">
+          maschere disegnate
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="">
+          maschere parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="">
+          combinare maschere disegnate &amp; parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/" class=" active">
+          rifinitura maschere &amp; controlli aggiuntivi
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/raster/" class="">
+          maschere raster
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+
+<a href='/dtdocs/it/'>darktable 3.7 (development) user manual</a> / <a href='/dtdocs/it/darkroom/'>Darkrooms</a> / <a href='/dtdocs/it/darkroom/masking-and-blending/'>maschere & fusione</a> / <a href='/dtdocs/it/darkroom/masking-and-blending/masks/'>maschere</a> / rifinitura maschere & controlli aggiuntivi
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="next">&lt; combinare maschere disegnate &amp; parametriche</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/raster/" class="prev">maschere raster &gt;</a>
+	
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        rifinitura maschere &amp; controlli aggiuntivi
+    </h1>
+
+    
+
+    <p>Quando una maschera parametrica o disegnata è attiva, vengono mostrati ulteriori cursori che permettono di rifinire ulteriormente la maschera.</p>
+<dl>
+<dt>soglia dei dettagli</dt>
+<dd>Quest&rsquo;opzione ti permette di modificare l&rsquo;opacità della maschera in base alla quantità di dettaglio dell&rsquo;immagine. Usa questo selettore scorrevole per selezionare tanto le aree con molti dettagli (valori positivi) quanto le aree &ldquo;piatte&rdquo; o che scarseggiano in dettaglio (valori negativi). Il valore predefinito (zero) in sostanza ignora la rifinitura dettaglio. Questo è perlopiù utile per applicare effetti di nitidezza e sfocature ignorando le aree fuori fuoco (bokeh) oppure per mettere a fuoco soltanto le zone sfocate, evitando di eccedere in nitidezza sulle regioni in fuoco.</dd>
+</dl>
+<hr>
+<p><strong>Nota:</strong> I dati usati per la rifinitura maschera dettaglio vengono presi dalla fase di demosaic durante il processo della coda, and non dall&rsquo;input del modulo (come succede per le altre opzioni delle maschere parametriche). Nessuno dei moduli dopo il demosaic avranno effetto sul dettaglio maschera, e non è attualmente disponibile per qualsiasi immagini non-RAW.</p>
+<hr>
+<dl>
+<dt>guida per la sfumatura</dt>
+<dd>La sfumatura viene applicata alle maschere parametriche o disegnate in modo tale che i bordi della maschera siano allineati ai bordi delle caratteristiche dell&rsquo;immagine. La sfumatura è guidata o dall&rsquo;input del modulo o dal suo output (prima della fusione), e può avvenire prima o dopo la sfocatura della maschera, a seconda di ciò che è selezionato nell&rsquo;opzione &ldquo;guida per la sfumatura&rdquo;. La sfumatura è particolarmente sensibile alla scelta dell&rsquo;immagine guida quando usata con moduli che lavorano sui bordi (ad esempio per la nitidezza o la sfocatura di un immagine).</dd>
+<dd><ul>
+<li><em>risultato prima di sfocare</em>: la sfumatura viene guidata usando l&rsquo;immagine <em>risultato</em> del modulo, e avviene <em>prima</em> che la maschera venga sfocata</li>
+</ul>
+</dd>
+<dd><ul>
+<li><em>input prima di sfocare</em>: la sfumatura viene guidata usando l&rsquo;immagine di <em>input</em> del modulo, e avviene <em>prima</em> che la maschera venga sfocata</li>
+</ul>
+</dd>
+<dd><ul>
+<li><em>risultato dopo aver sfocato</em>: la sfumatura viene guidata usando l&rsquo;immagine <em>risultato</em> del modulo, e avviene <em>dopo</em> che la maschera venga sfocata</li>
+</ul>
+</dd>
+<dd><ul>
+<li><em>input dopo aver sfocato</em>: la sfumatura viene guidata usando l&rsquo;immagine di <em>input</em> del modulo, e avviene <em>dopo</em> che la maschera venga sfocata</li>
+</ul>
+</dd>
+<dt>raggio di sfumatura</dt>
+<dd>Regola la forza dell&rsquo;effetto di sfumatura. La sfumatura funziona al meglio se i bordi della maschera sono già allineati approssimativamente ad alcuni dei bordi dell&rsquo;immagine. Maggiore è il &ldquo;raggio di sfumatura&rdquo; e maggiore sarà la capacità dell&rsquo;algoritmo di allineare la maschera ai bordi più distanti. Tuttavia, se il raggio è troppo grande, l&rsquo;immagine sfumata potrebbe andare oltre (ovvero coprire aree che l&rsquo;utente vuole escludere). La sfumatura è disabilitata quando il raggio di sfumatura è impostato a 0.</dd>
+<dt>blurring radius</dt>
+<dd>Blurring the mask creates a softer transition between blended and unblended parts of an image and can be used to avoid artifacts. The mask blur slider controls the radius of a gaussian blur applied to the final blend mask. The higher the radius, the stronger the blur (set to 0 for an unblurred mask). Mask blur is always applied after feathering if both kinds of mask adjustment are activated. This allows any resulting sharp edges or artifacts to be smoothed.</dd>
+<dt>opacità maschera</dt>
+<dd>La forza dell&rsquo;effetto del modulo è determinata dall&rsquo;opacità locale della maschera. Sfocatura e sfumatura possono ridurre l&rsquo;opacità originale della maschera. Il selettore scorrevole &ldquo;Opacità maschera&rdquo; permette di regolare l&rsquo;opacità per compensare. Se l&rsquo;opacità della maschera è decrementata (valori negativi) le parti meno opache vengono influenzate maggiormente. Al contrario, se l&rsquo;opacità maschera è incrementata (valori positivi), sono le aree più opache ad essere maggiormente influenzate. Di conseguenza, le aree della maschera completamente opache rimarranno tali, e le aree completamente trasparenti rimarranno sempre trasparenti. Questo è per assicurare che le aree completamente escluse o incluse dell&rsquo;effetto del modulo (impostando l&rsquo;opacità alo 0% o al 100%) rimangano completamente escluse o incluse.</dd>
+<dt>contrasto maschera</dt>
+<dd>Questo selettore scorrevole incrementa o decrementa il contrasto della maschera. Questo ti permette di regolare la transizione tra la parte opaca e quella trasparente della maschera.</dd>
+<dt>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/masking-and-blending/masks/refinement-controls/icon-eye.png"><img src="/dtdocs/en/darkroom/masking-and-blending/masks/refinement-controls/icon-eye.png" alt="icon occhio"  class="icon"    /></a>
+
+ disattiva temporaneamente la maschera</dt>
+<dd>Certe volte è utile poter visualizzare l&rsquo;effetto del modulo senza la maschera attivata. Fai click su questa icona per disattivare temporaneamente la maschera (la modalità di fusione e l&rsquo;opacità globale selezionate rimangono effettive).</dd>
+<dt>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/masking-and-blending/masks/refinement-controls/icon-mask.png"><img src="/dtdocs/en/darkroom/masking-and-blending/masks/refinement-controls/icon-mask.png" alt="icona maschera"  class="icon"    /></a>
+
+ mostra maschera</dt>
+<dd>Fai click su questa icona per mostrare la maschera corrente come una sovrapposizione in giallo sopra una versione in bianco e nero dell&rsquo;immagine. Giallo pieno indica un&rsquo;opacità del 100%, l&rsquo;immagine in grigio completamente visibile (senza sovrapposizione in giallo) denota un&rsquo;opacità dello 0%.</dd>
+</dl>
+<h1 id="esempio-sfumare-una-maschera-disegnata"><a href="#esempio-sfumare-una-maschera-disegnata">🔗</a>esempio: sfumare una maschera disegnata</h1>
+<p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/masking-and-blending/masks/refinement-controls/feathering.png"><img src="/dtdocs/en/darkroom/masking-and-blending/masks/refinement-controls/feathering.png" alt="sfumatura"  class="w100"    /></a>
+
+</p>
+<p>Creare una maschera che copra precisamente una particolare area dell&rsquo;immagine può risultare parecchio noioso. In questo esempio, vogliamo migliorare il contrasto colore della statua del leone mostrata a sinistra nell&rsquo;immagine senza toccare lo sfondo.</p>
+<ol>
+<li>
+<p>La prima immagine qui sopra mostra l&rsquo;immagine originale non alterata.</p>
+</li>
+<li>
+<p>La seconda immagine mostra una selezione grezza della scultura creata con una maschera disegnata. Nota che la maschera è piuttosto confusa e non segue precisamente il contorno della scultura del leone.</p>
+</li>
+<li>
+<p>La terza immagine mostra l&rsquo;effetto delle regolazioni effettuate sul raggio di sfumatura, opacità e contrasto della maschera, che porta ad una maschera più accurata con un piccolo sforzo. In questo esempio il raggio sfumatura è stato impostato a 50 e il raggio di sfocatura a 5, per levigare la maschera fino ad una certa misura. Opacità e contrasto maschera sono state incrementate rispettivamente a 0.3 e 0.5.</p>
+</li>
+<li>
+<p>L&rsquo;ultima immagine sopra mostra il risultato finale, dove il miglioramento dei colori (attraverso il modulo <a href="../../../module-reference/processing-modules/color-contrast.md"><em>contrasto colore</em></a>) è limitato alla sola scultura.</p>
+</li>
+</ol>
+<p>La sfumatura maschera funziona particolarmente bene in questo esempio poiché la scultura è ben separata dallo sfondo che è fuori fuoco. Il contorno netto al limite della scultura guida la maschera di sfumatura per aderire alla forma della scultura.</p>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/darkroom/masking-and-blending/masks/refinement-controls/">
+            English: mask refinement &amp; additional controls
+        </a></li>
+        
+        <li><a href="/dtdocs/de/darkroom/masking-and-blending/masks/refinement-controls/">
+            German: Masken Verfeinerung &amp; zusätzliche Kontrollen
+        </a></li>
+        
+        <li><a href="/dtdocs/es/darkroom/masking-and-blending/masks/refinement-controls/">
+            Espanol: refinamiento de la máscara y controles adicionales
+        </a></li>
+        
+        <li><a href="/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/">
+            Polish: uszczegóławianie maski i dodatkowe kontrolki
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/darkroom/masking-and-blending/masks/refinement-controls/">
+            Português: refinamento da máscara e controles adicionais
+        </a></li>
+        
+        <li><a href="/dtdocs/uk/darkroom/masking-and-blending/masks/refinement-controls/">
+            Ukrainian: уточнення маски та додаткові елементи керування
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="next">&lt; combinare maschere disegnate &amp; parametriche</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/raster/" class="prev">maschere raster &gt;</a>
+	
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

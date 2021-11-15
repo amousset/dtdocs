@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Темна кімната on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/uk/darkroom/</link>
+    <description>Recent content in Темна кімната on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/uk/darkroom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>огляд</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/darkroom/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/darkroom/overview/</guid>
+      <description>Режим темної кімнати &amp;ndash; це місце, де ви обробляєте свої зображення. Центральна панель містить зображення, яке наразі редагується.
+🔗масштабування Клік середньою клавішею миші на центральній панелі перемикає між масштабами &amp;ldquo;умістити на екрані&amp;rdquo;, 1:1 та 2:1.
+Крім того, ви можете масштабувати між 1:1 та &amp;ldquo;умістити на екрані&amp;rdquo;, прокручуючи мишу. Прокручуйте, утримуючи клавішу Ctrl, щоб збільшити діапазон масштабування від 2:1 до 1:10.</description>
+    </item>
+    
+  </channel>
+</rss>

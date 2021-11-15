@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kolejka przetwarzania on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/</link>
+    <description>Recent content in kolejka przetwarzania on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>anatomia modułu</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/</guid>
+      <description>W darktable podstawowym elementem przetwarzania jest moduł przetwarzający. Do pełnej edycji surowego pliku potrzebnych jest na ogół kilka takich modułów, działających na zdjęciu wejściowym, z których każdy wykonuje inną operację na danych zdjęcia. Dla osób zaznajomionych z Adobe Photoshop moduły przetwarzające w darktable można porównać do warstwy dostosowania w takim sensie, że oba te elementy tworzą &amp;ldquo;narastające dostosowanie&amp;rdquo; zdjęcia na szczycie stosu modyfikacji, dokonanych wcześniej.
+W darktable dostępne są również moduły użytkowe, nie są one jednak związane bezpośrednio z przetwarzaniem zdjęcia, a w zamian udostępniają interfejs, służący do zarządzania nimi, nadawania znaczników, eksportu, itd.</description>
+    </item>
+    
+    <item>
+      <title>potok przetwarzania i kolejność modułów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/the-pixelpipe-and-module-order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/the-pixelpipe-and-module-order/</guid>
+      <description>Uporządkowana kolejność modułów przetwarzających, operujących na obrazie wejściowym dla wygenerowania obrazu wyjściowego nazwana jest &amp;ldquo;kolejką przetwarzania&amp;rdquo;.
+Kolejność w kolejce przetwarzania reprezentowana jest graficznie kolejnością prezentacji modułów w interfejsie użytkownika – kolejka zaczyna się plikiem RAW na dole listy modułów, stosuje kolejno moduły przetwarzające, układające się w kolejce przetwarzania od dołu do góry aż do osiągnięcia szczytu listy, gdzie tworzony jest w pełni przetworzone zdjęcie.
+ Uwaga: Kolejność działania modułów jest identyczna do tej, którą widzisz w panelu historii.</description>
+    </item>
+    
+    <item>
+      <title>historia</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/history-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/history-stack/</guid>
+      <description>Panel historii pokazuje całą historię edycji danego zdjęcia według kolejności przeprowadzenia poszczególnych operacji. Jest ona zapisywana w bazie biblioteki darktable i w pliku pobocznym XMP, jest także przechowywana pomiędzy poszczególnymi sesjami edycyjnymi.
+Za każdym razem, kiedy moduł jest włączany, deaktywowany, przesuwany bądź zmieniany, w historii pojawia się nowy zapis.
+Historia może być odpytywana i modyfikowana z poziomu modułu historii w ciemni.
+ Uwaga: Kolejność operacji w historii nie odzwierciedla kolejności, w której moduły zostały uruchomione, lecz kolejność stosowania.</description>
+    </item>
+    
+    <item>
+      <title>cofnij i ponów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/undo-redo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/undo-redo/</guid>
+      <description>Podczas edycji zdjęcia darktable rejestruje wszystkie dokonywane modyfikacje. Oznacza to, że możliwe jest cofanie i ponawianie zmian w celu powrotu do poprzednio zarejestrowanego stanu. Nie ma limitu ilości rejestrowanych zmian, ale rejestr zmian resetowany jest za każdym razem, kiedy rozpoczynasz pracę nad nowym zdjęciem w ciemni.
+Naciśnij Ctrl-Z, żeby anulować ostatnią modyfikację, lub Ctrl-Y, żeby powtórzyć ostatnią anulowaną modyfikację (jeśli taka istnieje).</description>
+    </item>
+    
+  </channel>
+</rss>

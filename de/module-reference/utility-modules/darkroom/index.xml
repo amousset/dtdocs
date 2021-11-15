@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dunkelkammer on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/</link>
+    <description>Recent content in Dunkelkammer on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anzeige der Über-/Unterbelichtungen der RAW Werte</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/raw-overexposed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/raw-overexposed/</guid>
+      <description>Hebe Teile des Bildes, in denen die Kanäle der RAW-Eingabe-Datei beschnitten sind, hervor.
+Beschnittene Farbkanäle deuten auf Überbelichtung hin mit Verlust an Bildinformationen in den betroffenen Bildteilen. Gewisse Informationen können zurückgeholt werden, benutze dazu die Module Spitzlicht-Rekonstruktion, Farbrekonstruktion oder Filmic RGB.
+Klicke auf das Icon Anzeige von Über-/Unterbelichtungen der RAW Werte. Mit Rechtsklick öffnet sich ein Dialog mit den folgenden Parametern zur Konfiguration.
+ Modus Wähle, wie beschnittene Teile markiert werden sollen:   mit CFA Farben markieren: Zeige ein Muster der zugehörigen Primärfarben (rot, grün und blau) um anzuzeigen, welche Farbkanäle beschnitten sind.</description>
+    </item>
+    
+    <item>
+      <title>Bildinformationslinie</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/image-info-line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/image-info-line/</guid>
+      <description>Zeige Informationen über das geöffnete Bild in der Dunkelkammer-Ansicht.
+Die Inhalte dieser Linie können in den darktable-Voreinstellungen &amp;gt; Dunkelkammer. Für Informationen welche Variablen hier verwendet werden können, siehe den Abschnitt Variablen. Du kannst da auch eine neue Linie hinzufügen mit $(NL).
+Die Bildinformationslinie kann oben, unten links oder rechts platziert werden, was in einer zusätzlichen Schaltfläche in darktable-Voreinstellungen&amp;gt;Dunkelkammer eingestellt werden kann.</description>
+    </item>
+    
+    <item>
+      <title>Farbbeurteilung nach ISO 12646</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/color-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/color-assessment/</guid>
+      <description>Beurteile die Farben und Helligkeit in deinem Bild nach ISO 12646:2008 vorgeschlagene Bedingungen für die Betrachtung.
+Während des Entwickelns eines Bildes wird die Art, wie wir Helligkeit, Kontrast und Sättigung durch die Umgebungsverhältnisse beeinflusst. Falls ein Bild mit einem dunkeln Hintergrund gezeigt wird, wie mit der Normaloberfläche von darktable, kann dies diverse nachteilige Effekte auf die Wahrnehmung dieses Bildes haben:
+  Übertreibungen der wahrgenommenen Darstellung lassen das Bild heller erscheinen, als es wirklich ist.</description>
+    </item>
+    
+    <item>
+      <title>Gamutüberprüfung</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/gamut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/gamut/</guid>
+      <description>Hervorgehobene Teile des Bildes können auf Gamut-Beschnitt hinweisen.
+Klicke auf das Icon l  , um die Gamutüberprüfung für dein Bild zu aktivieren. Diese Funktion hebt in türkis alle Pixel hervor, die außerhalb des Gamut liegen bin Bezug auf das gewählte Softproof-Profil. Du kannst die Gamutüberprüfung auch mit der Tastenkombination Ctrl+G. Das gibt eine Anzeige &amp;ldquo;Gamutüberprüfung&amp;quot;links unten im Bild, die anzeigt, dass man in diesem Modus ist. Gamutüberprüfung und Softproof sind gegenseitig unabhängige Modi.</description>
+    </item>
+    
+    <item>
+      <title>Maskenverwaltung</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/mask-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/mask-manager/</guid>
+      <description>Verwalte alle Masken und Formen für das geöffnete Bild.
+  Dieses Modul wird gebraucht für das Kreieren, Umbenennen, Bearbeiten und Löschen von formen. Du kannst Formen hinzufügen und von Masken entfernen, Formen gruppieren und diese kombinieren mit der Benutzung von Set-Operatoren.
+Die oberste Linie der Schaltfläche Maskenverwaltung enthält Schaltknöpfe zur Erzeugung neuer Formen. Es sind die gleichen wie in der Benutzeroberfläche gezeichnete Masken in den Bearbeitungs-Modulen.
+Im Feld unter diesen Schaltflächen ist eine Liste aller Masken und der einzelnen Formen des geöffneten Bildes.</description>
+    </item>
+    
+    <item>
+      <title>Navigation</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/navigation/</guid>
+      <description>Zoome und schwenke das geöffnete Bild.
+Oben links im Navigations-Panel sehen Sie eine vollständige Vorschau Ihres Bildes mit einem Rechteck, das den Bereich zeigt, der aktuell im Hauptfenster sichtbar ist. Ein Ziehen des Rechtecks im Vorschaubild verschiebt die vergrößerte Ansicht. Der aktuelle Faktor der Vergrößerung wird rechts neben dem Vorschaubild angezeigt. Ein Klick darauf ermöglicht einen schnellen Zugriff auf einige vordefinierte Zoom-Stufe.
+Die Navigation kann umgeschaltet werden mit der Tastenkombination Ctrl+Shift+N.</description>
+    </item>
+    
+    <item>
+      <title>Snapshots</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/snapshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/snapshots/</guid>
+      <description>Sichere Bearbeitungs-Snapshots und vergleiche diese mit der gegenwärtigen Bearbeitung.
+Ein Snapshot ist eine gespeicherte Bitmap des mittleren Bildes in der Ansicht Dunkelkammer. Snapshots können zu jedem Zeitpunkt des Bearbeitungsprozesses genommen werden und später über das mittlere Bild überlagert werden. Dass erlaubt dir einen Vergleich Seite an Seite anzustellen (Normaleinstellung links=Snapshot, rechts=aktive Bearbeitung) während du an bestimmten Parametern eines Moduls einstellst. Das kann auch kombiniert werden mit dem Verlaufsstapel, um einen Snapshot mit verschiedenen Phasen der Bildentwicklung zu vergleichen.</description>
+    </item>
+    
+    <item>
+      <title>Softproof</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/soft-proof/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/soft-proof/</guid>
+      <description>Betrachte dein Bild mit einem ausgewählten Farbprofil gerendert.
+Klicke auf das Icon  im Bedienungsfeld unten rechts, um den Softproof-Modus des Bildes zu erzeugen. Dies zeigt eine Vorschau zum Druck mit einem Druckerprofil, um zu sehen, wie die Farben im Druck aussehen werden. Der Softproof kann auch angewählt werden mit der Tastenkombination Ctrl+S. Eine Anzeige &amp;ldquo;Softproof&amp;rdquo; wird unten links im Bild angezeigt, es zeigt dir, dass du in der Softproof-Anzeige bist.</description>
+    </item>
+    
+    <item>
+      <title>Verlaufsstapel</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/history-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/history-stack/</guid>
+      <description>Ansehen und Ändern des Verlaufsstapels des geöffneten Bildes.
+This module lists every change of state (activate/de-activate/move/change parameters) for all processing modules that have been modified for the current image. Select a point in the stack to return to that point in the development history of the image. Shift+click an item in the history stack to expand that module in the right-hand module panel without changing the current edit.
+ Vorsicht: Wenn du ein Modul im Verlaufsstapel anwählst und dann zusätzliche Änderungen am Bild machst, wird bewirken, dass alle Module oberhalb des gewählten Schrittes, verworfen werden.</description>
+    </item>
+    
+    <item>
+      <title>Warnung Beschneidung</title>
+      <link>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/clipping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/darkroom/clipping/</guid>
+      <description>Hervorgehobene Teile des Bildes können Leuchtstärke oder Gamut-Beschnitt anzeigen.
+Wenn ein Bild an einem Bildschirm dargestellt wird, dann wird normalerweise jedes Pixel als Summe von drei Zahlen dargestellt, die eine Aussage machen über die Intensität der Primärfarben rot, grün und blau im Darstellungs-Farbraum. Weil dieser normalerweise eng verknüpft ist mit der Hardware mit deren physikalischen Grenzen, so gibt es einen Maximalwert für die [R,G,B] Kanäle, der die maximale Intensität für diesen Farbraum repräsentiert.</description>
+    </item>
+    
+  </channel>
+</rss>

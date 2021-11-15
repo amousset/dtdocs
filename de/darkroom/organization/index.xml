@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Organisation on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/de/darkroom/organization/</link>
+    <description>Recent content in Organisation on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/de/darkroom/organization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Übersicht</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/organization/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/organization/overview/</guid>
+      <description>Bearbeitungs-Module werden organisiert und angewählt in der rechten Seitenleiste in der Ansicht Dunkelkammer:
+  Klicke auf die Icons oben in dieser Schaltfläche, von links nach rechts,
+   quick access panel Eine benutzerdefinierbare Schaltfläche, die es erlaubt einen Schnellzugriff für häufig gebrauchte Modul-Einstellungen.   aktive Module Gruppe der gerade aktiven Module in der Pixelpipe. Rechtsklick, um alle Module aus dem Verlaufsstapel anzuzeigen, unabhängig davon, ob sie aktiv sind.</description>
+    </item>
+    
+    <item>
+      <title>Modulgruppen</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/organization/module-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/organization/module-groups/</guid>
+      <description>Eine Anzahl von vordefinierten Modul-Gruppen werden mit darktable ausgeliefert und sind als Voreinstellungen anwählbar. Diese sind unten zusammengefasst.
+Alle diese Voreinstellungen (mit Ausnahme der Module: veraltet und nur Suche) schließen auch die Schnellzugriffs-Gruppe mit ein. Alle außer den _Module: veraltet_Gruppe beinhalten das Suchfenster.
+🔗Module: alle Diese Voreinstellung beinhaltet alle Module, die nach der traditionellen Modul-Gruppen sortiert sind, die vor darktable 3.4, wie folgt:
+   Basisbearbeitung Module Das minimale Set von Modulen, die normalerweise nötig sind, um ein präsentables Bild zu rendern.</description>
+    </item>
+    
+    <item>
+      <title>Schnellzugriffs Gruppe</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/organization/quick-access-panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/organization/quick-access-panel/</guid>
+      <description>Die Schnellzugriffs-Gruppe erlaubt es dir gewisse Modul-Objekte einer Anzahl von Bearbeitungsmodulen von einem Ort aus vorzunehmen.
+  Du kannst neue Modul-Objekte hinzufügen durch Klicken auf das Icon oben links oder im Fenster Modullayouts verwalten.
+Klicke auf das Icon rechts neben dem Modulnamen, um die volle Version dieses Moduls zu öffnen. Klicke auf das Icon links neben dem Modulnamen, um das Modul zu aktivieren/deaktivieren.
+Gegenwärtig sind nur wenige Modul-Objekte in dieser Schaltfläche (Kontrollkästchen, Schieber, Schaltboxen) &amp;ndash; komplexere Modul-Objekte wie Kurven werden nicht unterstützt.</description>
+    </item>
+    
+    <item>
+      <title>Verwalte Modul-Layouts</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/organization/manage-module-layouts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/organization/manage-module-layouts/</guid>
+      <description>Verwalte das Layout und die Gruppierung von Bearbeitungs-Modulen und der Schnellzugriffs-Gruppe.
+  Auf dieses Verwaltungsfenster kann unter Voreinstellungen bearbeiten &amp;hellip; vom Menü Modulgruppen rechts neben den Modulgruppensymbolen zugegriffen werden (unter dem Histogramm-/Scope-Modul in der Dunkelkammer). Mit Strg+Klick auf das Voreinstellungsmenü wird dieses Fenster direkt geöffnet.
+Einstellungen werden automatisch gespeichert, wenn du das Fenster verlässt. Klicke Reset, um jegliche Änderungen dieser Bearbeitungs-Session zurückzusetzen.
+🔗Moduleinstellungen 🔗Globale Einstellungen Die folgenden globalen Einstellmöglichkeiten sind oben auf dem Bildschirm zu finden.</description>
+    </item>
+    
+  </channel>
+</rss>

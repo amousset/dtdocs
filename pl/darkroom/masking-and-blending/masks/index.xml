@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maski on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/</link>
+    <description>Recent content in maski on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/overview/</guid>
+      <description>Maski pozwalają na ograniczenie efektu działania modułu tylko do wybranych obszarów obrazu.
+Maska może być traktowana jako obraz w skali szarości, gdzie każdy piksel posiada wartość pomiędzy 0 a 1.0 (lub pomiędzy 0% a 100%). Jest to wartość krycia, jest ona używana do określenia wpływu modułu na każdy piksel.
+Poniżej wyjaśniamy, jak kontruować maski w darktable.</description>
+    </item>
+    
+    <item>
+      <title>maski wektorowe</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/</guid>
+      <description>Przy użyciu maski wektorowej możesz tworzyć maskę, rysując kształty bezpośrednio na obszarze roboczym. Kształty mogą być używane samodzielnie bądź w grupach. Po narysowaniu kształtu na zdjęciu może on być modyfikowany, usuwany bądź użyty ponownie w innych modułach.
+Shapes are stored internally as vectors and are rendered with the required resolution during pixelpipe processing. Shapes are expressed in the coordinate system of the original image and are transformed along with the rest of the image by any active distorting modules in the pipe (lens correction, rotate and perspective for example).</description>
+    </item>
+    
+    <item>
+      <title>maski parametryczne</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/</guid>
+      <description>Opcja maski parametrycznej oferuje dokładną, selektywną kontrolę nad maskowaniem poszczególnych pikseli. Jest to możliwe dzięki automatycznemu stworzeniu pośredniej maski mieszania na podstawie parametrów podanych przez użytkownika. Są to charakterystyki kolorów – w odróżnieniu od współrzędnych geometrycznych, użytych w maskach wektorowych.
+Dla każdego kanału danych modułu (np. Lab czy RGB) i kilku wirtualnych kanałów danych (np. odcienia czy nasycenia) można stworzyć funkcję krycia. W zależności od wartości zadanego kanału danych dla określonego piksela funkcja ta przelicza na każdy piksel współczynnik mieszania pomiędzy 0 a 1 (100%).</description>
+    </item>
+    
+    <item>
+      <title>łączenie masek wektorowych i parametrycznych</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/</guid>
+      <description>Maski wektorowe i parametryczne mogą być łączone w celu stworzenia pojedynczej maski, którą można zastosować do modułu.
+Sposób połączenia poszczególnych masek kontrolujemy poprzez dwa elementy: ustawienie polaryzacji każdej z masek (określane przyciskiem plusa lub minusa) oraz ustawienie wartości pola wyboru &amp;ldquo;łącz maski&amp;rdquo;.
+Rozwijalna lista &amp;ldquo;łącz maski&amp;rdquo; udostępnia następujące wartości, określające sposób połączenia masek:
+ z wyłączeniem Najprostszy sposób łączenia masek, tryb wyłączenia mnoży wartości każdego piksela w każdej ze składowych masek.</description>
+    </item>
+    
+    <item>
+      <title>uszczegóławianie maski i dodatkowe kontrolki</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/</guid>
+      <description>Kiedy maska parametryczna bądź wektorowa jest aktywna, dostępne jest kilka suwaków, pomagających w jej uszczegółowieniu.
+ próg szczegółowości Kontrolka pozwala na zmianę krycia maski w oparciu o ilość szczegółów obrazu. Skorzystaj z tego suwaka w celu zaznaczenia obszarów z dużą ilością detali (wartość dodatnia) bądź obszarów jednolitych i pozbawionych szczegółów (wartość ujemna). Wartość domyślna (zero) pomija zawężanie do szczegółów. Kontrolka najczęściej jest wykorzystywana do zastosowania wyostrzenia bądź rozmycia, ignorującego obszary poza ostrością (bokeh) lub do wyostrzenia tylko części rozmytych, zapobiegając nadmiernemu wyostrzeniu obszarów już ostrych.</description>
+    </item>
+    
+    <item>
+      <title>maski rastrowe</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/raster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/raster/</guid>
+      <description>Jak opisano wcześniej, końcowym efektem maski modułu (połączonego działania masek parametrycznych i wektorowych) jest rastrowy obraz w skali szarości, reprezentujący zakres, w jakim efekt działania modułu ma zostać zastosowany do poszczególnych pikseli. Obraz ten jest przechowywany wewnętrznie na potrzeby aktywnych modułów i może być później wykorzystany przez inne moduły w potoku przetwarzania.
+Jak przy każdej masce, jeśli wartość krycia dla piksela maski rastrowej wynosi zero, wejście modułu po przejściu przez niego pozostaje niezmienione.</description>
+    </item>
+    
+  </channel>
+</rss>

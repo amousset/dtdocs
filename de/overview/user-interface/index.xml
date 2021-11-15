@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benutzeroberfläche on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/de/overview/user-interface/</link>
+    <description>Recent content in Benutzeroberfläche on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/de/overview/user-interface/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansichten</title>
+      <link>https://darktable-org.github.io/dtdocs/de/overview/user-interface/views/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/overview/user-interface/views/</guid>
+      <description>Die Funktionalität in darktable ist in sechs unterschiedliche Ansichten unterteilt:
+ Leuchttisch Verwalte Bilder und Sammlungen. Dunkelkammer Bearbeite ein einzelnes Bild. Karte Zeige Bilder mit Geolokation auf einer Karte und weise Bildern manuell die Geolokationen zu. Drucken Sende Bilder zu einem Drucker. Diaschau Zeige Bilder als Diaschau bearbeite diese spontan. Tethering Nimm Bilder auf mit einer angeschlossenen Kamera und sichere diese.  Zwischen den einzelnen Ansichten kannst du auswählen durch Klicken auf den Namen der Ansicht oben rechts (wobei der gerade aktive hervorgehoben ist) oder mit einem der folgenden Tastaturbefehle:</description>
+    </item>
+    
+    <item>
+      <title>Bildschirm Aufbau</title>
+      <link>https://darktable-org.github.io/dtdocs/de/overview/user-interface/screen-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/overview/user-interface/screen-layout/</guid>
+      <description>Der Aufbau aller Ansichten von darktable ist ähnlich und besteht aus einem zentralen Teil mit Schaltmöglichkeiten in den Spalten auf den Seiten:
+    Mittelteil : Enthält Informationen und Funktionen, die spezifisch für die gegenwärtige Ansicht sind.
+  Spalte links : Enthält Module, die zur Hauptsache Informationen vorsehen.
+  Spalte rechts : Enthält Module, zur Hauptsache für die Bildbearbeitung.
+  Oberes Banner : Enthält Informationen über die gegenwärtige Version von darktable und erlaubt zwischen den Ansichten umzuschalten.</description>
+    </item>
+    
+    <item>
+      <title>Filmstreifen</title>
+      <link>https://darktable-org.github.io/dtdocs/de/overview/user-interface/filmstrip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/overview/user-interface/filmstrip/</guid>
+      <description>Der Filmstreifen wird, wenn er angewählt ist unten auf dem Bildschirm angezeigt, (außer in der Ansicht Leuchttisch, in der er durch das Modul Zeitleiste) ersetzt wird und er zeigt die Bilder der gegenwärtigen Sammlung, (die in der Ansicht Leuchttisch ausgewählt ist.) Du kannst mit dem Mausrad im Filmstreifen navigieren.
+Der Filmstreifen erlaubt eine Interaktion mit Bildern, auch wenn du nicht in der Ansicht Leuchttisch bist. z.B. kannst du während der Entwicklung eines Bildes in der Dunkelkammer zu einem anderen Bild schalten, indem du auf das Vorschaubild im Filmstreifen klickst.</description>
+    </item>
+    
+    <item>
+      <title>Tastaturbefehle</title>
+      <link>https://darktable-org.github.io/dtdocs/de/overview/user-interface/keyboard-shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/overview/user-interface/keyboard-shortcuts/</guid>
+      <description>Sehr viele Funktionen von darktable können mit Tastaturbefehlen gesteuert werden, die auch benutzerdefiniert angepasst werden können in darktable-Voreinstellungen &amp;gt; Tastenkombinationen.
+Drücke die Taste H (für Hilfe) in irgendeiner Ansicht von darktable, um eine Liste mit Tastaturbefehlen für diese geöffnete Ansicht anzuzeigen.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/it/</link>
+    <description>Recent content on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduzione</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/overview/</guid>
+      <description>Le maschere permettono di limitare l&amp;rsquo;effetto di un modulo affinché venga applicato soltanto ad alcune parti dell&amp;rsquo;immagine.
+Una maschera può essere considerata come un&amp;rsquo;immagine in scala di grigi dove ogni pixel ha un valore compreso tra 0 e 1.0 (o tra 0% e 100%). Questo valore è l&amp;rsquo;opacità ed è utilizzata per determinare quanto il modulo coinvolge ogni pixel.
+Le sezioni seguenti spiegano come costruire maschere in darktable.</description>
+    </item>
+    
+    <item>
+      <title>Introduzione</title>
+      <link>https://darktable-org.github.io/dtdocs/it/print/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/print/overview/</guid>
+      <description>Questa vista permette di stampare le immagini. Dal momento che la stampa non è un&amp;rsquo;operazione semplice, ci sono diversi aspetti tecnici da tenere in considerazione.
+Dopo aver selezionato un&amp;rsquo;immagine sul Tavolo Luminoso è possibile attivare il modulo Opzioni di stampa per regolarne i parametri ed effettuare la stampa.
+Questo modulo supporta il profilo ICC della stampante, un passaggio praticamente obbligatorio se vuoi ottenere una stampa di qualità vicina a ciò che vedi sullo schermo.</description>
+    </item>
+    
+    <item>
+      <title>Disposizione visualizzazione Stampa</title>
+      <link>https://darktable-org.github.io/dtdocs/it/print/print-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/print/print-view-layout/</guid>
+      <description>L&amp;rsquo;area centrale visualizza la disposizione dell&amp;rsquo;immagine sulla carta (la zona bianca). Potresti vedere dei bordi grigi intorno all&amp;rsquo;immagine a rappresentare l&amp;rsquo;effettiva area di stampa (la pagina ad esclusione dei bordi).
+Il filmstrip sotto l&amp;rsquo;immagine ti permette di selezionare ulteriori immagini.
+🔗Pannello di sinistra  collections Filtra l&amp;rsquo;elenco delle immagini visualizzate nel Tavolo Luminoso. image information Visualizza le informazioni dell&amp;rsquo;immagine  🔗Pannello di destra  print settings Imposta le regolazioni della stampante e inizia a stampare.</description>
+    </item>
+    
+    <item>
+      <title>maschere disegnate</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn/</guid>
+      <description>Con le maschere disegnate puoi costruire una maschera disegnando forme direttamente sopra l&amp;rsquo;immagine. Le forme possono essere usate da sole o in combinazione. Dopo che una forma è stata disegnata su un&amp;rsquo;immagine può essere regolata, rimossa, o riutilizzata in altri moduli.
+Shapes are stored internally as vectors and are rendered with the required resolution during pixelpipe processing. Shapes are expressed in the coordinate system of the original image and are transformed along with the rest of the image by any active distorting modules in the pipe (lens correction, rotate and perspective for example).</description>
+    </item>
+    
+    <item>
+      <title>maschere parametriche</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/parametric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/parametric/</guid>
+      <description>La maschera parametrica offre un minuzioso controllo della selezione di come i pixel individuali vengono mascherati. Questa viene creata creando automaticamente una maschera di fusione intermedia sulla base di parametri stabiliti dall&amp;rsquo;utente. Questi parametri sono le coordinate colore invece che le coordinate geometriche utilizzate nelle maschere disegnate.
+Per ciascuno dei canali dati di un modulo (es. Lab, RGB) e molti altri canali virtuali (es. tinta, saturazione) puoi definire una funzione di opacità per canale.</description>
+    </item>
+    
+    <item>
+      <title>combinare maschere disegnate &amp; parametriche</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/</guid>
+      <description>Maschere parametriche e disegnate possono essere usate in combinazione per creare un&amp;rsquo;unica maschera che può essere applicata ad un modulo.
+Ci sono due elementi principali che controllano come le maschere vanno combinate individualmente: l&amp;rsquo;impostazione di polarità di ciascuna delle maschere (definita dal pulsante più o meno) e la selezione dell&amp;rsquo;opzione &amp;ldquo;Combina le maschere&amp;rdquo;.
+Il menù a discesa &amp;ldquo;combina le maschere&amp;rdquo; contiene le seguenti opzioni, che stabiliscono come le maschere disegnate e parametriche verranno combinate assieme.</description>
+    </item>
+    
+    <item>
+      <title>rifinitura maschere &amp; controlli aggiuntivi</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/</guid>
+      <description>Quando una maschera parametrica o disegnata è attiva, vengono mostrati ulteriori cursori che permettono di rifinire ulteriormente la maschera.
+ soglia dei dettagli Quest&amp;rsquo;opzione ti permette di modificare l&amp;rsquo;opacità della maschera in base alla quantità di dettaglio dell&amp;rsquo;immagine. Usa questo selettore scorrevole per selezionare tanto le aree con molti dettagli (valori positivi) quanto le aree &amp;ldquo;piatte&amp;rdquo; o che scarseggiano in dettaglio (valori negativi). Il valore predefinito (zero) in sostanza ignora la rifinitura dettaglio.</description>
+    </item>
+    
+    <item>
+      <title>maschere raster</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/raster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/raster/</guid>
+      <description>Come descritto nelle sezioni precedenti, il risultato finale di una maschera per un modulo (l&amp;rsquo;effetto combinato di qualsiasi maschera disegnata e parametrica) è un&amp;rsquo;immagine raster in toni di grigio che rappresenta l&amp;rsquo;intensità con la quale il modulo debba essere applicato su ogni pixel. L&amp;rsquo;immagine raster è conservata internamente per i moduli attivi e può essere utilizzata in seguito per gli altri moduli nella pixelpipe.
+Come per qualsiasi altra maschera, se il valore di opacità per un pixel nella maschera raster è zero, l&amp;rsquo;input del modulo ne risulta inalterato.</description>
+    </item>
+    
+    <item>
+      <title>editor metadati</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/metadata-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/metadata-editor/</guid>
+      <description>Modifica i metadati delle immagini selezionate.
+I metadati sono del testo in formato libero (titolo, descrizione, autore, editore, diritti etc&amp;hellip;) che descrive le tue immagini.
+🔗Controlli modulo  campi di inserimento metadati Per ciascuno elemento di metadati viene mostrato un campo separato. Scrolla con la rotellina del mouse mentre tieni premuto il tasto Ctrl per incrementare l&amp;rsquo;altezza di un campo. Premi Ctrl+Invio per inserire un ritorno a capo. Premi Invio per applicare qualsiasi testo inserito nel campo metadati corrente alle immagini selezionate.</description>
+    </item>
+    
+    <item>
+      <title>esporta</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/export/</guid>
+      <description>Esporta le immagini selezionate.
+Quando viene usato nella Camera Oscura, l&amp;rsquo;immagine correntemente in lavorazione verrà esportata se nessun&amp;rsquo;altra immagine è selezionata nei provini.
+Si possono esportare le immagini su file su disco, via email, su vari servizi online, come album web o come modello di libro.
+🔗Controlli modulo 🔗opzioni di salvataggio  destinazione E&#39; il tipo di destinazione per l&amp;rsquo;esportazione delle immagini selezionate. Sono implementati un certo numero di tipologie, incluse file su disco, modello libro LaTeX e vari web album.</description>
+    </item>
+    
+    <item>
+      <title>etichettatura</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/tagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/tagging/</guid>
+      <description>Gestisce le etichette allegate alle immagini.
+Le etichette forniscono un modo di aggiungere informazioni alle immagini usando un dizionario di parole chiavi. Puoi anche gestire le etichette in gerarchia, il ché può essere utile quando diventano molte.
+Le etichette vengono salvate fisicamente nei file &amp;ldquo;sidecar&amp;rdquo; XMP, ma anche nel database di darktable, e possono essere incluse nelle immagini esportate.
+🔗definizioni Le seguenti definizioni presuppongono che tu abbia impostato una singola etichetta &amp;ldquo;luoghi|Italia|Toscana|Rio Marina&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>focus peaking</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/focus-peaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/focus-peaking/</guid>
+      <description>Identifica quali parti dell&amp;rsquo;immagine contiene bordi nitidi, che di solito indica che quelle aree sono a fuoco.
+Attivare il modulo cliccando sull&amp;rsquo;icona  . La parte a fuoco dell&amp;rsquo;immagine verrà evidenziata con una sovrapposizione di giallo, verde e blu.
+Il focus peaking lavora filtrando il rumore della foto, misurando l&amp;rsquo;intensità del gradiente nell&amp;rsquo;immagine a calcolando medie e deviazioni standard. Quando il gradiente di un bordo si scosta in maniera significativa dalla media, i pixel associati vengono contrassegnati attraverso una &amp;ldquo;heat map&amp;rdquo; che mostra quanto un bordo sia nitido.</description>
+    </item>
+    
+    <item>
+      <title>geotagging</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/geotagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/geotagging/</guid>
+      <description>Importa usa i dati di tracciamento nel GPX alle immagini selezionate.
+Questo modulo è in comune alle viste Tavolo Luminoso e Mappa. La mappa fornisce una modalità avanzata che ti permette di avere un&amp;rsquo;anteprima della posizione dell&amp;rsquo;immagine lungo il percorso GPS mentre aggiusti la compensazione data/ora e il fuso orario.
+🔗panoramica del processo Il ricevitore GPS calcola la posizione corrente basandosi sulle informazioni che riceve dai satelliti e la registra in un file GPX assieme alla data/ora corrente.</description>
+    </item>
+    
+    <item>
+      <title>Impostazioni fotocamera</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/tethering/camera-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/tethering/camera-settings/</guid>
+      <description>Impostare una cattura d&amp;rsquo;immagine.
+Ciò può includere sequenze, bracket ed immagini ritardate. Si possono anche controllare altre impostazioni della fotocamera, quali la modalità di messa a fuoco, l&amp;rsquo;apertura, velocità di scatto, ISO e bilanciamento del bianco.</description>
+    </item>
+    
+    <item>
+      <title>informazioni immagine</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/image-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/image-information/</guid>
+      <description>Mostra le informazioni incluse nei dati Exif dell&amp;rsquo;immagine assieme ad altri campi aggiuntivi definiti da darktable.
+Quando si passa il mouse sulla miniatura di un&amp;rsquo;immagine, i dati mostrati vengono automaticamente aggiornati per mostrare le informazioni dell&amp;rsquo;immagine attualmente sotto il cursore del mouse.
+Quando è selezionata più di un&amp;rsquo;immagine e il fuoco è su nessuna delle immagini, il modulo mostra soltanto le informazioni che sono le stesse per tutte le immagini. Se uno dei campi differisce tra le immagini, viene visualizzato il testo alternativo &amp;ldquo;&amp;lt;various values&amp;gt;&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>provini</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/filmstrip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/filmstrip/</guid>
+      <description>I provini possono essere usati per passare tra un&amp;rsquo;immagine e l&amp;rsquo;altra in tutte le viste di darktable. Le immagini mostrate sono le stesse mostrate nella vista Tavolo Luminoso e sono definite dalla raccolta correntemente selezionata.
+  I provini possono essere abilitati/disabilitati usando la scorciatoia da tastiera Ctrl+F. L&amp;rsquo;altezza del pannello dei provini può essere cambiata cliccando e trascinando il suo bordo superiore.
+Puoi navigare velocemente le immagini nei provini utilizzando la rotellina del mouse.</description>
+    </item>
+    
+    <item>
+      <title>raccolte</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/collections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/collections/</guid>
+      <description>Filtra le immagini mostrate nel tavolo luminoso e nel pannello dei provini utilizzando le proprietà delle immagini. L&amp;rsquo;insieme delle immagini filtrate è chiamato una raccolta.
+Importing images into darktable stores information about them (filename, path, Exif data, data from XMP sidecar files etc.) in darktable&amp;rsquo;s library database. A collection may be defined by applying filtering rules to these attributes, thus creating a subset of images to display in the lighttable view and the filmstrip module.</description>
+    </item>
+    
+    <item>
+      <title>Sessione</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/tethering/session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/tethering/session/</guid>
+      <description>Impostare un codice sessione per permettere la creazione di un nuovo rullino.
+Una sessione è una sequenza di scatti effettuati in tethering (scatto remoto) che viene inserita in un singolo rullino. Aprire una nuova sessione significa creare un nuovo rullino.
+Questo modulo sessione permette di impostare un codice, che può essere usato per creare un nuovo rullino. Si veda preferences &amp;gt; import &amp;gt; session options per dettagli riguardo la creazione di un nuovo rullino usando la variabile $(JOBCODE) nel modulo sessione.</description>
+    </item>
+    
+    <item>
+      <title>Tethering (Scatto remoto)</title>
+      <link>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/tethering/live-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/tethering/live-view/</guid>
+      <description>Controlla la modalità live view della tua fotocamera.
+Sono supportate funzionalità come la messa a fuoco, la rotazione, l&amp;rsquo;aggiunta di linee guida e elementi in sovraimpressione.</description>
+    </item>
+    
+  </channel>
+</rss>

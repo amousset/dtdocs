@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>modules de traitement on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/fr/darkroom/processing-modules/</link>
+    <description>Recent content in modules de traitement on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/fr/darkroom/processing-modules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>entête d&#39;un module</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/darkroom/processing-modules/module-header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/darkroom/processing-modules/module-header/</guid>
+      <description>En haut de chaque module de traitement se trouve l&#39;entête du module.
+  Cliquez sur le nom du module pour développer le module et afficher les paramètres qui contrôlent son fonctionnement.
+Par défaut, darktable n&amp;rsquo;autorisera qu&amp;rsquo;un seul module de traitement à être déplié à la fois &amp;ndash; si vous cliquez sur l&amp;rsquo;entête d&amp;rsquo;un autre module, le module précédemment ouvert sera replié. Si vous souhaitez déplier plus d&amp;rsquo;un module, vous pouvez le faire en Shift+cliquant sur les entêtes d&amp;rsquo;autres modules et tous ceux qui ont été précédemment dépliés le resteront.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - potok przetwarzania i kolejność modułów</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/pl\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="pl" role="option" lang="pl" href="https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/the-pixelpipe-and-module-order/">Polish</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/the-pixelpipe-and-module-order/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/darkroom/pixelpipe/the-pixelpipe-and-module-order/">Português</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/overview/" class="">
+          Przegląd
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/" class="">
+          Stół podświetlany
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-view-layout/" class="">
+          układ widoku stołu podświetlanego
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/undo-redo/" class="">
+          cofnij/ponów
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/" class="">
+          tryby stołu podświetlanego
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/filemanager/" class="">
+          manager plików
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/culling/" class="">
+          układ selektywny
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/" class="">
+          zarządzanie zasobami cyfrowymi
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/collections/" class="">
+          kolekcje i rolki filmu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/thumbnails/" class="">
+          miniaturki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/star-color/" class="">
+          gwiazdki i kolorowe etykiety
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/metadata-tagging/" class="">
+          metadane i znaczniki
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/" class="">
+          Ciemnia
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/darkroom-view-layout/" class="">
+          układ widoku ciemni
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/" class="">
+          kolejka przetwarzania
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/" class="">
+          anatomia modułu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/the-pixelpipe-and-module-order/" class=" active">
+          potok przetwarzania i kolejność modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/history-stack/" class="">
+          historia
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/undo-redo/" class="">
+          cofnij i ponów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/" class="">
+          moduły przetwarzające
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/module-header/" class="">
+          nagłówek modułu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/multiple-instances/" class="">
+          wiele instancji
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/presets/" class="">
+          presety
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/module-controls/" class="">
+          kontrolki modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/curves/" class="">
+          krzywe
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/wavelets/" class="">
+          falki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/deprecated/" class="">
+          moduły przestarzałe
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/" class="">
+          maski i mieszanie
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/blend-modes/" class="">
+          tryby mieszania
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/" class="">
+          maski
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/" class="">
+          maski wektorowe
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/" class="">
+          maski parametryczne
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="">
+          łączenie masek wektorowych i parametrycznych
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/" class="">
+          uszczegóławianie maski i dodatkowe kontrolki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/raster/" class="">
+          maski rastrowe
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/" class="">
+          organizacja pracy z modułami
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/module-groups/" class="">
+          grupy modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/quick-access-panel/" class="">
+          panel szybkiego dostępu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/manage-module-layouts/" class="">
+          zarządzaj układem modułów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/tethering/" class="">
+          Tethering
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/tethering/troubleshooting/" class="">
+          rozwiązywanie problemów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/map/" class="">
+          Mapa
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/slideshow/" class="">
+          Pokaz slajdów
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/print/" class="">
+          Wydruk
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/print/print-view-layout/" class="">
+          układ widoku wydruku
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/preferences-settings/" class="">
+          Ustawienia darktable
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/" class="">
+          Skrypty Lua
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/a-simple-example/" class="">
+          prosty przykład lua
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/calling-from-dbus/" class="">
+          wywołanie lua z dbus
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/darktable-from-lua/" class="">
+          użycie darktable ze skryptu lua
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/api/" class="">
+          API lua
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/" class="">
+          Przewodniki i tutoriale
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/monochrome/" class="">
+          wywoływanie zdjęć monochromatycznych
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/other-resources/" class="">
+          inne zasoby
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/" class="">
+          Tematy specjalne
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/color-management/" class="">
+          zarządzanie kolorem
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/opencl/" class="">
+          opencl
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/darktable-chart/" class="">
+          użycie darktable-chart
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/program-invocation/" class="">
+          uruchomienie programu
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/" class="">
+          moduły przetwarzające
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/graduated-density/" class="">
+          filtr połówkowy
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/colorize/" class="">
+          koloryzacja
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/grain/" class="">
+          ziarno
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+<a href='/dtdocs/pl/'>darktable</a> / <a href='/dtdocs/pl/darkroom/'>Ciemnia</a> / <a href='/dtdocs/pl/darkroom/pixelpipe/'>kolejka przetwarzania</a> / potok przetwarzania i kolejność modułów
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/" class="next">&lt; anatomia modułu</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/pixelpipe/history-stack/" class="prev">historia &gt;</a>
+	
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        potok przetwarzania i kolejność modułów
+    </h1>
+
+    
+
+    <p>Uporządkowana kolejność <a href="../../module-reference/processing-modules/_index.md">modułów przetwarzających</a>, operujących na obrazie wejściowym dla wygenerowania obrazu wyjściowego nazwana jest &ldquo;kolejką przetwarzania&rdquo;.</p>
+<p>Kolejność w kolejce przetwarzania reprezentowana jest graficznie kolejnością prezentacji modułów w interfejsie użytkownika – kolejka zaczyna się plikiem RAW na dole listy modułów, stosuje kolejno moduły przetwarzające, układające się w kolejce przetwarzania od dołu do góry aż do osiągnięcia szczytu listy, gdzie tworzony jest w pełni przetworzone zdjęcie.</p>
+<hr>
+<p><strong>Uwaga:</strong> Kolejność działania modułów jest identyczna do tej, którą widzisz w panelu historii. <strong>Zmiana kolejności modułów w interfejsie użytkownika zmienia również sposób obróbki zdjęcia.</strong></p>
+<hr>
+<h1 id="kolejność-modułów-i-przebieg-pracy"><a href="#kolejno%c5%9b%c4%87-modu%c5%82%c3%b3w-i-przebieg-pracy">🔗</a>kolejność modułów i przebieg pracy</h1>
+<p>Kolejność wywołania modułów wewnątrz kolejki przetwarzania została starannie dobrana pod kątem uzyskania jak najlepszych jakościowo efektów. W poprzednich wersjach darktable nie było możliwości zmiany tej kolejności. W kilku ściśle ograniczonych przypadkach zalecamy jednak zmianę tej kolejności.</p>
+<p>One of the main reasons to change the module order came about with darktable version 3.0, which introduced the new <em>scene-referred</em> way of working. Version 3.2 formalised this by introducing the <em>display-referred</em> and <em>scene-referred</em> workflows, which are controlled by the <a href="../../../preferences-settings/processing.md">preferences &gt; processing &gt; auto-apply pixel workflow defaults</a> setting. Starting with version 3.6, <em>scene-referred</em> workflow is now the official recommended (and default) way to use darktable.</p>
+<p><em>Scenocentryczna</em> organizacja pracy ma na celu wykonanie możliwie jak najwięcej w liniowej przestrzeni barwnej RGB, kompresując tony tylko dla dopasowania do końcowego medium (z nieliniowym mapowaniem tonów) na samym końcu kolejki przetwarzania. Niesie to ze sobą większy realizm podczas dokonywania transformacji, niż ma to miejsce w tradycyjnej organizacji <em>ekranocentrycznej</em>, która próbuje wykonywać operacje w nieliniowej <em>perceptualnej</em> przestrzeni barwnej. Preferowanie realizmu fizycznego (bardziej niż postrzegania) ułatwia tworzenie przewidywalnych algorytmów, tworzących minimum artefaktów.</p>
+<p>Poniższy diagram pozwoli zrozumieć różnicę pomiędzy tymi organizacjami pracy:</p>
+<p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/scene-display-workflows.png"><img src="/dtdocs/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/scene-display-workflows.png" alt="scene-referred and display-referred modules"   /></a>
+
+</p>
+<ol>
+<li>
+<p>Moduły <em>scenocentryczne</em> produkują dane liniowe, proporcjonalne do ilości światła, uzyskanego ze sceny przez aparat. Zakres dynamiczny takiego obrazu w scenocentrycznej części kolejki przetwarzania jest często szerszy, niż ten w części ekranocentrycznej.</p>
+</li>
+<li>
+<p>W pewnym momencie kolejki przetwarzania wartości pikseli są kompresowane nieliniowym mapowaniem tonów do mniejszego zakresu dynamicznego, odpowiedniejszego do wyświetlenia na monitorze bądź do wydruku.</p>
+</li>
+<li>
+<p>Pozostałe moduły operują w nieliniowej, ekranowej sekcji kolejki przetwarzania dla wygenerowania finalnego zdjęcia.</p>
+</li>
+</ol>
+<h2 id="organizacja-pracy-display-referred"><a href="#organizacja-pracy-display-referred">🔗</a>organizacja pracy: display-referred</h2>
+<p>Przed wersją 3.0 organizacją pracy w darktable było <em>display-referred</em> (domyślna organizacja pracy = &ldquo;display_referred&rdquo;) i ta opcja wciąż jest możliwa jako tryb kompatybilności. W tej organizacji pracy moduły <a href="../../../module-reference/processing-modules/base-curve.md"><em>krzywej bazowej</em></a> oraz <a href="../../../module-reference/processing-modules/filmic-rgb.md"><em>krzywej filmowej rgb</em></a> dokonują mapowania tonów wcześnie w kolejce przetwarzania i większość innych modułów korzysta z danych zdjęcia w przestrzeni <em>display-referred</em>.</p>
+<p>Scenocentryczna organizacja pracy wspiera przestarzały (sprzed wersji 3.0) porządek modułów i dla nowych zdjęć przełącza się automatycznie do modułu <a href="../../../module-reference/processing-modules/base-curve.md"><em>krzywej bazowej</em></a>.</p>
+<p>Dane pikseli w przestrzeni <em>ekranocentrycznej</em> nie są liniowe i nie stanowią fizycznie realistycznej reprezentacji oryginalnej sceny. Może to prowadzić do wystąpienia artefaktów w niektórych modułach, dlatego też stworzyliśmy (teraz domyślną) <em>scenocentryczną</em> organizację pracy.</p>
+<h2 id="organizacja-pracy-scenocentryczna"><a href="#organizacja-pracy-scenocentryczna">🔗</a>organizacja pracy: scenocentryczna</h2>
+<p><em>Scenocentryczna</em> organizacja pracy (domyślnie stosowana organizacja = &ldquo;scenocentryczna&rdquo;) została wprowadzona jako część darktable 3.0. Kolejność modułów została całkowicie przeprojektowana, aby mapujące tony moduły <a href="../../../module-reference/processing-modules/filmic-rgb.md"><em>krzywej filmowej rgb</em></a> oraz <a href="../../../module-reference/processing-modules/base-curve.md"><em>krzywej bazowej</em></a> umieścić jak najpóźniej w kolejce przetwarzania. Oznacza to, że większość modułów działa teraz w <em>liniowej przestrzeni rgb</em>, a zaledwie kilka modułów pracuje w nieliniowej przestrzeni <em>ekranocentrycznej</em>. Przy takiej organizacji pracy zalecamy przeprowadzanie większości edycji w modułach do <a href="../../../module-reference/processing-modules/filmic-rgb.md"><em>krzywej filmowej rgb</em></a> włącznie. Edycje w tej części kolejki przetwarzania, wykonywane liniowo, są znacznie bardziej realistyczne i produkują mniej artefaktów.</p>
+<p>Wybór scenocentrycznej organizacji pracy udostępnia kolejność modułów w wersji <em>3.0</em> i automatycznie włącza moduły <a href="../../../module-reference/processing-modules/exposure.md"><em>ekspozycji</em></a> oraz <a href="../../../module-reference/processing-modules/filmic-rgb.md"><em>krzywej filmowej rgb</em></a> z ustawionymi pewnymi presetami, które służą jako dobry punkt wejścia do takiej edycji.</p>
+<h1 id="zmiana-kolejności-modułów"><a href="#zmiana-kolejno%c5%9bci-modu%c5%82%c3%b3w">🔗</a>zmiana kolejności modułów</h1>
+<p>W dalszym ciągu zalecamy niezmienianie kolejności wewnątrz kolejki przetwarzania, z kilku względów:</p>
+<ul>
+<li>
+<p>Kolejność modułów została opracowana z największą dbałością o jakość obrazu wyjściowego. Zmiany tej kolejności najczęściej pogorszą rezultat, niż go poprawią.</p>
+</li>
+<li>
+<p>Użycie niektórych modułów poza ich domyślną kolejnością nie miałoby po prostu sensu. Przykładowo <a href="../../../module-reference/processing-modules/highlight-reconstruction.md"><em>ratowanie prześwietleń</em></a> winno być wykonane na surowych danych przed <a href="../../../module-reference/processing-modules/demosaic.md"><em>demozaikowaniem</em></a>, które z kolei należy uruchomić przed <a href="../../../module-reference/processing-modules/input-color-profile.md"><em>wejściowym profilem koloru</em></a>. Z tego też względu zmiana kolejności niektórych wczesnych modułów w kolejce jest niemożliwa.</p>
+</li>
+<li>
+<p>Większość modułów przetwarzających została zaprojektowana do pracy w określonej przestrzeni barwnej (zob. <a href="../../../special-topics/color-management/_index.md">zarządzanie kolorem</a>). Pełna elastyczność wymagałaby stworzenia wsparcia dla różnych algorytmów równoległych w zależności od przestrzeni barwnej, co znacząco zwiększyłoby złożoność.</p>
+</li>
+</ul>
+<p>Pomimo ogólnych zaleceń pozostawiania kolejności przetwarzania, możliwa jest arbitralna zmiana tej kolejności poprzez przeniesienie i upuszczenie modułu na nowe miejsce przy wciśniętych klawiszach Ctrl+Shift. Wykonywanie tej czynności zalecamy tylko doświadczonym użytkownikom, rozumiejącym jej wpływ na finalną jakość obrazu.</p>
+<p>Kolejność modułów może zostać zmieniona ręcznie albo na wersję <em>3.0</em>, albo na <em>przestarzałą</em> przy użyciu modułu <a href="../../../module-reference/utility-modules/darkroom/module-order.md">kolejności modułów</a>, który może również zostać użyty w celu definicji własnych presetów.</p>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/">
+            English: the pixelpipe &amp; module order
+        </a></li>
+        
+        <li><a href="/dtdocs/de/darkroom/pixelpipe/the-pixelpipe-and-module-order/">
+            German: Die Pixelpipe &amp; Modul-Reihenfolge
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/darkroom/pixelpipe/the-pixelpipe-and-module-order/">
+            Português: a pixelpipe e a ordem dos módulos
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/" class="next">&lt; anatomia modułu</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/pixelpipe/history-stack/" class="prev">historia &gt;</a>
+	
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

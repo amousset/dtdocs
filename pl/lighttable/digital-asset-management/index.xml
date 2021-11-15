@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zarządzanie zasobami cyfrowymi on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/</link>
+    <description>Recent content in zarządzanie zasobami cyfrowymi on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>kolekcje i rolki filmu</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/collections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/collections/</guid>
+      <description>Kolekcja to zestaw zdjęć, spełniających zadane kryteria.
+Podstawowym rodzajem kolekcji jest rolka filmu, zawierająca wszystkie zdjęcia, zaimportowane z określonego folderu dyskowego. Za każdym razem, kiedy importujesz zdjęcia z systemu plików, są one organizowane w rolkę filmy, której nazwa pochodzi od nazwy folderu nadrzędnego.
+W module kolekcji Możesz łatwo konstruować inne rodzaje kolekcji, oparte o różne atrybuty zdjęć (dane Exif, nazwa pliku, etykiety, itd.). Można stosować tam złożone kryteria, składane logicznie, w celu zawężania bądź poszerzania kolekcji.</description>
+    </item>
+    
+    <item>
+      <title>miniaturki</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/thumbnails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/thumbnails/</guid>
+      <description>Each image in the current collection is represented by a thumbnail in the lighttable view and filmstrip module. A cache of the most recently used thumbnails is stored in a file on disk and loaded into memory at startup. The size of this cache can be adjusted in preferences &amp;gt; processing &amp;gt; cpu/gpu/memory.
+🔗tworzenie miniatur A thumbnail is created when an image is imported into darktable for the first time, after an image has been modified in the darkroom, or when revisiting an image whose thumbnail is no longer available.</description>
+    </item>
+    
+    <item>
+      <title>gwiazdki i kolorowe etykiety</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/star-color/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/star-color/</guid>
+      <description>Oceny gwiazdkowe i kolorowe etykiety pomagają sortować i oceniać obrazy według twoich własnych kryteriów. Gwiazdki i kolorowe etykiety mogą być wyświetlane na miniaturach w widoku stołu podświetlanego i module rolki filmowej.
+🔗oceny gwiazdkowe Zdjęcie możesz ocenić w skali od zera do pięciu gwiazdek. Ilekroć importujesz zdjęcia, każde z nich otrzymuje ocenę domyślną, którą możesz określić w module importu. Zdjęcie możesz ocenić również jako &amp;ldquo;odrzucone&amp;rdquo;.
+Istnieje kilka sposobów zmiany oceny. Trzymając kursor nad miniaturą, możesz wcisnąć klawisze od 0 do 5, żeby przyznać ilość gwiazdek, lub wcisnąć klawisz R dla &amp;ldquo;odrzucenia&amp;rdquo; zdjęcia.</description>
+    </item>
+    
+    <item>
+      <title>metadane i znaczniki</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/metadata-tagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/metadata-tagging/</guid>
+      <description>darktable pozwala na dołączanie dodatkowych informacji o zdjęciach dla umożliwienia ich łatwiejszego wyszukiwania i grupowania. Informacja przechowywana jest w bazie darktable oraz plikach pobocznych XMP, a także może zostać dołączona do eksportowanych zdjęć.
+🔗metadane Metadane (np. tytuł czy opis) to swobodny tekst, z reguły różny dla każdego zdjęcia. Możesz dodawać je do zdjęć w module edytora metadanych.
+🔗nadawanie etykiet Etykiety są na ogół dzielone pomiędzy wieloma zdjęciami i używane to ich kategoryzacji i grupowania.</description>
+    </item>
+    
+  </channel>
+</rss>

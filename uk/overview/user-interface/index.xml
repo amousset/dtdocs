@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>інтерфейс користувача on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/uk/overview/user-interface/</link>
+    <description>Recent content in інтерфейс користувача on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/uk/overview/user-interface/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>режими</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/overview/user-interface/views/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/overview/user-interface/views/</guid>
+      <description>Функціонал darktable розділений на шість окремих режимів:
+ світлий стіл Керування зображеннями та колекціями. темна кімната Обробка окремого зображення. мапа Показ зображень з геотегами на мапі та ручне геотегуваня нових зображень. друк Надсилання зображень на принтер. слайд-шоу Відображення зображень у вигляді слайд-шоу, обробляючи їх на ходу. камера Дистанційно робити знімки та зберігати зображення, зроблені за допомогою підключеної камери.  Ви можете переключатися між режимами, клікнувши на назві режиму у верхній частині правої панелі (поточний режим виділено) або за допомогою одного з наступних клавіатурних прискорювачів:</description>
+    </item>
+    
+    <item>
+      <title>макет екрану</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/overview/user-interface/screen-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/overview/user-interface/screen-layout/</guid>
+      <description>Розкладка екрану всіх режимів darktable схожа і складається з центральної області з панелями по краях:
+    центральна область : Містить інформацію та функціональні можливості, характерні для поточного режиму.
+  ліва панель : Містить модулі, в основному використовувані для надання інформації.
+  права панель : Містить модулі, які в основному використовуються для обробки зображень.
+  верхній банер : Містить інформацію про поточну версію darktable та дозволяє перемикатися між режимами.</description>
+    </item>
+    
+    <item>
+      <title>стрічка знімків</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/overview/user-interface/filmstrip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/overview/user-interface/filmstrip/</guid>
+      <description>Стрічка знімків, коли її увімкнено, відображається внизу екрана (за винятком режиму світлого стола, де вона замінюється на шкалу часу) та показує зображення з поточної колекції. Ви можете переміщатися по стрічці знімків, прокручуючи колесо миші.
+Стрічка знімків дозволяє взаємодіяти із зображеннями, коли ви не перебуваєте в режимі світлого стола. Наприклад, під час обробки зображення в режимі темної кімнати ви можете перейти до іншого зображення, клікнувши на його мініатюрі в стрічці знімків. Ви також можете оцінювати зображення та класифікувати їх за кольором, як ви це робите в режимі світлого стола, а також копіювати та вставляти стек історії за допомогою клавіатурних прискорювачів.</description>
+    </item>
+    
+    <item>
+      <title>клавіатурні прискорювачі</title>
+      <link>https://darktable-org.github.io/dtdocs/uk/overview/user-interface/keyboard-shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/uk/overview/user-interface/keyboard-shortcuts/</guid>
+      <description>Значною частиною функціональних можливостей darktable можна керувати за допомогою клавіатурних прискорювачів, які можна налаштувати за допомогою налаштування &amp;gt; клавіатурні прискорювачі.
+Натисніть клавішу H (H &amp;ndash; від Help) у будь-якому режимі darktable, щоб відобразити список усіх прискорювачів, які застосовуються до поточного режиму.</description>
+    </item>
+    
+  </channel>
+</rss>

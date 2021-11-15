@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maski i mieszanie on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/</link>
+    <description>Recent content in maski i mieszanie on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/overview/</guid>
+      <description>Każdy moduł przetwarzający pobiera wejście z poprzedniego modułu w kolejce przetwarzania, wykonuje operacje na danych obrazu, a następnie przekazuje wyjście do następnego modułu w kolejce.
+Dane wyjściowe modułu mogą zostać opcjonalnie przetworzone (połączone) z jego danymi wejściowymi przed przekazaniem danych do kolejnego modułu. Ten dodatkowy etap nosi nazwę mieszania – dane wejściowe i wyjściowe są przetwarzane przy użyciu algorytmów, zwanych operatorami mieszania bądź trybami mieszania.
+Każdy tryb mieszania jest w dalszej części kontrolowany przez parametr krycia (wartość z przedziału od 0% do 100%) określającego, w jakim stopniu obraz wejściowy i wyjściowy składają się na efekt końcowy.</description>
+    </item>
+    
+    <item>
+      <title>tryby mieszania</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/blend-modes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/blend-modes/</guid>
+      <description>Tryby mieszania decydują, jak wejście i wyjście modułu zostaną połączone (zmieszane), zanim ostateczne wyjście modułu zostanie przekazane do kolejnego modułu w kolejce przetwarzania.
+Klasyczne tryby mieszania, zaprojektowane dla ekranocentrycznego RGB (i ograniczone pomiędzy 0 i 100%), definiują w swoich algorytmach punkt podparcia jako 50% (szarość) i 100% (biel), w zależności od trybów mieszania. Ponieważ scenocentryczne RGB nie jest przedmiotem tych ograniczeń, punkty te muszą być wyraźnie określone przez użytkownika podczas jego operacji mieszania w scenocentrycznej przestrzeni barwnej RGB.</description>
+    </item>
+    
+  </channel>
+</rss>

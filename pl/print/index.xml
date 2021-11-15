@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wydruk on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/print/</link>
+    <description>Recent content in Wydruk on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/print/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>układ widoku wydruku</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/print/print-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/print/print-view-layout/</guid>
+      <description>Środkowy obszar przedstawia układ zdjęcia na papierze (biel). Pojawiające się niekiedy szare obwódki dokoła zdjęcia symbolizują obszar wydruku (stronę bez brzegów), nie wypełniony obrazem.
+Rolka filmu pod zdjęciem pozwala na wybór wielu obrazów.
+🔗lewy panel  kolekcje Filtruje listę zdjęć, wyświetlanych na stole podświetlanym. image information Display image information  🔗prawy panel  ustawienia wydruku Dostosowuje ustawienia wydruku i inicjalizuje drukowanie.  </description>
+    </item>
+    
+  </channel>
+</rss>

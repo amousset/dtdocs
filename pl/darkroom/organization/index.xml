@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>organizacja pracy z modułami on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/</link>
+    <description>Recent content in organizacja pracy z modułami on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/darkroom/organization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/overview/</guid>
+      <description>Moduły przetwarzające znajdują się w prawym panelu ciemni:
+  Po kliknięciu którejkolwiek z ikon na górze panelu odkryją się, kolejno od lewej do prawej,
+   panel szybkiego dostępu Konfigurowalny panel, umożliwiający szybki dostęp do często używanych kontrolek modułów.   active modules A group containing the modules that are currently active in the pixelpipe. Right-click to show all modules that are present in the history stack within the active group, regardless of whether or not they are actually active.</description>
+    </item>
+    
+    <item>
+      <title>grupy modułów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/module-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/module-groups/</guid>
+      <description>Darktable w domyślnej konfiguracji udostępnia w formie presetów pewną liczbę predefiniowanych grup modułów. Ich krótkie podsumowanie zamieszczono poniżej.
+Wszystkie presety (za wyjątkiem moduły: przestarzałe oraz tylko_wyszukiwarka) zawierają panel szybkiego dostępu. Wszystkie presety, poza grupą moduły: przestarzałe, zawierają pasek wyszukiwania.
+🔗moduły: wszystkie Ten preset zawiera wszystkie moduły, posortowane zgodnie ze standardowym grupowaniem darktable w wersji &amp;lt; 3.4, jak poniżej:
+   moduły: podstawowe Minimalny zestaw modułów, wymagany w podstawowej obróbce obrazu.</description>
+    </item>
+    
+    <item>
+      <title>panel szybkiego dostępu</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/quick-access-panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/quick-access-panel/</guid>
+      <description>Panel szybkiego dostępu zbiera w jednym miejscu dostęp do widżetów wybranych modułów.
+  Możesz dodawać nowe widżety, klikając PPM na ikonie w lewym górnym rogu lub poprzez ekran zarządzania układami modułów.
+Kliknij na ikonie po prawej stronie nazwy modułu, żeby otworzyć jego pełną wersję. Kliknij na ikonie po lewej stronie nazwy modułu, żeby go aktywować/deaktywować.
+Aktualnie można dodać tutaj tylko niektóre widżety (pola wyboru, suwaki, listy rozwijalne) – złożone kontrolki, jak np.</description>
+    </item>
+    
+    <item>
+      <title>zarządzaj układem modułów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/manage-module-layouts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/manage-module-layouts/</guid>
+      <description>Zarządza układem i grupowaniem modułów przetwarzających oraz panelem szybkiego dostępu.
+  This maintenance screen can be accessed from the presets menu beside the module search box or module group icons (below the scopes module in the darkroom view). Ctrl+click on the preset menu to open this screen directly.
+Ustawienia zapisywane są automatycznie po opuszczeniu tego ekranu. Naciśnij reset, aby porzucić zmiany, dokonane w bieżącej edycji.
+🔗kontrolki modułów 🔗kontrolki globalne Na górze panelu dostępne są następujące kontrolki:</description>
+    </item>
+    
+  </channel>
+</rss>

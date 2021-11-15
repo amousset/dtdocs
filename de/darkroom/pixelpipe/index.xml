@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Die Pixelpipe on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/</link>
+    <description>Recent content in Die Pixelpipe on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Die Anatomie eine Bearbeitungs-Moduls</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/the-anatomy-of-a-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/the-anatomy-of-a-module/</guid>
+      <description>Das Grundelement der Bildbeareitung in daktable ist das Bearbeitungs-Modul. Um ein RAW Bild zu bearbeiten, agieren eine Anzahl solcher Module auf das Eingabe-Bild in Folge, dabei übt jedes Modul eine unterschiedliche Operation an den Bild-Daten aus. fürjene, die Adobe Photoshop kennen ist das Konzept eines Bearbeitungs-Moduls analog zu dem einer Anpassungs-Ebene in der beide eine schrittweise Anpassung im Bild machen, zusätzlich zur Anpassung, die vorgängig kam.
+Dienste Module sind in darktable auch vorgesehen, sie sind jedoch nicht direkt mit der Bildbearbeitung verbunden, stattdessen sehen diese eine Grafische Benutzeroberfläche (GUI) vor, um deine Bilder zu verwalten, sie zu verschlagworten, zu exportieren etc.</description>
+    </item>
+    
+    <item>
+      <title>Die Pixelpipe &amp; Modul-Reihenfolge</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/the-pixelpipe-and-module-order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/the-pixelpipe-and-module-order/</guid>
+      <description>Die geordnete Abfolge der Bearbeitungs-Module, die an einer Eingabe-Datei arbeiten, um eine Ausgabe-Bild zu erzeugen wird als &amp;ldquo;Pixelpipe&amp;rdquo; bezeichnet.
+Die Reihenfolge der Pixelpipe wird grafisch dargestellt durch die Reihenfolge, in der die Module auf der Benutzeroberfläche angezeigt werden &amp;ndash; Die Pixelpipe beginnt mit einem RAW-Bild zuunterst auf der Modul-Liste und wendet die Bearbeitungs-Module eines nach dem andern an, und stapelt so Ebene nach Ebene von unten nach oben, bis zuoberst auf der Liste das vollständig bearbeitete Bild ausgegeben wird.</description>
+    </item>
+    
+    <item>
+      <title>Der Verlaufsstapel</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/history-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/history-stack/</guid>
+      <description>Der Verlaufsstapel speichert den gesamten Bearbeitungs-Ablauf für ein Bild, in der Reihenfolge, in der diese Bearbeitungen angewendet wurden. Er wird auch in der Library der darktable-Datenbank und der XMP-Datei gespeichert und bleibt zwischen Bearbeitungs-Sessionen erhalten.
+Jedes Mal, wenn ein Bearbeitungs-Modul angewählt, abgewählt, verschoben oder zugefügt wird, dann wird ein neuer Eintrag oben im Verlaufssstapel hinzugefügt.
+Der Verlaufsstapel kann abgefragt werden innerhalb des Moduls Verlaufsstapel in der Ansicht Dunkelkammer.
+ Beachte: Der Verlaufsstapel ist nicht ein Abbild der Reihenfolge, nach welcher die Module abgearbeitet werden, sondern es ist die Reihenfolge, nach welcher sie zugefügt wurden.</description>
+    </item>
+    
+    <item>
+      <title>Rückgängig machen und erneut machen</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/undo-redo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/pixelpipe/undo-redo/</guid>
+      <description>Während du Bilder bearbeitest, wird darktable alle Änderungen, die du an diesem Bild aufzeichnen. Das bedeutet, es ist möglich alle Änderungen zu widerrufen und wiederherzustellen, um einen früheren Bearbeitungs-Status wiederzuhaben. Beachte, dass die Möglichkeit des Widerrufen/Wiederherstellen eine unbegrenzte Anzahl Male während der Bearbeitung gemacht werden kann, sie wird aber jedes Mal zurückgesetzt, wenn in der Dunkelkammer zu einem neuen Bild geschaltet wird.
+Ctrl+Z um die letzte Aktion rückgängig zu machen und Ctrl+Y, um die letzten gelöschten Modifikationen wieder zurückzuholen (falls es sie gibt).</description>
+    </item>
+    
+  </channel>
+</rss>

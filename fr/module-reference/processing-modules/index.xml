@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>modules de traitement on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/</link>
+    <description>Recent content in modules de traitement on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>adoucir (effet Orton)</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/soften/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/soften/</guid>
+      <description>Créer une image adoucie en utilisant l&#39;effet Orton.
+Michael Orton a obtenu ses résultats sur des diapositives en utilisant deux expositions de la même scène, une bien exposée et une surexposée. Il a ensuite utilisé une technique de chambre noire pour fusionner ces deux images en une image finale où l&amp;rsquo;image surexposée était floue.
+Ce module est une quasi-copie du processus analogique d&amp;rsquo;Orton dans le domaine numérique.
+🔗les contrôles du module  taille La taille du flou de l&amp;rsquo;image surexposée.</description>
+    </item>
+    
+    <item>
+      <title>ajustements de base (déprécié)</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/basic-adjustments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/basic-adjustments/</guid>
+      <description>Please note that this module is deprecated from darktable 3.6 and should no longer be used for new edits. Please use the quick access panel instead.
+ Un module pratique qui combine les contrôles des modules exposition, reconstruction des hautes lumières, balance couleur et vibrance en un seul module.
+Bien que ce module puisse fournir un moyen rapide et pratique d&amp;rsquo;effectuer des ajustements simples d&amp;rsquo;une image, il doit être utilisé avec précaution.</description>
+    </item>
+    
+    <item>
+      <title>balance couleur</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/color-balance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/color-balance/</guid>
+      <description>Un outil polyvalent pour ajuster la balance des couleurs de l&amp;rsquo;image.
+Ce module peut être utilisé pour inverser les dominantes de couleurs parasites ou pour améliorer l&amp;rsquo;atmosphère visuelle d&amp;rsquo;une image à l&amp;rsquo;aide de l&amp;rsquo;étalonnage des couleurs, une technique populaire dans l&amp;rsquo;industrie du cinéma. Pour le flux de travail relatif à la scène, vous devriez plutôt envisager d&amp;rsquo;utiliser le module amélioré balance couleur.
+🔗présentation Le module balance couleur vous permet de décaler les couleurs de manière sélective par plage de luminance (ombres, tons moyens et hautes lumières).</description>
+    </item>
+    
+    <item>
+      <title>cadre décoratif</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/framing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/framing/</guid>
+      <description>Générer un cadre autour de l&amp;rsquo;image.
+Le cadre se compose d&amp;rsquo;une bordure (d&amp;rsquo;une couleur définie par l&amp;rsquo;utilisateur) et d&amp;rsquo;une ligne de cadre à l&amp;rsquo;intérieur de cette bordure (d&amp;rsquo;une deuxième couleur définie par l&amp;rsquo;utilisateur). Différentes options sont disponibles pour contrôler la géométrie et la couleur du cadre.
+🔗les contrôles du module  taille du cadre La taille du cadre en pourcentage de l&amp;rsquo;image complète sous-jacente. aspect Le rapport hauteur/largeur de la sortie finale du module (c&amp;rsquo;est-à-dire de l&amp;rsquo;image sous-jacente plus le cadre) orientation L&amp;rsquo;orientation du cadre (portrait/paysage).</description>
+    </item>
+    
+    <item>
+      <title>réduction du bruit RAW</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/raw-denoise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/module-reference/processing-modules/raw-denoise/</guid>
+      <description>Effectue une réduction du bruit sur les données de l&amp;rsquo;image RAW avant leur dématriçage.
+Ce module a été porté à partir de dcraw.
+🔗les contrôles du module  seuil de bruit Le seuil de détection du bruit. Des valeurs plus élevées entraînent une suppression du bruit plus importante et une plus grande perte de détails dans l&amp;rsquo;image. courbes grossières/fines Le bruit d&amp;rsquo;une image est généralement une combinaison de bruit à grains fins et à grains grossiers.</description>
+    </item>
+    
+  </channel>
+</rss>

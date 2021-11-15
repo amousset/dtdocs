@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="it">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - combinare maschere disegnate &amp; parametriche</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/it\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="it" role="option" lang="it" href="https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/">Italian</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/masks/drawn-and-parametric/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="fr" role="option" lang="fr" href="https://darktable-org.github.io/dtdocs/fr/darkroom/masking-and-blending/masks/drawn-and-parametric/">Français</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/masks/drawn-and-parametric/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="es" role="option" lang="es" href="https://darktable-org.github.io/dtdocs/es/darkroom/masking-and-blending/masks/drawn-and-parametric/">Espanol</a>
+		    
+		      <a class="dropdown-item" hreflang="pl" role="option" lang="pl" href="https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/">Polish</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/darkroom/masking-and-blending/masks/drawn-and-parametric/">Português</a>
+		    
+		      <a class="dropdown-item" hreflang="uk" role="option" lang="uk" href="https://darktable-org.github.io/dtdocs/uk/darkroom/masking-and-blending/masks/drawn-and-parametric/">Ukrainian</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/" class="">
+          Stampa
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/print-view-layout/" class="">
+          Disposizione visualizzazione Stampa
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/" class="">
+          Darkrooms
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/" class="">
+          maschere &amp; fusione
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/" class="">
+          maschere
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn/" class="">
+          maschere disegnate
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="">
+          maschere parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/" class=" active">
+          combinare maschere disegnate &amp; parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/" class="">
+          rifinitura maschere &amp; controlli aggiuntivi
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/raster/" class="">
+          maschere raster
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+
+<a href='/dtdocs/it/'>darktable 3.7 (development) user manual</a> / <a href='/dtdocs/it/darkroom/'>Darkrooms</a> / <a href='/dtdocs/it/darkroom/masking-and-blending/'>maschere & fusione</a> / <a href='/dtdocs/it/darkroom/masking-and-blending/masks/'>maschere</a> / combinare maschere disegnate & parametriche
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="next">&lt; maschere parametriche</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/" class="prev">rifinitura maschere &amp; controlli aggiuntivi &gt;</a>
+	
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        combinare maschere disegnate &amp; parametriche
+    </h1>
+
+    
+
+    <p>Maschere parametriche e disegnate possono essere usate in combinazione per creare un&rsquo;unica maschera che può essere applicata ad un modulo.</p>
+<p>Ci sono due elementi principali che controllano come le maschere vanno combinate individualmente: l&rsquo;impostazione di <em>polarità</em> di ciascuna delle maschere (definita dal pulsante più o meno) e la selezione dell&rsquo;opzione &ldquo;Combina le maschere&rdquo;.</p>
+<p>Il menù a discesa &ldquo;combina le maschere&rdquo; contiene le seguenti opzioni, che stabiliscono come le maschere disegnate e parametriche verranno combinate assieme.</p>
+<dl>
+<dt>esclusiva</dt>
+<dd>Un metodo diretto per combinare le maschere, la modalità esclusiva moltiplica i valori individuali dei pixel di ciascuna maschera.</dd>
+<dd>
+<p>Per ciascun pixel, la maschera finale avrà il valore di 0 se <em>qualsiasi</em> delle singole maschere è 0 in quella posizione, e avrà valore di 1.0 solo se <em>tutte</em> le maschere hanno il valore di 1.0 in quella posizione.</p>
+</dd>
+<dd>
+<p>Qualsiasi maschera singola può <em>escludere</em> un pixel impostando il proprio valore a 0, a prescindere da cosa fanno le altre maschere. Una volta che un pixel viene escluso da una maschera non esiste modo per includerlo di nuovo con un altra maschera.</p>
+</dd>
+<dt>inclusiva</dt>
+<dd>La modalità inclusiva prima inverte ogni singola maschera (sottraendo il suo valore da 1.0), moltiplica assieme le maschere invertite, e alla fine inverte la maschera combinata un&rsquo;altra volta.</dd>
+<dd>
+<p>Per ogni singolo pixel, la maschera finale avrà un valore di 1.0 se <em>qualsiasi</em> delle maschere singole è a 1.0 alla posizione, e avrà valore di 0 solo se <em>tutte</em> le maschere hanno valore di 0 a quella posizione.</p>
+</dd>
+<dd>
+<p>Qualsiasi maschera singola può <em>includere</em> un pixel impostando il suo valore a 1.0, indipendentemente da quello che le altre maschere fanno. Una volta che il pixel è incluso completamente da una maschera (col suo valore a 1.0) non esiste modo di escluderlo di nuovo.</p>
+</dd>
+<dt>modalità esclusiva e inclusiva invertita</dt>
+<dd>Usando soltanto le combinazioni qui sopra sarebbe troppo limitato. Otteniamo la massima flessibilità abilitando un ulteriore passo di inversione per ciascuna delle singole maschere. Questo è gestito dai pulsanti di polarità che trovi vicino ai singoli canali.</dd>
+<dd>
+<p>Alternando il pulsante di polarità della maschera si inverte il valore della stessa (sottraendo il valore originale da 1.0).</p>
+</dd>
+<dd>
+<p>Alla fine tra le opzioni &ldquo;combina le maschere&rdquo; puoi selezionare <em>esclusiva &amp; invertita</em> oppure <em>inclusiva e invertita</em>. Ognuna di queste opzioni è equivalente alle rispettive modalità <em>esclusiva</em> e <em>inclusiva</em>, ma con un passo finale di inversione della maschera risultante.</p>
+</dd>
+</dl>
+<h1 id="casi-duso-tipici"><a href="#casi-duso-tipici">🔗</a>casi d&rsquo;uso tipici</h1>
+<dl>
+<dt>modalità inclusiva</dt>
+<dd>Per questa modalità devi impostare l&rsquo;opzione &ldquo;combina maschere&rdquo; a &ldquo;inclusiva&rdquo; e devi assicurarti che tutti i pulsanti di polarità dei singoli canali e della maschera disegnata siano impostati a negativa (-). Il tuo punto di partenza è una maschera dove tutti i pixel hanno valore 0 (nessun pixel è selezionato). Adesso puoi regolare il selettore scorrevole per portare più e più pixel nella selezione, oppure puoi disegnare sull&rsquo;interfaccia per selezionare aree specifiche della tua immagine.</dd>
+<dt>modalità esclusiva</dt>
+<dd>Nel caso contrario imposta la modalità selezionata di &ldquo;combina le maschere&rdquo; in esclusiva e accertati che tutti i pulsanti di polarità siano impostati su positiva (+). Il tuo punto di partenza è una maschera con tutti i valori a 1.0 (tutti i pixel sono selezionati). Ora puoi regolare i selettori scorrevoli della maschera parametrica per escludere aree della tua immagine, o puoi direttamente disegnare forme sull&rsquo;immagine per escludere tali aree.</dd>
+</dl>
+<p>Per tua convenienza l&rsquo;interfaccia delle maschere parametriche fornisce un interruttore che inverte le polarità di tutti i canali e alterna tra le modalità inclusiva ed esclusiva dell&rsquo;opzione &ldquo;combina le maschere&rdquo;.</p>
+<p>Per gli utenti alle prime armi si raccomanda di rimanere nei primi due casi d&rsquo;uso. In questo modo potrai decidere a priori come costruire la tua maschera.</p>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/darkroom/masking-and-blending/masks/drawn-and-parametric/">
+            English: combining drawn &amp; parametric masks
+        </a></li>
+        
+        <li><a href="/dtdocs/fr/darkroom/masking-and-blending/masks/drawn-and-parametric/">
+            Français: combiner les masques dessinés/paramétriques
+        </a></li>
+        
+        <li><a href="/dtdocs/de/darkroom/masking-and-blending/masks/drawn-and-parametric/">
+            German: Kombinieren von gezeichneten und parametrischen Masken
+        </a></li>
+        
+        <li><a href="/dtdocs/es/darkroom/masking-and-blending/masks/drawn-and-parametric/">
+            Espanol: combinando máscaras dibujadas y paramétricas
+        </a></li>
+        
+        <li><a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/">
+            Polish: łączenie masek wektorowych i parametrycznych
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/darkroom/masking-and-blending/masks/drawn-and-parametric/">
+            Português: combinando máscaras desenhadas e paramétricas
+        </a></li>
+        
+        <li><a href="/dtdocs/uk/darkroom/masking-and-blending/masks/drawn-and-parametric/">
+            Ukrainian: поєднання намальованих та параметричних масок
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="next">&lt; maschere parametriche</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/" class="prev">rifinitura maschere &amp; controlli aggiuntivi &gt;</a>
+	
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

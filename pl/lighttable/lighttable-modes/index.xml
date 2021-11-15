@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tryby stołu podświetlanego on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/</link>
+    <description>Recent content in tryby stołu podświetlanego on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>manager plików</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/filemanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/filemanager/</guid>
+      <description>Domyślnie zdjęcia wyświetlane są w układzie siatki, z konfigurowalną liczbą zdjęć na rządek.
+🔗kontrolki  powiększenie Liczba zdjęć w każdym rzędzie może być zmieniana suwakiem na dolnym panelu lub poprzez trzymanie Ctrl podczas przewijania myszą w widoku centralnym. nawigacja Pomiędzy zdjęciami przemieszczasz się klawiszami kursora (←/→/↑/↓) lub przewijając myszką. Wciśnij klawisz Home, żeby przejść do szczytu kolekcji, End, żeby przewinąć do końca, lub PageUp/PageDown, jeśli chcesz przewinąć w górę/dół o jedną stronę.</description>
+    </item>
+    
+    <item>
+      <title>układ selektywny</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/culling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/culling/</guid>
+      <description>Układ selektywny pozwala wyświetlać zdjęcia obok siebie w celu łatwego ich porównania.
+🔗kontrolki  powiększenie W trybie selektywnym możesz powiększać zdjęcia (do 100%), trzymając Ctrl podczas przewijania rolką myszy. Pomiędzy powiększonymi zdjęciami przemieszczasz się poprzez LPM+przeciągnięcie. Domyślnie powiększenie i przemieszczanie się działają na wszystkie widoczne zdjęcia. Jeśli chcesz wykonać którąś z tych czynności dla jednego zdjęcia, do powyższych kombinacji klawiszy dodaj Shift. nawigacja Użyj rolki myszy lub klawiszy strzałek (←/→) do poruszania się po kolekcji.</description>
+    </item>
+    
+  </channel>
+</rss>

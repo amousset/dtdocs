@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ciemnia on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/darkroom/</link>
+    <description>Recent content in Ciemnia on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/darkroom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/overview/</guid>
+      <description>Widok ciemni jest miejscem, gdzie wywołujesz zdjęcia. Środkowy panel zawiera aktualnie edytowany obraz.
+🔗powiększenie Kliknij ŚPM na środkowym panelu, aby przełączać się pomiędzy &amp;ldquo;dopasowaniem do ekranu&amp;rdquo; oraz powiększeniami 1:1 i 2:1.
+Pomiędzy 1:1 a &amp;ldquo;dopasowaniem do ekranu&amp;rdquo; możesz przełączać się również rolką myszy. Wciśnięty przy przewijaniu Ctrl da możliwość rozszerzenia zakresu powiększenia od 2:1 do 1:10.</description>
+    </item>
+    
+    <item>
+      <title>układ widoku ciemni</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/darkroom-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/darkroom-view-layout/</guid>
+      <description>🔗lewy panel Od góry do dołu:
+ navigation Panel nawigacyjny dla widoku środkowego. snapshots Tworzy i umożliwia podgląd zrzutów obrazu dla porównania z bieżącą edycją. menedżer duplikatów Pozwala na przeglądanie i zarządzanie duplikatami zdjęć. globalny próbnik koloru Wybór i analiza informacji o kolorze, pobranym z fragmentu zdjęcia. etykiety Zarządzaj etykietami. image information Wyświetla informacje o bieżącym zdjęciu. manager masek Wyświetla i umożliwia edycję masek wektorowych. eksportuj Eksportuje zaznaczone zdjęcia do lokalnych plików bądź zdalnych serwisów.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - tryby mieszania</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/pl\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="pl" role="option" lang="pl" href="https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/blend-modes/">Polish</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/blend-modes/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/blend-modes/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="es" role="option" lang="es" href="https://darktable-org.github.io/dtdocs/es/darkroom/masking-and-blending/blend-modes/">Espanol</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/darkroom/masking-and-blending/blend-modes/">Português</a>
+		    
+		      <a class="dropdown-item" hreflang="uk" role="option" lang="uk" href="https://darktable-org.github.io/dtdocs/uk/darkroom/masking-and-blending/blend-modes/">Ukrainian</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/overview/" class="">
+          Przegląd
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/" class="">
+          Stół podświetlany
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-view-layout/" class="">
+          układ widoku stołu podświetlanego
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/undo-redo/" class="">
+          cofnij/ponów
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/" class="">
+          tryby stołu podświetlanego
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/filemanager/" class="">
+          manager plików
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/culling/" class="">
+          układ selektywny
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/" class="">
+          zarządzanie zasobami cyfrowymi
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/collections/" class="">
+          kolekcje i rolki filmu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/thumbnails/" class="">
+          miniaturki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/star-color/" class="">
+          gwiazdki i kolorowe etykiety
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/metadata-tagging/" class="">
+          metadane i znaczniki
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/" class="">
+          Ciemnia
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/darkroom-view-layout/" class="">
+          układ widoku ciemni
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/" class="">
+          kolejka przetwarzania
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/" class="">
+          anatomia modułu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/the-pixelpipe-and-module-order/" class="">
+          potok przetwarzania i kolejność modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/history-stack/" class="">
+          historia
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/undo-redo/" class="">
+          cofnij i ponów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/" class="">
+          moduły przetwarzające
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/module-header/" class="">
+          nagłówek modułu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/multiple-instances/" class="">
+          wiele instancji
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/presets/" class="">
+          presety
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/module-controls/" class="">
+          kontrolki modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/curves/" class="">
+          krzywe
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/wavelets/" class="">
+          falki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/deprecated/" class="">
+          moduły przestarzałe
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/" class="">
+          maski i mieszanie
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/blend-modes/" class=" active">
+          tryby mieszania
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/" class="">
+          maski
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/" class="">
+          maski wektorowe
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/" class="">
+          maski parametryczne
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="">
+          łączenie masek wektorowych i parametrycznych
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/" class="">
+          uszczegóławianie maski i dodatkowe kontrolki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/raster/" class="">
+          maski rastrowe
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/" class="">
+          organizacja pracy z modułami
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/module-groups/" class="">
+          grupy modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/quick-access-panel/" class="">
+          panel szybkiego dostępu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/manage-module-layouts/" class="">
+          zarządzaj układem modułów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/tethering/" class="">
+          Tethering
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/tethering/troubleshooting/" class="">
+          rozwiązywanie problemów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/map/" class="">
+          Mapa
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/slideshow/" class="">
+          Pokaz slajdów
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/print/" class="">
+          Wydruk
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/print/print-view-layout/" class="">
+          układ widoku wydruku
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/preferences-settings/" class="">
+          Ustawienia darktable
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/" class="">
+          Skrypty Lua
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/a-simple-example/" class="">
+          prosty przykład lua
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/calling-from-dbus/" class="">
+          wywołanie lua z dbus
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/darktable-from-lua/" class="">
+          użycie darktable ze skryptu lua
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/api/" class="">
+          API lua
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/" class="">
+          Przewodniki i tutoriale
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/monochrome/" class="">
+          wywoływanie zdjęć monochromatycznych
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/other-resources/" class="">
+          inne zasoby
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/" class="">
+          Tematy specjalne
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/color-management/" class="">
+          zarządzanie kolorem
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/opencl/" class="">
+          opencl
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/darktable-chart/" class="">
+          użycie darktable-chart
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/program-invocation/" class="">
+          uruchomienie programu
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/" class="">
+          moduły przetwarzające
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/graduated-density/" class="">
+          filtr połówkowy
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/colorize/" class="">
+          koloryzacja
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/grain/" class="">
+          ziarno
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+<a href='/dtdocs/pl/'>darktable</a> / <a href='/dtdocs/pl/darkroom/'>Ciemnia</a> / <a href='/dtdocs/pl/darkroom/masking-and-blending/'>maski i mieszanie</a> / tryby mieszania
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/masking-and-blending/overview/" class="next">&lt; przegląd</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/masking-and-blending/masks/" class="prev">maski &gt;</a>
+	
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        tryby mieszania
+    </h1>
+
+    
+
+    <p>Tryby mieszania decydują, jak wejście i wyjście modułu zostaną połączone (zmieszane), zanim ostateczne wyjście modułu zostanie przekazane do kolejnego modułu w kolejce przetwarzania.</p>
+<p>Klasyczne tryby mieszania, zaprojektowane dla ekranocentrycznego RGB (i ograniczone pomiędzy 0 i 100%), definiują w swoich algorytmach punkt podparcia jako 50% (szarość) i 100% (biel), w zależności od trybów mieszania. Ponieważ scenocentryczne RGB nie jest przedmiotem tych ograniczeń, punkty te muszą być wyraźnie określone przez użytkownika podczas jego operacji mieszania w scenocentrycznej przestrzeni barwnej RGB. Dodatkowy parametr <em>punkt podparcia mieszania</em> pojawia się, kiedy używasz jednego z tych trybów w tej przestrzeni barwnej. Efekt zależy od użytego operatora. Przykładowo wartości powyżej progu podparcia mogą zostać rozjaśnione, a wartości poniżej – zaciemnione (i na odwrót).</p>
+<p>Ostateczne wyjście modułu obliczane jest na każdy piksel indywidualnie, w następujący sposób:</p>
+<pre><code>ostateczne_wyjście = (1.0 - krycie) * wejście_modułu + krycie * wyjście_zmieszane
+</code></pre><p>gdzie <code>wyjście_zmieszane</code> oznacza kombinację zdjęć wejściowego i wyjściowego, w zależności od trybu mieszania (p. poniżej), a <code>krycie</code> oznacza przeliczoną dla każdego piksela kombinację parametrów maski i globalnego krycia. Krycie 0% przekazuje obraz identyczny do wejściowego obrazu modułu.</p>
+<p>Przycisk &ldquo;odwrócenia&rdquo; 
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/masking-and-blending/blend-modes/blend-reverse.png"><img src="/dtdocs/en/darkroom/masking-and-blending/blend-modes/blend-reverse.png" alt="blend-reverse"  class="icon"    /></a>
+
+ zamienia role obrazów wejściowego i wyjściowego w obliczeniach poszczególnych pikseli.</p>
+<pre><code>ostateczne_wyjście = (1.0 - krycie) * wyjście_modułu + krycie * wejście_zmieszane
+</code></pre><p>gdzie <code>wejście_zmieszane</code> oznacza kombinację zdjęć wejściowego i wyjściowego, w zależności od trybu mieszania, gdzie odwołania do <em>wyjścia</em> i <em>wejścia</em> są zamienione miejscami. W <code>odwróconych</code>trybach mieszania, krycie 0% przekazuje obraz identyczny do <em>wyjściowego</em> obrazu modułu.</p>
+<h1 id="tryby-zwykłe"><a href="#tryby-zwyk%c5%82e">🔗</a>tryby zwykłe</h1>
+<dl>
+<dt>zwykły</dt>
+<dd>Najczęściej używany tryb mieszania, tryb &ldquo;zwykły&rdquo; po prostu miesza wejście i wyjście w stopniu określonym przez parametr krycia. Ten tryb używany jest najczęściej do osłabienia siły działania modułu poprzez krycie. Korzystamy ze niego również często podczas selektywnego stosowania efektów modułu w maskach. Tryb znany jest również jako operator &ldquo;ponad&rdquo; (ang. over) w mieszaniu alpha Portera-Duffa (zob. [https://en.wikipedia.org/wiki/Alpha_compositing] (ang.))</dd>
+<dt>zwykły ograniczony</dt>
+<dd><em>tryb niedostępny w przestrzeni barwnej &ldquo;RGB scena&rdquo;</em></dd>
+<dd>Ten tryb mieszania jest podobny do zwykłego poza faktem, że dane wejściowe i wyjściowe są przycięte do określonego zakresu wartości min/maks. Wartości spoza zakresu są blokowane i nie przekazywane do kolejnych modułów. Pomaga to niekiedy w uniknięciu artefaktów. W większości przypadków (np. wysoko nasyconych, ekstremalnych światłach) lepiej jest pozwolić takim wartościom przejść dalej w ciągu obróbki, żeby obrobić je prawidłowo później. W takim przypadku lepiej jest skorzystać z trbu &ldquo;zwykłego&rdquo;.</dd>
+</dl>
+<h1 id="tryby-arytmetyczne"><a href="#tryby-arytmetyczne">🔗</a>tryby arytmetyczne</h1>
+<dl>
+<dt>suma</dt>
+<dd>Dodaje wartości pikseli dla obrazu wejściowego i wyjściowego, rozjaśniając wyjście. Piksele mieszane w przestrzeni &ldquo;RGB: scena&rdquo; będą mieć wartość wyjściową przemnożoną proporcjonalnie do wartości punktu podparcia mieszania.</dd>
+<dt>różnica</dt>
+<dd>Odejmuje <em>wyjściową</em> wartość piksela od wartości <em>wejściowej</em>. Mieszane w przestrzeni &ldquo;RGB (scena)&rdquo; wartości pikseli dla obrazu wyjściowego mnożone są przez wartość proporcjonalną do punktu podparcia mieszania. Wartości pikseli mniejsze od zera ustawiane są na zero.</dd>
+<dt>mnożenie</dt>
+<dd>Mnoży wejściową i wyjściową wartość piksela. Piksele mieszane w przestrzeniach barw dla wyświetlaczy mają wartość pomiędzy 0 a 1.0, wynikowe wyjście będzie więc obcięte i zawsze ciemniejsze. Mieszana w przestrzeni &ldquo;RGB (scena)&rdquo; wartość ta mnożona jest następnie przez wartość proporcjonalną do punktu podparcia mieszania. W takim przypadku wartości mogą być większe od 1.0, a przez to rozjaśniać bazowy obraz. Może to rodzić skutki uboczne, takie jak aktualizacja punktu bieli w module krzywej filmowej.</dd>
+<dd>
+<p>Tryb mieszania &ldquo;mnożenie&rdquo; symuluje działanie optycznego filtru połówkowego, którego intensywność definiowana jest wyjściem modułu. Ma wiele zastosowań, od poświaty i wzmocnień lokalnego kontrastu (kiedy używany z rozmyciem bądź filtrem dolnoprzepustowym) do rozjaśniania/wypalania i wzmocnień globalnego kontrastu (kiedy użyty jest z korektą ekspozycji). Punkt podparcia określa wyjściowy próg intensywności pomiędzy zaciemnianiem a rozjaśnianiem (każda wartość RGB poniżej punktu podparcia zaciemni piksel).</p>
+</dd>
+<dt>dzielenie</dt>
+<dd>Dzieli wejściową wartość pikseli przez wartości wyjściowe. Wartości pikseli obrazu wyjściowego, mieszanych w przestrzeni &ldquo;RGB (scena)&rdquo;, są następnie mnożone przez wartość, proporcjonalną do punktu podparcia mieszania.</dd>
+<dd>
+<p>Ponieważ jest to tryb odwrotny do mnożenia, zaciemni on te obszary, które mnożenie rozjaśnia, i odwrotnie. Wszystko inne działa dokładnie tak samo.</p>
+</dd>
+<dt>przesiewanie</dt>
+<dd><em>tryb niedostępny w przestrzeni &ldquo;RGB (scena)&quot;</em></dd>
+<dd>Zamienia wartości pikseli wejścia i wyjścia, mnoży je razem i odwraca wynik. Generuje to mniej więcej wynik odwrotny do trybu &ldquo;mnożenia&rdquo; &ndash; wynikowe zdjęcie jest na ogół jaśniejsze, a czasem &ldquo;wyprane&rdquo; z kolorów.</dd>
+<dt>średnia</dt>
+<dd>Zwraca średnią arytmetyczną wejściowych i wyjściowych wartości pikseli.</dd>
+<dt>rożnica</dt>
+<dd>Zwraca bezwzględną różnicę pomiędzy wejściową a wyjściową wartością piksela.</dd>
+<dt>średnia geometryczna</dt>
+<dd>Zwraca pierwiastek kwadratowy z iloczynu wartości pikseli wejścia i wyjścia.</dd>
+<dt>średnia harmoniczna</dt>
+<dd>Zwraca iloczyn wejściowych i wyjściowych wartości pikseli, pomnożony przez 2 i podzielony przez ich sumę.</dd>
+</dl>
+<h1 id="praca-z-kolorem"><a href="#praca-z-kolorem">🔗</a>praca z kolorem</h1>
+<p>Poniższe tryby nie są dostępne w przestrzeni mieszania &ldquo;RGB (scena)&rdquo;, ponieważ zakładają one &ldquo;50% środszarości&rdquo;, które to założenie ma zastosowanie tylko dla przestrzeni nieliniowych bądź typu &ldquo;ekran&rdquo;.</p>
+<dl>
+<dt>pokrywanie</dt>
+<dd>Ten tryb łączy tryby mieszania &ldquo;mnożenie&rdquo; i &ldquo;przesiewanie&rdquo;: te części wejścia, gdzie wyjście jest jaśniejsze, staną się jaśniejsze. Części zdjęcia, gdzie wyjście jest ciemniejsze, staną się ciemniejsze. Śródszarości pozostaną niezmienione. Tryb często łączony jest z modułami filtra <a href="../../../module-reference/processing-modules/lowpass.md"><em>dolno-</em></a> i <a href="../../../module-reference/processing-modules/highpass.md"><em>górnoprzepustowego</em></a>.</dd>
+<dt>miękkie światło</dt>
+<dd>Tryb podobny do &ldquo;pokrywania&rdquo; poza tym, że wyniki są bardziej miękkie i mniej jasne. Podobnie jak pokrywanie, tryb często łączony jest z modułami filtra <a href="../../../module-reference/processing-modules/lowpass.md"><em>dolno-</em></a> i <a href="../../../module-reference/processing-modules/highpass.md"><em>górnoprzepustowego</em></a>.</dd>
+<dt>twarde światło</dt>
+<dd>Ten tryb nie jest spokrewniony z &ldquo;miękkim światłem&rdquo; niczym poza nazwą. Podobnie jak tryb pokrywania, jest on kombinacją trybów &ldquo;mnożenia&rdquo; i &ldquo;przesiewania&rdquo;, mając inny wpływ powyżej i poniżej śródszarości. Efekty trybu twardego światła bywają dość intensywne, więc na ogół stosuje się go ze zredukowanym kryciem.</dd>
+<dt>światło jaskrawe</dt>
+<dd>Ten tryb to ekstremalna wersja pokrywania / miękkiego światła. Wartości ciemniejsze od śródszarości są przyciemniane; wartości jaśniejsze od śródszarości są rozjaśniane. Prawdopodobnie będziesz potrzebował zmniejszyć siłę efektu poprzez zmniejszenie krycia.</dd>
+<dt>światło liniowe</dt>
+<dd>Ten tryb jest podobny do efektu &ldquo;światła jaskrawego&rdquo;.</dd>
+<dt>światło punktowe</dt>
+<dd>Ten tryb wykonuje jednoczesne mieszanie przyciemnianiem i rozjaśnianiem, usuwając śródtony. Może to objawiać się artefaktami, takimi jak łatki czy kleksy.</dd>
+</dl>
+<h1 id="tryby-pracy-z-kolorem"><a href="#tryby-pracy-z-kolorem">🔗</a>tryby pracy z kolorem</h1>
+<h2 id="kanały-lab"><a href="#kana%c5%82y-lab">🔗</a>kanały Lab</h2>
+<p>Poniższe tryby mieszania dostępne są tylko w przestrzeni Lab:</p>
+<dl>
+<dt>jasność Lab</dt>
+<dd>Miesza jasność kanałów wejściowego i wyjściowego, biorąc kanały kolorów (a i b) niezmienione z obrazu wejściowego. Przeciwnie do &ldquo;jasności&rdquo;, ten tryb mieszania nie przeprowadza żadnej konwersji przestrzeni barwnej ani nie obcina danych. W niektórych przypadkach ten tryb mieszania jest mniej podatny na tworzenie artefaktów, niż &ldquo;jasność&rdquo;.</dd>
+<dt>Lab: kanał a</dt>
+<dd>Miesza kanał Lab &ldquo;a&rdquo; z wejściowego i wyjściowego kanału, pozostawiając pozostałe kolory niezmienione z obrazu wejściowego.</dd>
+<dt>Lab: kanał b</dt>
+<dd>Miesza kanał Lab &ldquo;b&rdquo; z wejściowego i wyjściowego kanału, pozostawiając pozostałe kolory niezmienione z obrazu wejściowego.</dd>
+<dt>kolor Lab</dt>
+<dd>Miesza kanały koloru Lab (a i b) z obrazów wejściowego i wyjściowego, pozostawiając jasność niezmienną z obrazu wejściowego. Przeciwnie do &ldquo;koloru&rdquo;, ten tryb mieszania nie przeprowadza żadnej konwersji przestrzeni barwnej ani nie obcina danych. W niektórych przypadkach ten tryb mieszania jest mniej podatny na tworzenie artefaktów, niż &ldquo;kolor&rdquo;.</dd>
+</dl>
+<h2 id="kanały-rgb"><a href="#kana%c5%82y-rgb">🔗</a>kanały RGB</h2>
+<p>Poniższe dostępne są tylko dla mieszania w przestrzeniach barwnych RGB.</p>
+<dl>
+<dt>RGB: kanał czerwony</dt>
+<dd>Miesza czerwony kanał z obrazów wejściowego i wyjściowego, pozostawiając pozostałe kanały niezmienne z obrazu wejściowego. Mieszany w przestrzeni barwnej &ldquo;RGB (scena)&rdquo;, kanał czerwony z obrazu wyjściowego mnożony jest przez wartość, proporcjonalną do punktu podparcia.</dd>
+<dt>RGB: kanał zielony</dt>
+<dd>Miesza zielony kanał z obrazów wejściowego i wyjściowego, pozostawiając pozostałe kanały niezmienne z obrazu wejściowego. Mieszany w przestrzeni barwnej &ldquo;RGB (scena)&rdquo;, kanał zielony z obrazu wyjściowego mnożony jest przez wartość, proporcjonalną do punktu podparcia.</dd>
+<dt>RGB: kanał niebieski</dt>
+<dd>Miesza niebieski kanał z obrazów wejściowego i wyjściowego, pozostawiając pozostałe kanały niezmienne z obrazu wejściowego. Mieszany w przestrzeni barwnej &ldquo;RGB (scena)&rdquo;, kanał niebieski z obrazu wyjściowego mnożony jest przez wartość, proporcjonalną do punktu podparcia.</dd>
+</dl>
+<h1 id="kanały-hsv"><a href="#kana%c5%82y-hsv">🔗</a>kanały HSV</h1>
+<p>Poniższe dostępne są tylko dla mieszania w przestrzeniach barwnych RGB (wyświetlanie).</p>
+<dl>
+<dt>jasność HSV</dt>
+<dd>Miesza jasność z obrazów wejściowego i wyjściowego, pozostawiając niezmieniony kolor z obrazu wejściowego. W przeciwieństwie do &ldquo;jasności&rdquo; ten tryb nie powoduje przycięcia.</dd>
+<dt>kolor HSV</dt>
+<dd>Miesza kolor z obrazów wejściowego i wyjściowego, pozostawiając niezmienioną jasność z obrazu wejściowego. W przeciwieństwie do &ldquo;koloru&rdquo; ten tryb nie powoduje przycięcia.</dd>
+</dl>
+<h1 id="inne"><a href="#inne">🔗</a>inne</h1>
+<dl>
+<dt>jasność</dt>
+<dd>Miesza jasność z obrazów wejściowego i wyjściowego, pozostawiając niezmienionym kolor i odcień z obrazu wejściowego.</dd>
+<dt>chrominancja</dt>
+<dd>Miesza chrominancję z obrazów wejściowego i wyjściowego, pozostawiając jasność i odcień obrazu wejściowego. Tryb korzysta ze współczynników RGB, podzielonych przez normę euklidesową.</dd>
+<dt>rozjaśnianie</dt>
+<dd><em>niedostępny w przestrzeni barwnej &ldquo;RGB (scena)&quot;</em></dd>
+<dd>Porównuje wartości pikseli wejścia i wyjścia, zwracając jaśniejszą wartość.</dd>
+<dt>przyciemnianie</dt>
+<dd><em>niedostępny w przestrzeni barwnej &ldquo;RGB (scena)&quot;</em></dd>
+<dd>Porównuje wartości pikseli wejścia i wyjścia, zwracając ciemniejszą wartość.</dd>
+<dt>odcień</dt>
+<dd><em>niedostępny w przestrzeni barwnej &ldquo;RGB (scena)&quot;</em></dd>
+<dd>Miesza odcień z obrazów wejściowego i wyjściowego, pozostawiając niezmienione z wejściowego obrazu jasność i chrominancję.</dd>
+<dt>kolor</dt>
+<dd><em>niedostępny w przestrzeni barwnej &ldquo;RGB (scena)&quot;</em></dd>
+<dd>Miesza kolor i odcień z obrazów wejściowych i wyjściowych, pozostawiając bez zmian jasność z obrazu wejściowego.</dd>
+<dd>
+<p><em>Uwaga: Kiedy moduły mocno modyfikują kolor (np. generując kolory komplementarne), ten tryb może spowodować dziwny kolorowy szum.</em></p>
+</dd>
+<dt>wyrównanie koloru</dt>
+<dd><em>niedostępny w przestrzeni barwnej &ldquo;RGB (scena)&quot;</em></dd>
+<dd>Niektóre moduły działają głównie na wartościach tonalnych obrazu, dostosowując przy tym nasycenie koloru (np. moduły <a href="../../module-reference/processing-modules/levels.md"><em>poziomów</em></a> oraz <a href="../../module-reference/processing-modules/tone-curve.md"><em>krzywej tonalnej</em></a>. Ten tryb mieszania pobiera jasność z wyjścia modułu, a następnie miesza kolory z wejścia i wyjścia, umożliwiając kontrolę nad wyrównaniem koloru, dokonanym przez moduł.</dd>
+</dl>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/darkroom/masking-and-blending/blend-modes/">
+            English: blend modes
+        </a></li>
+        
+        <li><a href="/dtdocs/de/darkroom/masking-and-blending/blend-modes/">
+            German: Misch Modi
+        </a></li>
+        
+        <li><a href="/dtdocs/es/darkroom/masking-and-blending/blend-modes/">
+            Espanol: modos de fusión
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/darkroom/masking-and-blending/blend-modes/">
+            Português: modos de mesclagem
+        </a></li>
+        
+        <li><a href="/dtdocs/uk/darkroom/masking-and-blending/blend-modes/">
+            Ukrainian: режими змішування
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/masking-and-blending/overview/" class="next">&lt; przegląd</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/masking-and-blending/masks/" class="prev">maski &gt;</a>
+	
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

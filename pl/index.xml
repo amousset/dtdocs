@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>darktable on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/</link>
+    <description>Recent content in darktable on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>anatomia modułu</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/</guid>
+      <description>W darktable podstawowym elementem przetwarzania jest moduł przetwarzający. Do pełnej edycji surowego pliku potrzebnych jest na ogół kilka takich modułów, działających na zdjęciu wejściowym, z których każdy wykonuje inną operację na danych zdjęcia. Dla osób zaznajomionych z Adobe Photoshop moduły przetwarzające w darktable można porównać do warstwy dostosowania w takim sensie, że oba te elementy tworzą &amp;ldquo;narastające dostosowanie&amp;rdquo; zdjęcia na szczycie stosu modyfikacji, dokonanych wcześniej.
+W darktable dostępne są również moduły użytkowe, nie są one jednak związane bezpośrednio z przetwarzaniem zdjęcia, a w zamian udostępniają interfejs, służący do zarządzania nimi, nadawania znaczników, eksportu, itd.</description>
+    </item>
+    
+    <item>
+      <title>manager plików</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/filemanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/filemanager/</guid>
+      <description>Domyślnie zdjęcia wyświetlane są w układzie siatki, z konfigurowalną liczbą zdjęć na rządek.
+🔗kontrolki  powiększenie Liczba zdjęć w każdym rzędzie może być zmieniana suwakiem na dolnym panelu lub poprzez trzymanie Ctrl podczas przewijania myszą w widoku centralnym. nawigacja Pomiędzy zdjęciami przemieszczasz się klawiszami kursora (←/→/↑/↓) lub przewijając myszką. Wciśnij klawisz Home, żeby przejść do szczytu kolekcji, End, żeby przewinąć do końca, lub PageUp/PageDown, jeśli chcesz przewinąć w górę/dół o jedną stronę.</description>
+    </item>
+    
+    <item>
+      <title>nagłówek modułu</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/module-header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/module-header/</guid>
+      <description>Na górze każdego modułu znajduje się jego nagłówek.
+  Kliknięcie na nazwie modułu rozwija go i wyświetla parametry, kontrolujące jego zachowanie.
+Domyślnie darktable pozwala na rozwinięcie tylko jednego modułu przetwarzającego naraz – jeśli klikniesz nagłówek innego modułu, elementy sterujące poprzedniego zostaną zwinięte. Jeśli potrzebujesz rozwijać naraz więcej, niż jeden moduł, możesz rozwijać kolejne poprzez Shift+LPM na nagłówku, a wtedy wszystkie poprzednio rozwinięte moduły pozostaną otwarte. To zachowanie można odwrócić przez ustawienia &amp;gt; ciemnia.</description>
+    </item>
+    
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/overview/</guid>
+      <description>Maski pozwalają na ograniczenie efektu działania modułu tylko do wybranych obszarów obrazu.
+Maska może być traktowana jako obraz w skali szarości, gdzie każdy piksel posiada wartość pomiędzy 0 a 1.0 (lub pomiędzy 0% a 100%). Jest to wartość krycia, jest ona używana do określenia wpływu modułu na każdy piksel.
+Poniżej wyjaśniamy, jak kontruować maski w darktable.</description>
+    </item>
+    
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/overview/</guid>
+      <description>Każdy moduł przetwarzający pobiera wejście z poprzedniego modułu w kolejce przetwarzania, wykonuje operacje na danych obrazu, a następnie przekazuje wyjście do następnego modułu w kolejce.
+Dane wyjściowe modułu mogą zostać opcjonalnie przetworzone (połączone) z jego danymi wejściowymi przed przekazaniem danych do kolejnego modułu. Ten dodatkowy etap nosi nazwę mieszania – dane wejściowe i wyjściowe są przetwarzane przy użyciu algorytmów, zwanych operatorami mieszania bądź trybami mieszania.
+Każdy tryb mieszania jest w dalszej części kontrolowany przez parametr krycia (wartość z przedziału od 0% do 100%) określającego, w jakim stopniu obraz wejściowy i wyjściowy składają się na efekt końcowy.</description>
+    </item>
+    
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/overview/</guid>
+      <description>Moduły przetwarzające znajdują się w prawym panelu ciemni:
+  Po kliknięciu którejkolwiek z ikon na górze panelu odkryją się, kolejno od lewej do prawej,
+   panel szybkiego dostępu Konfigurowalny panel, umożliwiający szybki dostęp do często używanych kontrolek modułów.   active modules A group containing the modules that are currently active in the pixelpipe. Right-click to show all modules that are present in the history stack within the active group, regardless of whether or not they are actually active.</description>
+    </item>
+    
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/overview/</guid>
+      <description>Widok ciemni jest miejscem, gdzie wywołujesz zdjęcia. Środkowy panel zawiera aktualnie edytowany obraz.
+🔗powiększenie Kliknij ŚPM na środkowym panelu, aby przełączać się pomiędzy &amp;ldquo;dopasowaniem do ekranu&amp;rdquo; oraz powiększeniami 1:1 i 2:1.
+Pomiędzy 1:1 a &amp;ldquo;dopasowaniem do ekranu&amp;rdquo; możesz przełączać się również rolką myszy. Wciśnięty przy przewijaniu Ctrl da możliwość rozszerzenia zakresu powiększenia od 2:1 do 1:10.</description>
+    </item>
+    
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/overview/</guid>
+      <description>Widok stołu podświetlanego pozwala przeglądać twoją kolekcję zdjęć i zarządzać nią.
+Widok środkowy zawiera miniaturki twoich zdjęć – to, jak są wyświetlane, zależy od aktualnego trybu pracy .
+Kiedy kursor znajduje się nad miniaturką zdjęcia lub zaznaczono kilka zdjęć, przy pomocy skrótów klawiszowych możesz wykonać kilka rzeczy:
+0-5 ustawia ocenę zdjęcia jeśli zdjęcie posiada jedną gwiazdkę i wciśniesz klawisz 1, zdjęcie utraci ocenę R ocenia zdjęcie jako &amp;quot;odrzucone&amp;quot; F1-F5 ustawia kolorową etykietę Ctrl-C kopiuje stos historii Ctrl-V wkleja skopiowany stos historii D otwiera widok ciemni do wywołania zdjęcia W wyświetla pełnoekranowy podgląd zdjęcia, dopóki wciśnięty jest klawisz Ctrl-W wyświetla pełnoekranowy podgląd zdjęcia z zaznaczonymi wyostrzonymi obszarami </description>
+    </item>
+    
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/overview/</guid>
+      <description>Skrypty lua mogą być użyte do określenia w darktable akcji, wyzwalanych po wystąpieniu określonego zdarzenia. Przykładem może być wywołanie zewnętrznej aplikacji podczas eksportu plików w celu zastosowania dodatkowych procedur przetwarzania spoza darktable.
+Lua to niezależny projekt, założony w 1993 r., oferujący potężny, szybki, lekki i osadzalny język skryptowy. Lua jest szeroko używana przez wiele aplikacji otwartoźródłowych, w oprogramowaniu komercyjnym oraz przy tworzeniu gier.
+darktable uses Lua version 5.4. Describing the principles and syntax of Lua is beyond the scope of this usermanual.</description>
+    </item>
+    
+    <item>
+      <title>wywoływanie zdjęć monochromatycznych</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/guides-tutorials/monochrome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/guides-tutorials/monochrome/</guid>
+      <description>Fotografia ma długą historię obróbki zdjęć monochromatycznych i wiele osób wciąż uprawia tę jej dziedzinę. Istnieją modele aparatów ze specjalnym, dedykowanym sensorem czarno-białym, jednak większość wciąż korzysta ze zwykłych modeli aparatów, uzyskując kolorowe zdjęcia i przekształcając je w obrazy czarno-białe podczas późniejszej obróbki.
+Istnieją dwa główne podejścia do takiej konwersji:
+  Podejście fizyczne, w którym próbujemy zasymulować sposób, w jaki klisza fotograficzna pokryta warstwą srebra reaguje ze światłem sceny.</description>
+    </item>
+    
+    <item>
+      <title>grupy modułów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/module-groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/module-groups/</guid>
+      <description>Darktable w domyślnej konfiguracji udostępnia w formie presetów pewną liczbę predefiniowanych grup modułów. Ich krótkie podsumowanie zamieszczono poniżej.
+Wszystkie presety (za wyjątkiem moduły: przestarzałe oraz tylko_wyszukiwarka) zawierają panel szybkiego dostępu. Wszystkie presety, poza grupą moduły: przestarzałe, zawierają pasek wyszukiwania.
+🔗moduły: wszystkie Ten preset zawiera wszystkie moduły, posortowane zgodnie ze standardowym grupowaniem darktable w wersji &amp;lt; 3.4, jak poniżej:
+   moduły: podstawowe Minimalny zestaw modułów, wymagany w podstawowej obróbce obrazu.</description>
+    </item>
+    
+    <item>
+      <title>kolekcje i rolki filmu</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/collections/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/collections/</guid>
+      <description>Kolekcja to zestaw zdjęć, spełniających zadane kryteria.
+Podstawowym rodzajem kolekcji jest rolka filmu, zawierająca wszystkie zdjęcia, zaimportowane z określonego folderu dyskowego. Za każdym razem, kiedy importujesz zdjęcia z systemu plików, są one organizowane w rolkę filmy, której nazwa pochodzi od nazwy folderu nadrzędnego.
+W module kolekcji Możesz łatwo konstruować inne rodzaje kolekcji, oparte o różne atrybuty zdjęć (dane Exif, nazwa pliku, etykiety, itd.). Można stosować tam złożone kryteria, składane logicznie, w celu zawężania bądź poszerzania kolekcji.</description>
+    </item>
+    
+    <item>
+      <title>maski wektorowe</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/</guid>
+      <description>Przy użyciu maski wektorowej możesz tworzyć maskę, rysując kształty bezpośrednio na obszarze roboczym. Kształty mogą być używane samodzielnie bądź w grupach. Po narysowaniu kształtu na zdjęciu może on być modyfikowany, usuwany bądź użyty ponownie w innych modułach.
+Shapes are stored internally as vectors and are rendered with the required resolution during pixelpipe processing. Shapes are expressed in the coordinate system of the original image and are transformed along with the rest of the image by any active distorting modules in the pipe (lens correction, rotate and perspective for example).</description>
+    </item>
+    
+    <item>
+      <title>potok przetwarzania i kolejność modułów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/the-pixelpipe-and-module-order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/the-pixelpipe-and-module-order/</guid>
+      <description>Uporządkowana kolejność modułów przetwarzających, operujących na obrazie wejściowym dla wygenerowania obrazu wyjściowego nazwana jest &amp;ldquo;kolejką przetwarzania&amp;rdquo;.
+Kolejność w kolejce przetwarzania reprezentowana jest graficznie kolejnością prezentacji modułów w interfejsie użytkownika – kolejka zaczyna się plikiem RAW na dole listy modułów, stosuje kolejno moduły przetwarzające, układające się w kolejce przetwarzania od dołu do góry aż do osiągnięcia szczytu listy, gdzie tworzony jest w pełni przetworzone zdjęcie.
+ Uwaga: Kolejność działania modułów jest identyczna do tej, którą widzisz w panelu historii.</description>
+    </item>
+    
+    <item>
+      <title>tryby mieszania</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/blend-modes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/blend-modes/</guid>
+      <description>Tryby mieszania decydują, jak wejście i wyjście modułu zostaną połączone (zmieszane), zanim ostateczne wyjście modułu zostanie przekazane do kolejnego modułu w kolejce przetwarzania.
+Klasyczne tryby mieszania, zaprojektowane dla ekranocentrycznego RGB (i ograniczone pomiędzy 0 i 100%), definiują w swoich algorytmach punkt podparcia jako 50% (szarość) i 100% (biel), w zależności od trybów mieszania. Ponieważ scenocentryczne RGB nie jest przedmiotem tych ograniczeń, punkty te muszą być wyraźnie określone przez użytkownika podczas jego operacji mieszania w scenocentrycznej przestrzeni barwnej RGB.</description>
+    </item>
+    
+    <item>
+      <title>układ widoku ciemni</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/darkroom-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/darkroom-view-layout/</guid>
+      <description>🔗lewy panel Od góry do dołu:
+ navigation Panel nawigacyjny dla widoku środkowego. snapshots Tworzy i umożliwia podgląd zrzutów obrazu dla porównania z bieżącą edycją. menedżer duplikatów Pozwala na przeglądanie i zarządzanie duplikatami zdjęć. globalny próbnik koloru Wybór i analiza informacji o kolorze, pobranym z fragmentu zdjęcia. etykiety Zarządzaj etykietami. image information Wyświetla informacje o bieżącym zdjęciu. manager masek Wyświetla i umożliwia edycję masek wektorowych. eksportuj Eksportuje zaznaczone zdjęcia do lokalnych plików bądź zdalnych serwisów.</description>
+    </item>
+    
+    <item>
+      <title>układ widoku stołu podświetlanego</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-view-layout/</guid>
+      <description>🔗lewy panel Od góry do dołu:
+ import Importuje zdjęcia z systemu plików lub podłączonego aparatu. kolekcje Filtruje zdjęcia, wyświetlane w środkowym panelu stołu podświetlanego; używane również do kontroli zdjęć, wyświetlanych w modułach rolki filmu oraz osi czasu. ostatnio używane kolekcje Udostępnia listę ostatnio użytych kolekcji zdjęć. informacje o obrazie Wyświetla informacje o obrazie. instalator skryptów lua (opcjonalnie) Instaluje skrypty lua.  🔗prawy panel Od góry do dołu:
+ wybór Wybiera zdjęcia na stole podświetlanym przy użyciu prostych kryteriów.</description>
+    </item>
+    
+    <item>
+      <title>układ widoku wydruku</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/print/print-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/print/print-view-layout/</guid>
+      <description>Środkowy obszar przedstawia układ zdjęcia na papierze (biel). Pojawiające się niekiedy szare obwódki dokoła zdjęcia symbolizują obszar wydruku (stronę bez brzegów), nie wypełniony obrazem.
+Rolka filmu pod zdjęciem pozwala na wybór wielu obrazów.
+🔗lewy panel  kolekcje Filtruje listę zdjęć, wyświetlanych na stole podświetlanym. image information Display image information  🔗prawy panel  ustawienia wydruku Dostosowuje ustawienia wydruku i inicjalizuje drukowanie.  </description>
+    </item>
+    
+    <item>
+      <title>wiele instancji</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/multiple-instances/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/multiple-instances/</guid>
+      <description>Sporo modułów może zostać wykorzystanych w kolejce więcej, niż tylko raz. Każda instancja modułu zachowuje się niezależnie, biorąc wejście z modułu leżącego niżej w kolejce i dostarczając wyjście do modułu powyżej.
+Tak jak pierwsza instancja, również wszystkie inne mogą być przesuwane w kolejce albo przez przeciąganie z trzymanymi Ctrl+Shift, albo przez przeciąganie i upuszczenie, albo przez wybór opcji &amp;ldquo;przenieś w górę&amp;rdquo; lub &amp;ldquo;przenieś w dół&amp;rdquo; z rozwijalnego menu instancji.
+Możesz zmieniać nazwy instancji, klikając Ctrl-LPM na nazwie modułu.</description>
+    </item>
+    
+    <item>
+      <title>cofnij/ponów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/undo-redo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/undo-redo/</guid>
+      <description>Większość zmian, wykonanych na stole podświetlanym, jest nagrywana i może zostać cofnięta do wcześniejszego stanu. Dotyczy to modyfikacji kolorowych etykiet, ocen, geolokalizacji, etykiet, metadanych, orientacji, kopiowania/wklejania historii, duplikowania zdjęć i stosowania stylu. Zauważ, że akcje cofnij/ponów nie mają licznika kroków w widoku stołu podświetlanego, ale są resetowane za każdym razem, kiedy przełączysz się na inny widok.
+Naciśnij Ctrl-Z, żeby anulować ostatnią modyfikację, lub Ctrl-Y, żeby powtórzyć ostatnią anulowaną modyfikację (jeśli taka istnieje).</description>
+    </item>
+    
+    <item>
+      <title>historia</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/history-stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/history-stack/</guid>
+      <description>Panel historii pokazuje całą historię edycji danego zdjęcia według kolejności przeprowadzenia poszczególnych operacji. Jest ona zapisywana w bazie biblioteki darktable i w pliku pobocznym XMP, jest także przechowywana pomiędzy poszczególnymi sesjami edycyjnymi.
+Za każdym razem, kiedy moduł jest włączany, deaktywowany, przesuwany bądź zmieniany, w historii pojawia się nowy zapis.
+Historia może być odpytywana i modyfikowana z poziomu modułu historii w ciemni.
+ Uwaga: Kolejność operacji w historii nie odzwierciedla kolejności, w której moduły zostały uruchomione, lecz kolejność stosowania.</description>
+    </item>
+    
+    <item>
+      <title>maski parametryczne</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/</guid>
+      <description>Opcja maski parametrycznej oferuje dokładną, selektywną kontrolę nad maskowaniem poszczególnych pikseli. Jest to możliwe dzięki automatycznemu stworzeniu pośredniej maski mieszania na podstawie parametrów podanych przez użytkownika. Są to charakterystyki kolorów – w odróżnieniu od współrzędnych geometrycznych, użytych w maskach wektorowych.
+Dla każdego kanału danych modułu (np. Lab czy RGB) i kilku wirtualnych kanałów danych (np. odcienia czy nasycenia) można stworzyć funkcję krycia. W zależności od wartości zadanego kanału danych dla określonego piksela funkcja ta przelicza na każdy piksel współczynnik mieszania pomiędzy 0 a 1 (100%).</description>
+    </item>
+    
+    <item>
+      <title>miniaturki</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/thumbnails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/thumbnails/</guid>
+      <description>Each image in the current collection is represented by a thumbnail in the lighttable view and filmstrip module. A cache of the most recently used thumbnails is stored in a file on disk and loaded into memory at startup. The size of this cache can be adjusted in preferences &amp;gt; processing &amp;gt; cpu/gpu/memory.
+🔗tworzenie miniatur A thumbnail is created when an image is imported into darktable for the first time, after an image has been modified in the darkroom, or when revisiting an image whose thumbnail is no longer available.</description>
+    </item>
+    
+    <item>
+      <title>panel szybkiego dostępu</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/quick-access-panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/quick-access-panel/</guid>
+      <description>Panel szybkiego dostępu zbiera w jednym miejscu dostęp do widżetów wybranych modułów.
+  Możesz dodawać nowe widżety, klikając PPM na ikonie w lewym górnym rogu lub poprzez ekran zarządzania układami modułów.
+Kliknij na ikonie po prawej stronie nazwy modułu, żeby otworzyć jego pełną wersję. Kliknij na ikonie po lewej stronie nazwy modułu, żeby go aktywować/deaktywować.
+Aktualnie można dodać tutaj tylko niektóre widżety (pola wyboru, suwaki, listy rozwijalne) – złożone kontrolki, jak np.</description>
+    </item>
+    
+    <item>
+      <title>presety</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/presets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/presets/</guid>
+      <description>Presety pozwalają na przechowanie często używanych ustawień do użycia w przyszłości. Niektóre moduły wyposażone są w presety predefiniowane (wewnętrzne), możesz także tworzyć własne presety. Obydwie kategorie możesz podejrzeć, korzystając z menu presetów w nagłówku modułu.
+Większość funkcji opisanych tutaj dotyczy tylko modułów przetwarzających, choć presety mogą być również użyte z modułami użytkowymi. W takim przypadku funkcje automatycznego stosowania i automatycznego pokazywania presetów, działające w oparciu o dane Exif, nie są dostępne.</description>
+    </item>
+    
+    <item>
+      <title>prosty przykład lua</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/a-simple-example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/a-simple-example/</guid>
+      <description>Zacznijmy z prostym przykładem, wypisującym cokolwiek na konsolę. Utwórz plik luarcw katalogu konfiguracyjnym darktable (na ogół jest to $HOME/.config/darktable/) i dodaj w nim następującą linię:
+print(&amp;quot;Hello World !&amp;quot;) Uruchom darktable, a na konsoli pojawi się zdanie &amp;ldquo;Witaj, świecie!&amp;rdquo; Na razie szału nie ma, ale spokojnie, zaraz się rozkręci&amp;hellip;
+Do tego miejsca w skrypcie nie ma nic charakterystycznego dla darktable. Chcąc wypisać łańcuch, wykorzystaliśmy po prostu standardową funkcję print. Działa, ale stać nas na więcej.</description>
+    </item>
+    
+    <item>
+      <title>układ selektywny</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/culling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-modes/culling/</guid>
+      <description>Układ selektywny pozwala wyświetlać zdjęcia obok siebie w celu łatwego ich porównania.
+🔗kontrolki  powiększenie W trybie selektywnym możesz powiększać zdjęcia (do 100%), trzymając Ctrl podczas przewijania rolką myszy. Pomiędzy powiększonymi zdjęciami przemieszczasz się poprzez LPM+przeciągnięcie. Domyślnie powiększenie i przemieszczanie się działają na wszystkie widoczne zdjęcia. Jeśli chcesz wykonać którąś z tych czynności dla jednego zdjęcia, do powyższych kombinacji klawiszy dodaj Shift. nawigacja Użyj rolki myszy lub klawiszy strzałek (←/→) do poruszania się po kolekcji.</description>
+    </item>
+    
+    <item>
+      <title>cofnij i ponów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/undo-redo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/pixelpipe/undo-redo/</guid>
+      <description>Podczas edycji zdjęcia darktable rejestruje wszystkie dokonywane modyfikacje. Oznacza to, że możliwe jest cofanie i ponawianie zmian w celu powrotu do poprzednio zarejestrowanego stanu. Nie ma limitu ilości rejestrowanych zmian, ale rejestr zmian resetowany jest za każdym razem, kiedy rozpoczynasz pracę nad nowym zdjęciem w ciemni.
+Naciśnij Ctrl-Z, żeby anulować ostatnią modyfikację, lub Ctrl-Y, żeby powtórzyć ostatnią anulowaną modyfikację (jeśli taka istnieje).</description>
+    </item>
+    
+    <item>
+      <title>gwiazdki i kolorowe etykiety</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/star-color/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/star-color/</guid>
+      <description>Oceny gwiazdkowe i kolorowe etykiety pomagają sortować i oceniać obrazy według twoich własnych kryteriów. Gwiazdki i kolorowe etykiety mogą być wyświetlane na miniaturach w widoku stołu podświetlanego i module rolki filmowej.
+🔗oceny gwiazdkowe Zdjęcie możesz ocenić w skali od zera do pięciu gwiazdek. Ilekroć importujesz zdjęcia, każde z nich otrzymuje ocenę domyślną, którą możesz określić w module importu. Zdjęcie możesz ocenić również jako &amp;ldquo;odrzucone&amp;rdquo;.
+Istnieje kilka sposobów zmiany oceny. Trzymając kursor nad miniaturą, możesz wcisnąć klawisze od 0 do 5, żeby przyznać ilość gwiazdek, lub wcisnąć klawisz R dla &amp;ldquo;odrzucenia&amp;rdquo; zdjęcia.</description>
+    </item>
+    
+    <item>
+      <title>kontrolki modułów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/module-controls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/module-controls/</guid>
+      <description>Ten rozdział opisuje sposoby interakcji z kontrolkami modułów.
+🔗suwaki Suwaki oferują pięć różnych metod interakcji, w zależności od poziomu dokładności, którego potrzebujesz.
+ kliknięcie LPM Kliknij gdziekolwiek w obszarze suwaka dla ustawienia jego wartości. Możesz również kliknąć i przesunąć suwak w celu zmiany jego wartości. Nie musisz klikać dokładnie w trójkąt czy linię &amp;ndash; możesz kliknąć gdziekolwiek w obszarze suwaka, nawet na jego etykietę. kółko myszy Najedź kursorem na obszar suwaka i przy użyciu kółka myszy ustaw wartość kontrolki.</description>
+    </item>
+    
+    <item>
+      <title>rozwiązywanie problemów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/tethering/troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/tethering/troubleshooting/</guid>
+      <description>This troubleshooting guide can be used to verify whether or not your camera can be used with tethering. This is done using the same (gphoto2) tool that darktable uses to interface with your camera.
+Before you start, you first need to find your camera port name. Usually the port &amp;ldquo;usb:&amp;rdquo; is sufficient and is therefore used in the following guide.
+🔗czy aparat jest wykrywany? Poniższa komenda sprawdzi, czy aparat jest podłączony do komputera i wykrywany przez gphoto2.</description>
+    </item>
+    
+    <item>
+      <title>zarządzaj układem modułów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/manage-module-layouts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/organization/manage-module-layouts/</guid>
+      <description>Zarządza układem i grupowaniem modułów przetwarzających oraz panelem szybkiego dostępu.
+  This maintenance screen can be accessed from the presets menu beside the module search box or module group icons (below the scopes module in the darkroom view). Ctrl+click on the preset menu to open this screen directly.
+Ustawienia zapisywane są automatycznie po opuszczeniu tego ekranu. Naciśnij reset, aby porzucić zmiany, dokonane w bieżącej edycji.
+🔗kontrolki modułów 🔗kontrolki globalne Na górze panelu dostępne są następujące kontrolki:</description>
+    </item>
+    
+    <item>
+      <title>łączenie masek wektorowych i parametrycznych</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/</guid>
+      <description>Maski wektorowe i parametryczne mogą być łączone w celu stworzenia pojedynczej maski, którą można zastosować do modułu.
+Sposób połączenia poszczególnych masek kontrolujemy poprzez dwa elementy: ustawienie polaryzacji każdej z masek (określane przyciskiem plusa lub minusa) oraz ustawienie wartości pola wyboru &amp;ldquo;łącz maski&amp;rdquo;.
+Rozwijalna lista &amp;ldquo;łącz maski&amp;rdquo; udostępnia następujące wartości, określające sposób połączenia masek:
+ z wyłączeniem Najprostszy sposób łączenia masek, tryb wyłączenia mnoży wartości każdego piksela w każdej ze składowych masek.</description>
+    </item>
+    
+    <item>
+      <title>krzywe</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/curves/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/curves/</guid>
+      <description>Moduły krzywej bazowej, krzywej tonalnej oraz krzywej rgb korzystają z krzywych w celu kontroli tonów na zdjęciu. Moduły te mają wspólne cechy.
+  🔗węzły W domyślnym kształcie krzywe są liniami prostymi, ograniczonymi dwoma węzłami w lewym dolnym i prawym górnym rogu ekranu. W celu modyfikacji krzywej może przesuwać węzły oraz tworzyć nowe, klikając na krzywej. Ctrl+LPM utworzy nowy węzeł o współrzędnej x, odpowiadającej pozycji kursora, i odpowiedniej pozycji y na krzywej – umożliwia to dodanie węzła bez przypadkowej modyfikacji krzywej.</description>
+    </item>
+    
+    <item>
+      <title>uszczegóławianie maski i dodatkowe kontrolki</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/</guid>
+      <description>Kiedy maska parametryczna bądź wektorowa jest aktywna, dostępne jest kilka suwaków, pomagających w jej uszczegółowieniu.
+ próg szczegółowości Kontrolka pozwala na zmianę krycia maski w oparciu o ilość szczegółów obrazu. Skorzystaj z tego suwaka w celu zaznaczenia obszarów z dużą ilością detali (wartość dodatnia) bądź obszarów jednolitych i pozbawionych szczegółów (wartość ujemna). Wartość domyślna (zero) pomija zawężanie do szczegółów. Kontrolka najczęściej jest wykorzystywana do zastosowania wyostrzenia bądź rozmycia, ignorującego obszary poza ostrością (bokeh) lub do wyostrzenia tylko części rozmytych, zapobiegając nadmiernemu wyostrzeniu obszarów już ostrych.</description>
+    </item>
+    
+    <item>
+      <title>falki</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/wavelets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/wavelets/</guid>
+      <description>Falki używane są do separowania (lub dekompozycji) zdjęcia do kilku różnych warstw o różnych poziomach szczegółowości. Po dekompozycji obrazu tą metodą moduł może ograniczyć przetwarzanie do jednej lub więcej warstw szczegółów, a następnie do ponownego połączenia tych warstw dla uzyskania oczekiwanego efektu. Pozwala to na osiągnięcie precyzji w doborze cech na zdjęciu, na które planujemy wpłynąć poprzez ten moduł.
+Kilka operacji, które darktable może wykonać w ten sposób, to:
+  redukcja szumu (w modułach odszumiania (profilowanego), odszumiania (raw) i korektora kontrastu modules)</description>
+    </item>
+    
+    <item>
+      <title>moduły przestarzałe</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/deprecated/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/processing-modules/deprecated/</guid>
+      <description>Programiści darktable regularnie przeglądają stare moduły i unowocześniają ich implementacje tam, gdzie można poprawić błędy albo gdzie zdobycze nauki pokazują miejsca do ulepszeń. Większość czasu staramy się ulepszyć istniejące moduły poprzez nowe funkcje, ale bywa to niekiedy problematyczne, często z powodu konieczności utrzymywania wielu wersji modułu. W takich przypadkach tworzymy nowy moduł zastępczy, a stary otrzymuje status przestarzałego.
+Deaktualizacja modułu przebiega według jasnej ścieżki: w wydaniu, które deaktualizuje moduł, nie może on być już wyszukany ani dodany do grupy własnych.</description>
+    </item>
+    
+    <item>
+      <title>maski rastrowe</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/raster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/raster/</guid>
+      <description>Jak opisano wcześniej, końcowym efektem maski modułu (połączonego działania masek parametrycznych i wektorowych) jest rastrowy obraz w skali szarości, reprezentujący zakres, w jakim efekt działania modułu ma zostać zastosowany do poszczególnych pikseli. Obraz ten jest przechowywany wewnętrznie na potrzeby aktywnych modułów i może być później wykorzystany przez inne moduły w potoku przetwarzania.
+Jak przy każdej masce, jeśli wartość krycia dla piksela maski rastrowej wynosi zero, wejście modułu po przejściu przez niego pozostaje niezmienione.</description>
+    </item>
+    
+    <item>
+      <title>metadane i znaczniki</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/metadata-tagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/digital-asset-management/metadata-tagging/</guid>
+      <description>darktable pozwala na dołączanie dodatkowych informacji o zdjęciach dla umożliwienia ich łatwiejszego wyszukiwania i grupowania. Informacja przechowywana jest w bazie darktable oraz plikach pobocznych XMP, a także może zostać dołączona do eksportowanych zdjęć.
+🔗metadane Metadane (np. tytuł czy opis) to swobodny tekst, z reguły różny dla każdego zdjęcia. Możesz dodawać je do zdjęć w module edytora metadanych.
+🔗nadawanie etykiet Etykiety są na ogół dzielone pomiędzy wieloma zdjęciami i używane to ich kategoryzacji i grupowania.</description>
+    </item>
+    
+    <item>
+      <title>wywołanie lua z dbus</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/calling-from-dbus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/calling-from-dbus/</guid>
+      <description>Możliwe jest wysłanie komendy lua do darktable poprzez interfejs DBus. Metoda org.darktable.service.Remote.Luapobiera parametr w postaci pojedynczego łańcucha znaków, interpretowany jako komenda lua. Komenda zostanie wykonana w aktualnym kontekście lua i powinna zwrócić łańcuch znakowy lub wartość nil. Wynik zostanie zwrócony jako rezultat metody DBus.
+Jeśli wywołanie Lua zakończy się błędem, metoda DBus zwróci błąd org.darktable.Error.LuaError z komunikatem błędu lua jako wiadomością, dołączoną do błędu DBus.</description>
+    </item>
+    
+    <item>
+      <title>użycie darktable ze skryptu lua</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/darktable-from-lua/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/darktable-from-lua/</guid>
+      <description>Uwaga: Ta opcja jest mocno eksperymentalna. Wiemy o kilku elementach, które wciąż nie działają dobrze w trybie biblioteki. Zalecamy ostrożne testy.
+Interfejs lua pozwala na korzystanie z darktable z dowolnego skryptu lua. Spowoduje to załadowanie darktable jako biblioteki i udostępnienie większości API lua (darktable jest skonfigurowane bez plików nagłówkowych, więc funkcje interfejsu użytkownika nie są dostępne).
+Poniższy program zaprezentuje przykładowo wypisanie listy wszystkich zdjęć z Twojej biblioteki:
+#!/usr/bin/env lua package = require &amp;quot;package&amp;quot; package.</description>
+    </item>
+    
+    <item>
+      <title>API lua</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/api/</guid>
+      <description>API Lua w darktable jest udokumentowane w oddzielnej instrukcji, wraz ze szczegółowym opisem wszystkich struktur danych oraz funkcji. Instrukcję do API możesz pobrać stąd.</description>
+    </item>
+    
+    <item>
+      <title>inne zasoby</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/guides-tutorials/other-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/guides-tutorials/other-resources/</guid>
+      <description>Dla uzyskania wsparcia i pomocy w zakresie używania darktable możesz również zadawać pytania na głównych forach dyskusyjnych na discuss.pixls.us.
+Oficjalne miejsca, w których możesz uzyskać informacje o darktable, to:
+  darktable.org
+  GitHub wiki
+  Poniższe artykuły poruszają szerzej tematykę scenocentrycznej organizacji pracy w darktable.
+  darktable 3.0 for dummies in 3 modules
+  darktable 3.0 for dummies &amp;ndash; hardcore edition
+  darktable 3.0: RGB or Lab?</description>
+    </item>
+    
+    <item>
+      <title>filtr połówkowy</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/module-reference/processing-modules/graduated-density/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/module-reference/processing-modules/graduated-density/</guid>
+      <description>Symuluje działanie filtru połówkowego w celu umożliwienia narastającej korekcji naświetlenia i koloru.
+Na ekranie wyświetla się linia, umożliwiająca przy pomocy myszki zmianę pozycji i pochylenia gradientu.
+Moduł w określonych okolicznościach generuje często artefakty bandingu. Rozważ aktywację modułu ditheringu dla uniknięcia tego efektu.
+🔗kontrolki modułów  przyciemnienie Ustawia gęstość filtra (EV). Niska wartość powoduje lekkie niedoświetlenie, a wysoka – tworzy mocny filtr. twardość Twardość gradientu. Niska wartość tworzy gładkie przejście, wysoka wartość czyni je bardziej nagłym.</description>
+    </item>
+    
+    <item>
+      <title>koloryzacja</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/module-reference/processing-modules/colorize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/module-reference/processing-modules/colorize/</guid>
+      <description>Dodaje mocną warstwę koloru do zdjęcia.
+🔗kontrolki modułów  odcień Odcień warstwy koloru. nasycenie Nasycenie cieni. jasność Jasność warstwy koloru. miks źródła Określa, jak jasność obrazu wejściowego mieszana jest z warstwą koloru. Wartość zerowa to jednolity kolor kadru.  </description>
+    </item>
+    
+    <item>
+      <title>ziarno</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/module-reference/processing-modules/grain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/module-reference/processing-modules/grain/</guid>
+      <description>Symuluje ziarno kliszy filmowej. Ziarno przetwarzane jest w kanale L przestrzeni Lab.
+🔗kontrolki modułów  szorstkość Rozmiar ziarna, zmienny dla zasymulowania wartości ISO. siła Siła efektu.  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skrypty Lua on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/lua/</link>
+    <description>Recent content in Skrypty Lua on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/lua/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/overview/</guid>
+      <description>Skrypty lua mogą być użyte do określenia w darktable akcji, wyzwalanych po wystąpieniu określonego zdarzenia. Przykładem może być wywołanie zewnętrznej aplikacji podczas eksportu plików w celu zastosowania dodatkowych procedur przetwarzania spoza darktable.
+Lua to niezależny projekt, założony w 1993 r., oferujący potężny, szybki, lekki i osadzalny język skryptowy. Lua jest szeroko używana przez wiele aplikacji otwartoźródłowych, w oprogramowaniu komercyjnym oraz przy tworzeniu gier.
+darktable uses Lua version 5.4. Describing the principles and syntax of Lua is beyond the scope of this usermanual.</description>
+    </item>
+    
+    <item>
+      <title>prosty przykład lua</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/a-simple-example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/a-simple-example/</guid>
+      <description>Zacznijmy z prostym przykładem, wypisującym cokolwiek na konsolę. Utwórz plik luarcw katalogu konfiguracyjnym darktable (na ogół jest to $HOME/.config/darktable/) i dodaj w nim następującą linię:
+print(&amp;quot;Hello World !&amp;quot;) Uruchom darktable, a na konsoli pojawi się zdanie &amp;ldquo;Witaj, świecie!&amp;rdquo; Na razie szału nie ma, ale spokojnie, zaraz się rozkręci&amp;hellip;
+Do tego miejsca w skrypcie nie ma nic charakterystycznego dla darktable. Chcąc wypisać łańcuch, wykorzystaliśmy po prostu standardową funkcję print. Działa, ale stać nas na więcej.</description>
+    </item>
+    
+    <item>
+      <title>wywołanie lua z dbus</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/calling-from-dbus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/calling-from-dbus/</guid>
+      <description>Możliwe jest wysłanie komendy lua do darktable poprzez interfejs DBus. Metoda org.darktable.service.Remote.Luapobiera parametr w postaci pojedynczego łańcucha znaków, interpretowany jako komenda lua. Komenda zostanie wykonana w aktualnym kontekście lua i powinna zwrócić łańcuch znakowy lub wartość nil. Wynik zostanie zwrócony jako rezultat metody DBus.
+Jeśli wywołanie Lua zakończy się błędem, metoda DBus zwróci błąd org.darktable.Error.LuaError z komunikatem błędu lua jako wiadomością, dołączoną do błędu DBus.</description>
+    </item>
+    
+    <item>
+      <title>użycie darktable ze skryptu lua</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/darktable-from-lua/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/darktable-from-lua/</guid>
+      <description>Uwaga: Ta opcja jest mocno eksperymentalna. Wiemy o kilku elementach, które wciąż nie działają dobrze w trybie biblioteki. Zalecamy ostrożne testy.
+Interfejs lua pozwala na korzystanie z darktable z dowolnego skryptu lua. Spowoduje to załadowanie darktable jako biblioteki i udostępnienie większości API lua (darktable jest skonfigurowane bez plików nagłówkowych, więc funkcje interfejsu użytkownika nie są dostępne).
+Poniższy program zaprezentuje przykładowo wypisanie listy wszystkich zdjęć z Twojej biblioteki:
+#!/usr/bin/env lua package = require &amp;quot;package&amp;quot; package.</description>
+    </item>
+    
+    <item>
+      <title>API lua</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lua/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lua/api/</guid>
+      <description>API Lua w darktable jest udokumentowane w oddzielnej instrukcji, wraz ze szczegółowym opisem wszystkich struktur danych oraz funkcji. Instrukcję do API możesz pobrać stąd.</description>
+    </item>
+    
+  </channel>
+</rss>

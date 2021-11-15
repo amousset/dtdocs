@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Capture on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/fr/tethering/</link>
+    <description>Recent content in Capture on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/fr/tethering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>disposition de la vue capture</title>
+      <link>https://darktable-org.github.io/dtdocs/fr/tethering/tethering-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/fr/tethering/tethering-view-layout/</guid>
+      <description>🔗panneau gauche  informations de l&amp;rsquo;image Afficher les informations de l&amp;rsquo;image.  🔗panneau droit De haut en bas :
+ scopes A graphical depiction of the current image&amp;rsquo;s light levels and colors. This module can be moved to the left-hand panel if desired (see preferences &amp;gt; miscellaneous &amp;gt; position of the scopes module).  session : Paramètres de la session.
+live view : Paramètres de l&amp;rsquo;affichage en direct.
+paramètres de la caméra : Paramètres de la caméra.</description>
+    </item>
+    
+  </channel>
+</rss>

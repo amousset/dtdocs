@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maskieren und Mischen on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/</link>
+    <description>Recent content in Maskieren und Mischen on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Übersicht</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/overview/</guid>
+      <description>Jedes Bearbeitungs-Modul übernimmt die Eingabe von den vorangehenden Modulen in der Pixelpipe, führt die Operation durch und übergibt diese Ausgabe an das nächste Modul in der Pixelpipe.
+Die Ausgabe-Daten eines Moduls können optional wieder bearbeitet werden (kombiniert) werden mit den Eingabe-Daten vor es an das nächste Modul übergeben wird. Diesen zusätzlichen Bearbeitungsschritt nennt man Mischen &amp;ndash; Eingabe- und Ausgabe-Daten werden wieder bearbeitet mit Algorithmen auch Misch-Operatoren genannt Misch-Modi.
+Jeder Misch-Modus kann zusätzlich kontrolliert mit dem Deckkraft Parameter, (mit einem Wert zwischen 0 % und 100 %), der definiert, wie viel das Eingabe- und wie viel das Ausgabe-Bild an das Endresultat beisteuert.</description>
+    </item>
+    
+    <item>
+      <title>Misch Modi</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/blend-modes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/blend-modes/</guid>
+      <description>Misch-Modi definieren, wie die Eingabe und die Ausgabe zusammen kombiniert (gemischt), vor die letzte Ausgabe des Moduls an das nächste Modul in der Pixelpipe weitergegeben wird.
+Klassische Misch-Modi, die für auf Anzeige-basiertem RGB (beschränkt auf 0 - 100%) definieren implizit einen Angelpunkt bei 50% Grau oder 100% Weiß in deren Algorithmen, abhängig vom Misch-Modus. Weil auf Aufnahme-basiert diese Restriktionen nicht hat, muss dieser Angelpunkt explizit durch den Nutzer definiert werden, wenn Misch-Operationen im &amp;ldquo;RGB (Szene)&amp;rdquo; Farbraum.</description>
+    </item>
+    
+  </channel>
+</rss>

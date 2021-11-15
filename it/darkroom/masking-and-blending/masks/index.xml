@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maschere on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/</link>
+    <description>Recent content in maschere on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduzione</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/overview/</guid>
+      <description>Le maschere permettono di limitare l&amp;rsquo;effetto di un modulo affinché venga applicato soltanto ad alcune parti dell&amp;rsquo;immagine.
+Una maschera può essere considerata come un&amp;rsquo;immagine in scala di grigi dove ogni pixel ha un valore compreso tra 0 e 1.0 (o tra 0% e 100%). Questo valore è l&amp;rsquo;opacità ed è utilizzata per determinare quanto il modulo coinvolge ogni pixel.
+Le sezioni seguenti spiegano come costruire maschere in darktable.</description>
+    </item>
+    
+    <item>
+      <title>maschere disegnate</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn/</guid>
+      <description>Con le maschere disegnate puoi costruire una maschera disegnando forme direttamente sopra l&amp;rsquo;immagine. Le forme possono essere usate da sole o in combinazione. Dopo che una forma è stata disegnata su un&amp;rsquo;immagine può essere regolata, rimossa, o riutilizzata in altri moduli.
+Shapes are stored internally as vectors and are rendered with the required resolution during pixelpipe processing. Shapes are expressed in the coordinate system of the original image and are transformed along with the rest of the image by any active distorting modules in the pipe (lens correction, rotate and perspective for example).</description>
+    </item>
+    
+    <item>
+      <title>maschere parametriche</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/parametric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/parametric/</guid>
+      <description>La maschera parametrica offre un minuzioso controllo della selezione di come i pixel individuali vengono mascherati. Questa viene creata creando automaticamente una maschera di fusione intermedia sulla base di parametri stabiliti dall&amp;rsquo;utente. Questi parametri sono le coordinate colore invece che le coordinate geometriche utilizzate nelle maschere disegnate.
+Per ciascuno dei canali dati di un modulo (es. Lab, RGB) e molti altri canali virtuali (es. tinta, saturazione) puoi definire una funzione di opacità per canale.</description>
+    </item>
+    
+    <item>
+      <title>combinare maschere disegnate &amp; parametriche</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/</guid>
+      <description>Maschere parametriche e disegnate possono essere usate in combinazione per creare un&amp;rsquo;unica maschera che può essere applicata ad un modulo.
+Ci sono due elementi principali che controllano come le maschere vanno combinate individualmente: l&amp;rsquo;impostazione di polarità di ciascuna delle maschere (definita dal pulsante più o meno) e la selezione dell&amp;rsquo;opzione &amp;ldquo;Combina le maschere&amp;rdquo;.
+Il menù a discesa &amp;ldquo;combina le maschere&amp;rdquo; contiene le seguenti opzioni, che stabiliscono come le maschere disegnate e parametriche verranno combinate assieme.</description>
+    </item>
+    
+    <item>
+      <title>rifinitura maschere &amp; controlli aggiuntivi</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/</guid>
+      <description>Quando una maschera parametrica o disegnata è attiva, vengono mostrati ulteriori cursori che permettono di rifinire ulteriormente la maschera.
+ soglia dei dettagli Quest&amp;rsquo;opzione ti permette di modificare l&amp;rsquo;opacità della maschera in base alla quantità di dettaglio dell&amp;rsquo;immagine. Usa questo selettore scorrevole per selezionare tanto le aree con molti dettagli (valori positivi) quanto le aree &amp;ldquo;piatte&amp;rdquo; o che scarseggiano in dettaglio (valori negativi). Il valore predefinito (zero) in sostanza ignora la rifinitura dettaglio.</description>
+    </item>
+    
+    <item>
+      <title>maschere raster</title>
+      <link>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/raster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/raster/</guid>
+      <description>Come descritto nelle sezioni precedenti, il risultato finale di una maschera per un modulo (l&amp;rsquo;effetto combinato di qualsiasi maschera disegnata e parametrica) è un&amp;rsquo;immagine raster in toni di grigio che rappresenta l&amp;rsquo;intensità con la quale il modulo debba essere applicato su ogni pixel. L&amp;rsquo;immagine raster è conservata internamente per i moduli attivi e può essere utilizzata in seguito per gli altri moduli nella pixelpipe.
+Come per qualsiasi altra maschera, se il valore di opacità per un pixel nella maschera raster è zero, l&amp;rsquo;input del modulo ne risulta inalterato.</description>
+    </item>
+    
+  </channel>
+</rss>

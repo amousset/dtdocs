@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bearbeitungsmodule on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/</link>
+    <description>Recent content in Bearbeitungsmodule on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modul Kopfzeile</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/module-header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/module-header/</guid>
+      <description>Oben im Bearbeitungs-Modul ist die Kopfzeile des Moduls.
+  Klicke auf den Modul-Namen um das Modul auszuklappen und die Parameter, welche die Funktion beeinflussen, darzustellen.
+Standardmässig erlaubt darktable, dass nur ein Modul gleichzeitig ausgeklappt ist &amp;ndash; wenn du auf die Kopfzeile eines anderen Moduls klickst, werden die Einstellmöglichkeiten des bis jetzt geöffneten Moduls einklappen. Falls du mehr als ein Modul ausklappen willst, kannst du das mit Shift+Klick auf die Kopfzeile tun, dann werden alle vorgängig ausgeklappten Module offen bleiben.</description>
+    </item>
+    
+    <item>
+      <title>Mehrere Instanzen</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/multiple-instances/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/multiple-instances/</guid>
+      <description>Viel der Module von darktable können mehrmals in der Pixelpipe zugefügt werden. Jede Instanz eines Moduls reagiert unabhängig, es übernimmt die Eingabe des Moduls davor in der Pixelpipe und liefert die Ausgabe an das nächste Modul.
+Wie mit der Basis-Instanz eines Moduls, können alle Instanzen unabhängig innerhalb der Pixelpipe verschoben werden entweder mit halten von Ctrl+Shift, und mit drag&amp;amp;drop oder durch Wählen von &amp;ldquo;nach oben&amp;rdquo; und &amp;ldquo;nach unten&amp;rdquo; im Dropdown-Menü mehrere Instanzen.</description>
+    </item>
+    
+    <item>
+      <title>Voreinstellungen</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/presets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/presets/</guid>
+      <description>Voreinstellungen erlauben es dir viel genutzte Modul-Einstellungen für den zukünftigen Gebrauch zu speichern. Einige Module kommen mit vordefinierten (internen) Voreinstellungen und du kannst deine eigenen (benutzerdefinierten) erstellen. Beide interne und benutzerdefinierte können angezeigt werden im Menü Voreinstellungen in der Kopfzeile des Moduls.
+Die meisten der hier beschriebenen Funktionalitäten treffen nur für Bearbeitungs-Module zu. Voreinstellungen jedoch können auch in einigen Dienste-Module gebraucht werden. Wenn sie in Dienste-Modulen gebraucht werden, sind die Funktionen automatisch anwenden oder automatisch anzeigen Voreinstellungen, die auf den Exif-Daten basieren, nicht vorhanden.</description>
+    </item>
+    
+    <item>
+      <title>Moduleinstellungen</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/module-controls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/module-controls/</guid>
+      <description>Dieser Abschnitt beschreibt, wie die mit den Einstellungen der Module zu interagieren hast.
+🔗Schieber Schieber können mit fünf unterschiedlichen Arten von Interaktionen, abhängig vom Niveau der Einstellung, die du erreichen willst.
+ Links-Klick Klicke irgendwo in die Schieber-Skala, um den wert zu setzen. Du kannst auch klicken und ziehen, um es zu ändern. Du musst nicht auf das Dreieck oder gar auf die Linie treffen &amp;ndash; du kannst irgendwo klicken in der gesamten Höhe des Schiebers, inklusive dem Label.</description>
+    </item>
+    
+    <item>
+      <title>Kurven</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/curves/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/curves/</guid>
+      <description>Die Module Basiskurve, Tonkurve und RGB Kurve nutzen Kurven, um die Töne im Bild zu gestalten. Diese Module haben einige gemeinsame Möglichkeiten, die eine separate Diskussion rechtfertigen.
+  🔗Knoten In ihrem Standard-Status sind Kurve gerade Linien, die zwei Anker-Knoten oben rechts und unten links der Grafik definiert sind. Du kannst die Knoten bewegen, um die Kurve zu verändern, oder mit klicken auf die Kurve zusätzliche Knoten generieren. Mit Ctrl+Klick um einen neuen Knoten an der x-Lokation des Mauszeigers und der zugehörigen y-Lokation &amp;ndash; das wird einen Knoten hinzufügen ohne das Risiko einer ungewollten Änderungen der Kurve.</description>
+    </item>
+    
+    <item>
+      <title>Wavelets</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/wavelets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/wavelets/</guid>
+      <description>Wavelets werden gebraucht, um ein Bild zu separieren (oder zerlegen) in eine Anzahl klare Ebenen, von denen jede einen unterschiedlichen Anteil von Details aufweist. Nach der Zerlegung eines Bildes in dieser Art, kann ein Modul seine Bearbeitung auf eine oder mehrere dieser Ebenen beschränken, um dann die Ebenen wieder zusammenzusetzen und die Ausgabe zu formen. Das erlaubt es uns chirurgisch zu sein darüber, welche Besonderheiten im Bild wir beeinflussen wollen, wenn wir mit einem Modul arbeiten.</description>
+    </item>
+    
+    <item>
+      <title>Abgekündigte Module</title>
+      <link>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/deprecated/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/darkroom/processing-modules/deprecated/</guid>
+      <description>Das darktable-Team prüft regelmäßig ältere Module und erneuert deren Implementation, falls Probleme auftraten oder neuere Erkenntnisse eine Verbesserung ermöglichen. Meist versuchen wir, existierende Module mit neuer Funktionalität zu ergänzen. Doch gelegentlich wird dies problematisch, vielfach aufgrund des Mehraufwands für die Pflege unterschiedlicher Modulversionen. Unter diesen Umständen wird ein neues Ersetzungsmodul erzeugt und das alte Modul wird abgekündigt.
+Eine Modulabkündigung folgt einem Standardprozess: In einer Version, die ein Modul abkündigt, kann das Modul nicht mehr gesucht oder zu Modulgruppen hinzugefügt werden.</description>
+    </item>
+    
+  </channel>
+</rss>

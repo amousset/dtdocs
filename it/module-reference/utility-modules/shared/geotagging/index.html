@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="it">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - geotagging</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/it\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="it" role="option" lang="it" href="https://darktable-org.github.io/dtdocs/it/module-reference/utility-modules/shared/geotagging/">Italian</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/shared/geotagging/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="fr" role="option" lang="fr" href="https://darktable-org.github.io/dtdocs/fr/module-reference/utility-modules/shared/geotagging/">Français</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/module-reference/utility-modules/shared/geotagging/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="es" role="option" lang="es" href="https://darktable-org.github.io/dtdocs/es/module-reference/utility-modules/shared/geotagging/">Espanol</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/module-reference/utility-modules/shared/geotagging/">Português</a>
+		    
+		      <a class="dropdown-item" hreflang="uk" role="option" lang="uk" href="https://darktable-org.github.io/dtdocs/uk/module-reference/utility-modules/shared/geotagging/">Ukrainian</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/" class="">
+          Stampa
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/print/print-view-layout/" class="">
+          Disposizione visualizzazione Stampa
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/" class="">
+          Darkrooms
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/" class="">
+          maschere &amp; fusione
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/" class="">
+          maschere
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/overview/" class="">
+          Introduzione
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn/" class="">
+          maschere disegnate
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/parametric/" class="">
+          maschere parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="">
+          combinare maschere disegnate &amp; parametriche
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/refinement-controls/" class="">
+          rifinitura maschere &amp; controlli aggiuntivi
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/it/darkroom/masking-and-blending/masks/raster/" class="">
+          maschere raster
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/it/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+<a href='/dtdocs/it/'>darktable 3.7 (development) user manual</a> / <a href='/dtdocs/it/module-reference/'>Module-references</a> / <a href='/dtdocs/it/module-reference/utility-modules/shared/'>condivisi</a> / geotagging
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/module-reference/" class="next">&lt; Module-references</a>
+	
+    </div>
+    <div class="col-6">
+    
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        geotagging
+    </h1>
+
+    
+
+    <p>Importa usa i dati di tracciamento nel GPX alle immagini selezionate.</p>
+<p>Questo modulo è in comune alle viste <a href="../../../lighttable/_index.md">Tavolo Luminoso</a> e <a href="../../../map/_index.md">Mappa</a>. La mappa fornisce una modalità avanzata che ti permette di avere un&rsquo;anteprima della posizione dell&rsquo;immagine lungo il percorso GPS mentre aggiusti la compensazione data/ora e il fuso orario.</p>
+<h1 id="panoramica-del-processo"><a href="#panoramica-del-processo">🔗</a>panoramica del processo</h1>
+<p>Il ricevitore GPS calcola la posizione corrente basandosi sulle informazioni che riceve dai satelliti e la registra in un file GPX assieme alla data/ora corrente. I dati Exif delle immagini contegono anche loro un timestamp (data e ora) a seconda delle impostazioni della fotocamera. Il modulo <em>geotagging</em> legge il timestamp dell&rsquo;immagine, ricerca la posizione nel file GPX a quella determinata data/ora, e registra le coordinate relative (latitudine/longitudine/altitudine) nel suo database e nel file XMP relativo all&rsquo;immagine.</p>
+<p>Due problemi possono verificarsi durante il processo:</p>
+<ul>
+<li>Al contrario dei ricevitori GPS, la maggiorparte delle fotocamere non registrano data/ora accuratamente.</li>
+<li>Data e ora registrate nei dati Exif non include informazioni sul fuso orario. La maggiorparte delle persone impostano la foro fotocamera con il fuso orario locale, mentre i ricevitori GPS registrano data/ora in UTC (Universal Time Coordinated) con il fuso orario di Greenwich (Londra). Se il fuso orario della fotocamera e del file GPX sono differenti, la posizione relativa sarà errata.</li>
+</ul>
+<p>Se la tua immagine già mostra il valore corretto di data/ora e usa il fuso orario UTC, allora puoi applicare il file di traccia GPX senza ulteriori aggiustamenti.</p>
+<p>In caso contrario usa la seguente procedura per correlare data/ora delle immagini e del file di traccia GPX</p>
+<ol>
+<li>
+<p>Fix the camera time setting for a single image by manually entering the correct date/time for that image into the <em>date/time</em> field. A good way to do this accurately is to take a photograph of a reliable time source. This can be any precise clock or, even better, the time displayed on your GPS device (bearing in mind that GPS devices normally <em>show</em> the local time, even though they <em>store</em> universal time). The difference (offset) between the time entered and the time stored in the image&rsquo;s Exif data will be shown in the <em>date/time offset</em> field.</p>
+</li>
+<li>
+<p>Premi il pulsante <em>blocca</em> per bloccare la compensazione calcolata dal modulo.</p>
+</li>
+<li>
+<p>Seleziona tutte le immagini che desideri correggere e clicca su <em>applica compensazione</em> per applicare la compensazione calcolata alle immagini.</p>
+</li>
+<li>
+<p>Se il fuso orario della fotocamera non è UTC, imposta il fuso orario nel campo <em>fuso orario fotocamera</em>.</p>
+</li>
+</ol>
+<p>Con i dati data/ora corretti ora puoi applicare i dati di tracciamento GPX usando il pulsante <em>applica file di tracciamento GPX</em>.</p>
+<h1 id="controlli-modulo-comuni"><a href="#controlli-modulo-comuni">🔗</a>controlli modulo (comuni)</h1>
+<dl>
+<dt>data/ora</dt>
+<dd>Questo campo viene inizializzato con la data/ora letta dalla prima immagine selezionata (nel formato <code>yyyy:mm:dd hh:mm:ss</code>) e può essere modificata per correggere la data/ora per quella immagine. I singoli campi di data/ora possono essere modificati usando la rotella di scorrimento del tuo mouse. Se un campo raggiunge il suo limite, i campi adiacenti vengono aggiornati automaticamente. Per esempio, se vai oltre 60 nel campo dei minuti, il campo <em>ora</em> verrà incrementato automaticamente.</dd>
+<dt>data/ora originale</dt>
+<dd>La data/ora originale dell&rsquo;immagine è mostrata per riferimento.</dd>
+<dt>compensazione data/ora</dt>
+<dd>La differenza calcolata tra la data/ora originale e quella inserita nel campo <em>data/ora</em>. Se la differenza calcolata è maggiore di 99 giorni, 59 minuti e 59 secondi, la compensazione viene annullata.</dd>
+<dt>pulsante di blocco</dt>
+<dd>Se il pulsante di blocco è attivato, il valore di spostamento è bloccato. Se successivamente cambi le immagini selezionate, la nuova data/ora per le immagini verrà aggiornata usando il valore di spostamento bloccato. Questo ti permette di applicare lo stesso valore di spostamento su diversi gruppi di immagini</dd>
+<dt>pulsante applica lo spostamento</dt>
+<dd>Applica il valore di spostamento sulle immagini selezionate.</dd>
+<dt>pulsante applica data/ora</dt>
+<dd>Talvolta è utile di essere in grado di impostare una data/ora assoluta per un&rsquo;immagine, per esempio dove questa informazione è mancante. Questo pulsante ti permette di applicare il valore di data/ora inserito nel campo <em>data/ora</em> alle immagini selezionate, senza considerare il valore precedente. Puoi usare Ctrl+Z per annullare qualsiasi modifica non voluta.</dd>
+<dt>Fuso orario fotocamera</dt>
+<dd>Seleziona il fuso orario della fotocamera. Inizia a digitare per mostrare una lista di valori possibili.</dd>
+<dt>Applica un file tracciato GPX&hellip; (solo in Tavolo Luminoso)</dt>
+<dd>Applica un file tracciato GPX. Clicca sul pulsante corrispondente e naviga verso il file GPX. Puoi usare Ctrl+Z per annullare qualsiasi modifica non voluta. All&rsquo;interno della maschera di selezione file, il pulsante di preview elenca i tracciati del file GPX selezionato assieme alle seguenti informazioni: nome tracciato, data/ora di inizio e fine (ora locale), numero di punti di tracciato e numero di immagini selezionate che verranno geo-referenziate.</dd>
+</dl>
+<h1 id="controlli-modulo-vista-mappa"><a href="#controlli-modulo-vista-mappa">🔗</a>controlli modulo (vista Mappa)</h1>
+<dl>
+<dt>gpx file</dt>
+<dd>The path of the gpx file selected.</dd>
+<dt>lista tracciati</dt>
+<dd>Questa tabella mostra la data/ora di inizio di ogni tracciato assieme al numero di punti di tracciato e il numero di immagini corrispondenti. Quando la casella di spunta è attiva, il tracciato relativo viene mostrato sulla mappa. Una casella di spunta nell&rsquo;intestazione della tabella ti permette di selezionare e deselezionare tutti i tracciati con un solo click. Muovi il mouse sopra una riga per mostrare la data/ora di inizio e fine sia in UTC che in ora locale.</dd>
+<dt>Anteprima immagini</dt>
+<dd>Se selezionato, le immagini corrispondenti sono mostrate sulla mappa lungo il tracciato visibile.</dd>
+<dt>seleziona immagini</dt>
+<dd>Se non desideri applicare uno spostamento a tutte le immagini selezionate, ma solo alle immagini corrispondenti, usa questo pulsante per selezionare le immagini. Se non vuoi perdere il valore di spostamento corrente, potresti volerlo bloccare prima di cambiare la selezione.</dd>
+<dt>conteggio</dt>
+<dd>Un conteggio del numero di immagini corrispondenti e immagini selezionate è mostrato alla destra del pulsante <em>seleziona immagini</em>.</dd>
+<dt>applica geo localizzazione</dt>
+<dd>Questo pulsante viene mostrato quando il valore di spostamento è nullo. Il pulsante <em>applica geo localizzazione</em> applica i dati del file GPX alle immagini corrisponenti sui tracciati selezionati.</dd>
+<dt>applica lo spostamento e la geo localizzazione</dt>
+<dd>Questo pulsante viene mostrato una volta che un valore di spostamento è stato inserito. Come promemoria il pulsante <em>Applica lo spostamento</em> applica lo spostamento alle immagini selezionate. A differenza di <em>applica spostamento</em>, il pulsante <em>applica lo spostamento e la geo localizzazione</em> applica lo spsotamento e i dati GPX alle immagini corrispondenti sui tracciati selezionati.</dd>
+</dl>
+<p>Puoi usare Ctrl+Z per annullare qualsiasi modifica non desiderata (due volte in caso di <em>applica lo spostamento e la geo localizzazione</em>).</p>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/module-reference/utility-modules/shared/geotagging/">
+            English: geotagging
+        </a></li>
+        
+        <li><a href="/dtdocs/fr/module-reference/utility-modules/shared/geotagging/">
+            Français: géolocalisation
+        </a></li>
+        
+        <li><a href="/dtdocs/de/module-reference/utility-modules/shared/geotagging/">
+            German: Geotagging
+        </a></li>
+        
+        <li><a href="/dtdocs/es/module-reference/utility-modules/shared/geotagging/">
+            Espanol: geoetiquetado
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/module-reference/utility-modules/shared/geotagging/">
+            Português: geoetiquetas
+        </a></li>
+        
+        <li><a href="/dtdocs/uk/module-reference/utility-modules/shared/geotagging/">
+            Ukrainian: геотегування
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/it/module-reference/" class="next">&lt; Module-references</a>
+	
+    </div>
+    <div class="col-6">
+    
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

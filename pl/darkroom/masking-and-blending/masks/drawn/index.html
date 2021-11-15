@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable 3.7 (development) user manual - maski wektorowe</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/dtdocs/css/style.min.eb245f4760a454736bda5213516e6595e5e7257293a998810ddd42d8a6bbf546.css">
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/dtdocs\/pl\/index.json"</script>
+<script src="/dtdocs/js/jquery.js"></script>
+<script src="/dtdocs/js/popper.js" type="module"></script>
+<script src="/dtdocs/js/bootstrap.js"></script>
+<script src="/dtdocs/js/lunr.js"></script>
+<script src="/dtdocs/js/app.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/dtdocs" rel="home" title="darktable 3.7 (development) user manual">
+	darktable 3.7 (development) user manual
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	      <li class="nav-item dropdown" aria-describedby="language-picker-description">
+		   <p class="sr-only" id="language-picker-description"></p>
+		   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="https://darktable-org.github.io/dtdocs//language-icons/icon20x24px-exported-transparent.png" alt="Language Icon" height="20" class="translation-icon"/>
+		     <span></span>
+		   </a>
+		   <div class="dropdown-menu dropdonw-trans" role="listbox">
+		      <a class="dropdown-item" aria-selected="true" hreflang="pl" role="option" lang="pl" href="https://darktable-org.github.io/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/">Polish</a>
+		        
+		      <a class="dropdown-item" hreflang="en" role="option" lang="en" href="https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/masks/drawn/">English</a>
+		    
+		      <a class="dropdown-item" hreflang="de" role="option" lang="de" href="https://darktable-org.github.io/dtdocs/de/darkroom/masking-and-blending/masks/drawn/">German</a>
+		    
+		      <a class="dropdown-item" hreflang="es" role="option" lang="es" href="https://darktable-org.github.io/dtdocs/es/darkroom/masking-and-blending/masks/drawn/">Espanol</a>
+		    
+		      <a class="dropdown-item" hreflang="it" role="option" lang="it" href="https://darktable-org.github.io/dtdocs/it/darkroom/masking-and-blending/masks/drawn/">Italian</a>
+		    
+		      <a class="dropdown-item" hreflang="pt_br" role="option" lang="pt_br" href="https://darktable-org.github.io/dtdocs/pt_br/darkroom/masking-and-blending/masks/drawn/">Português</a>
+		    
+		      <a class="dropdown-item" hreflang="uk" role="option" lang="uk" href="https://darktable-org.github.io/dtdocs/uk/darkroom/masking-and-blending/masks/drawn/">Ukrainian</a>
+		    
+		   </div>
+	       </li>
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/overview/" class="">
+          Przegląd
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/" class="">
+          Stół podświetlany
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-view-layout/" class="">
+          układ widoku stołu podświetlanego
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/undo-redo/" class="">
+          cofnij/ponów
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/" class="">
+          tryby stołu podświetlanego
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/filemanager/" class="">
+          manager plików
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/lighttable-modes/culling/" class="">
+          układ selektywny
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/" class="">
+          zarządzanie zasobami cyfrowymi
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/collections/" class="">
+          kolekcje i rolki filmu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/thumbnails/" class="">
+          miniaturki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/star-color/" class="">
+          gwiazdki i kolorowe etykiety
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lighttable/digital-asset-management/metadata-tagging/" class="">
+          metadane i znaczniki
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/" class="">
+          Ciemnia
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/darkroom-view-layout/" class="">
+          układ widoku ciemni
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/" class="">
+          kolejka przetwarzania
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/the-anatomy-of-a-module/" class="">
+          anatomia modułu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/the-pixelpipe-and-module-order/" class="">
+          potok przetwarzania i kolejność modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/history-stack/" class="">
+          historia
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/pixelpipe/undo-redo/" class="">
+          cofnij i ponów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/" class="">
+          moduły przetwarzające
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/module-header/" class="">
+          nagłówek modułu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/multiple-instances/" class="">
+          wiele instancji
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/presets/" class="">
+          presety
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/module-controls/" class="">
+          kontrolki modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/curves/" class="">
+          krzywe
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/wavelets/" class="">
+          falki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/processing-modules/deprecated/" class="">
+          moduły przestarzałe
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/" class="">
+          maski i mieszanie
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/blend-modes/" class="">
+          tryby mieszania
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/" class="">
+          maski
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn/" class=" active">
+          maski wektorowe
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/" class="">
+          maski parametryczne
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/drawn-and-parametric/" class="">
+          łączenie masek wektorowych i parametrycznych
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/refinement-controls/" class="">
+          uszczegóławianie maski i dodatkowe kontrolki
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/masking-and-blending/masks/raster/" class="">
+          maski rastrowe
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/" class="">
+          organizacja pracy z modułami
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/module-groups/" class="">
+          grupy modułów
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/quick-access-panel/" class="">
+          panel szybkiego dostępu
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/darkroom/organization/manage-module-layouts/" class="">
+          zarządzaj układem modułów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/tethering/" class="">
+          Tethering
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/tethering/troubleshooting/" class="">
+          rozwiązywanie problemów
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/map/" class="">
+          Mapa
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/slideshow/" class="">
+          Pokaz slajdów
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/print/" class="">
+          Wydruk
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/print/print-view-layout/" class="">
+          układ widoku wydruku
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/preferences-settings/" class="">
+          Ustawienia darktable
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/" class="">
+          Skrypty Lua
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/overview/" class="">
+          przegląd
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/a-simple-example/" class="">
+          prosty przykład lua
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/calling-from-dbus/" class="">
+          wywołanie lua z dbus
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/darktable-from-lua/" class="">
+          użycie darktable ze skryptu lua
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/lua/api/" class="">
+          API lua
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/" class="">
+          Przewodniki i tutoriale
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/monochrome/" class="">
+          wywoływanie zdjęć monochromatycznych
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/guides-tutorials/other-resources/" class="">
+          inne zasoby
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/" class="">
+          Tematy specjalne
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/color-management/" class="">
+          zarządzanie kolorem
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/opencl/" class="">
+          opencl
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/darktable-chart/" class="">
+          użycie darktable-chart
+      </a>
+
+   <ul></ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/special-topics/program-invocation/" class="">
+          uruchomienie programu
+      </a>
+
+   <ul></ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/" class="">
+          Module-references
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/" class="">
+          moduły przetwarzające
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/graduated-density/" class="">
+          filtr połówkowy
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/colorize/" class="">
+          koloryzacja
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/dtdocs/pl/module-reference/processing-modules/grain/" class="">
+          ziarno
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+
+		</nav>
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+
+<a href='/dtdocs/pl/'>darktable</a> / <a href='/dtdocs/pl/darkroom/'>Ciemnia</a> / <a href='/dtdocs/pl/darkroom/masking-and-blending/'>maski i mieszanie</a> / <a href='/dtdocs/pl/darkroom/masking-and-blending/masks/'>maski</a> / maski wektorowe
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/masking-and-blending/masks/overview/" class="next">&lt; przegląd</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/" class="prev">maski parametryczne &gt;</a>
+	
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        maski wektorowe
+    </h1>
+
+    
+
+    <p>Przy użyciu maski wektorowej możesz tworzyć maskę, rysując kształty bezpośrednio na obszarze roboczym. Kształty mogą być używane samodzielnie bądź w grupach. Po narysowaniu kształtu na zdjęciu może on być modyfikowany, usuwany bądź użyty ponownie w innych modułach.</p>
+<p>Shapes are stored internally as vectors and are rendered with the required resolution during pixelpipe processing. Shapes are expressed in the coordinate system of the original image and are transformed along with the rest of the image by any active distorting modules in the pipe (<a href="../../../module-reference/processing-modules/lens-correction.md"><em>lens correction</em></a>, <a href="../../../module-reference/processing-modules/rotate-perspective.md"><em>rotate and perspective</em></a> for example). This means that a shape will always work on the same image area regardless of any modifications that may be subsequently applied.</p>
+<p>Kontrolki do tworzenia i zmiany masek mogą zostać uaktywnione poprzez wybór ikony &ldquo;maski wektorowej&rdquo; lub &ldquo;maski wektorowej i parametrycznej&rdquo;, znajdujących się na dole modułu. Tworzyć i edytować kształty możesz również z pomocą modułu <a href="../../../module-reference/utility-modules/darkroom/mask-manager.md">menedżera masek</a>.</p>
+<h1 id="tworzenie-kształtów"><a href="#tworzenie-kszta%c5%82t%c3%b3w">🔗</a>tworzenie kształtów</h1>
+<p>Wybierz kształt, klikając odpowiedni obrazek (kolejno od lewej: okrąg, elipsę, ścieżkę, pędzel, gradient).</p>
+<p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/shape-icons.png"><img src="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/shape-icons.png" alt="ikony kształtu"   /></a>
+
+</p>
+<p>Uruchamia to tryb tworzenia kształtu. Po zakończeniu tworzenia kształtu automatycznie uruchamiany jest tryb edycji.</p>
+<p>Ctrl-LPM na kształcie spowoduje ciągłe rysowanie wielu kształtów tego samego typu – po zakończeniu rysowania kształtu wejdziesz w tryb tworzenia nowej instancji tego kszałtu. W trybie ciągłego tworzenia kliknięcie PPM spowoduje porzucenie rysowania kształtów i wejście do trybu edycji.</p>
+<p>Dla każdego rysowanego kształtu możesz przytrzymać Shift podczas obracania kółka myszy, aby zmienić szerokość rozmycia kształtu na jego krawędzi, lub Ctrl+kółko dla zmiany przejrzystości kształtu. Te operacje dostępne są zarówno w trybie tworzenia, jak i edycji tak długo, jak kursor znajduje się nad danym kształtem.</p>
+<p>By default, scrolling your mouse up increases the value of the relevant shape parameters. This behavior can be changed in <a href="../../../preferences-settings/darkroom.md">preferences &gt; darkroom &gt; scroll down to increase mask parameters</a>.</p>
+<hr>
+<p><strong>Uwaga:</strong> Kiedy wspomniane operacje użyte są w trybie tworzenia kształtu, spowodują one również zmianę <em>domyślnych</em> wartości rozmycia i przejrzystości. Nowe wartości domyślne zostaną użyte podczas tworzenia kolejnego kształtu.</p>
+<hr>
+<h1 id="edycja-kształtów"><a href="#edycja-kszta%c5%82t%c3%b3w">🔗</a>edycja kształtów</h1>
+<p>Kliknij na ikonie &lsquo;pokaż i edytuj elementy maski&rsquo; 
+
+
+
+
+
+
+
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<a href="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/shape-edit.png"><img src="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/shape-edit.png" alt="show-and-edit-masks-icon"  class="icon"    /></a>
+
+, żeby uruchomić tryb edycji kształtu. Pokaże on wszystkie używane przez bieżący moduł maski wektorowe i pozwoli na edycję tych kształtów. Ctrl+LPM na tej samej ikonie uruchomi tryb ograniczonej edycji, gdzie niektóre akcje (np. przeciąganie całego kształtu i zmiana jego rozmiaru) będą niemożliwe. Tryb ten stosuje się najczęściej w celu uniknięcia kosztownych błędów podczas edycji ścieżek i kształtów pędzla.</p>
+<p>Kliknij i przeciągnij kształt, żeby przesunąć go w obrębie obszaru zdjęcia.</p>
+<h1 id="usuwanie-kształtów"><a href="#usuwanie-kszta%c5%82t%c3%b3w">🔗</a>usuwanie kształtów</h1>
+<p>W trybie edycji kliknij PPM na kształcie, żeby go usunąć.</p>
+<h1 id="powtórne-wykorzystanie-kształtów"><a href="#powt%c3%b3rne-wykorzystanie-kszta%c5%82t%c3%b3w">🔗</a>powtórne wykorzystanie kształtów</h1>
+<p>Możesz skorzystać z masek, stworzonych w innych modułach. Kliknij na rozwijalną listę kształtów (powyżej przycisku &lsquo;pokaż i edytuj elementy maski&rsquo;), aby wybrać narysowane wcześniej kształty indywidualnie bądź użyć tej samej grupy kształtów, co w innym module. Dostępne są następujące opcje:</p>
+<dl>
+<dt>dodaj istniejący kształt</dt>
+<dd>Wybierz pojedynczy kształt bądź grupę kształtów, narysowaną wcześniej (z poziomu <a href="../../../module-reference/utility-modules/darkroom/mask-manager.md">menedżera masek</a> albo z maski wektorowej innego modułu). Jeśli kształt bądź ich grupa zostały użyte już gdzieś indziej, wówczas wszystkie naniesione zmiany znajdą odzwierciedlenie również w tamtych miejscach.</dd>
+<dt>użyj tych kształtów, co</dt>
+<dd>Dodaje grupę kształtów, używanych w innym module, do maski bieżącego modułu. Opcja ta różni się od poprzedniej tym, że tworzy nową grupę kształtów, pozwalając na ich dodawanie bądź usuwanie niezależnie od modułu, z którego zostały skopiowane. Wszystkie kształty wspólne dla obu grup pozostają połączone.</dd>
+</dl>
+<h1 id="łączenie-i-organizacja-kształtów"><a href="#%c5%82%c4%85czenie-i-organizacja-kszta%c5%82t%c3%b3w">🔗</a>łączenie i organizacja kształtów</h1>
+<p>Moduł <a href="../../../module-reference/utility-modules/darkroom/mask-manager.md">managera masek</a> można wykorzystać do organizacji narysowanych kształtów. Moduł pozwala również grupować i łączyć maski przy użyciu operatorów (</p>
+<h1 id="niepożądane-zmiany-kształtów"><a href="#niepo%c5%bc%c4%85dane-zmiany-kszta%c5%82t%c3%b3w">🔗</a>niepożądane zmiany kształtów</h1>
+<p>W celu zapewnienia spójnego systemu współrzędnych, kształt umieszczany na zdjęciu jest w rzeczywistości rysowany na oryginalnym pliku RAW. Kształt ten przechodzi następnie przez sekwencję, zanim zostanie finalnie użyty przez moduł i narysowany na ekranie. Oznacza to, że jeśli włączone są moduły o działaniu zniekształcającym (jak na przykład korekcja obiektywu), rysowane na ekranie i finalnym zdjęciu kształty mogą również odziedziczyć ten efekt. Może to na przykład prowadzić do renderowania okręgów jako elips albo zakrzywienia linii gradientów. Jeśli chcesz stworzyć dokładniejszy kształt (w celu uniknięcia tych efektów ubocznych), rekomendujemy unikanie prostych kształtów (okręgów / elips) na rzecz ścieżek (które mogą być rysowane przy użyciu większej ilości punktów, redukując przez to zniekształcenia. Dla uniknięcia ubocznych efektów korekcji obiektywu możesz również dostosować krzywe linii gradientów.</p>
+<h1 id="dostępne-kształty"><a href="#dost%c4%99pne-kszta%c5%82ty">🔗</a>dostępne kształty</h1>
+<dl>
+<dt>koło</dt>
+<dd>Kliknij na płótnie obrazu, by dodać koło. Kręć rolką myszy nad kołem, żeby zmienić jego średnicę. Kręć rolką nad krawędzią koła, jeśli chcesz zmienić szerokość rozmycia (ma to ten sam efekt, co przytrzymywanie Shift podczas kręcenia rolką wewnątrz głównego kształtu).</dd>
+<dt>elipsa</dt>
+<dd>Podstawowa obsługa jest identyczna, jak dla kształtu koła. Dodatkowo dla kształtu elipsy dostępne są cztery węzły. Kliknięcie węzła dostosuje półosie elipsy. Ctrl+LPM i przeciągnięcie węzłów lub Shift+Ctrl+rolka obróci elipsę. Shift+LPM wewnątrz kształtu przełączy stopniowe zanikanie między trybem równoodległym i proporcjonalnym.</dd>
+<dt>ścieżka</dt>
+<dd>Kliknij na płótnie obrazu, żeby umieścić na nim trzy lub więcej węzłów i wygenerować kształt do swobodnej edycji. Zakończ ścieżkę przez PPM po ustawieniu ostatniego punktu. Węzły są domyślnie połączone gładkimi liniami. Jeśli zamiast tego chcesz definiować ostry kąt, możesz to zrobić poprzez Ctrl-LPM.</dd>
+<dd>
+<p>W trybie edycji Ctrl+LPM na istniejącym węźle przekształci go z gładkiego na ostry i vice versa. Ctrl+LPM na jednym z segmentów linii wstawia dodatkowy węzel. PPM na węźle usuwa go. Upewnij się, że kursor znajduje się nad prawidłowym węzłem i że węzeł ten jest podświetlony, aby uniknąć przypadkowego usunięcia całej ścieżki.</p>
+</dd>
+<dd>
+<p>Rozmiar gotowego kształtu może być modyfikowany przez przewijanie. To samo odnosi się do szerokości krawędzi (obszaru stopniowego narastania przezroczystości), która może być również zmieniana przez Shift+rolka z dowolnego miejsca wewnątrz kształtu. Pojedyncze węzły oraz segmenty ścieżki mogą być przesuwane poprzez przeciąganie ich myszką. Jeśli kliknięciem wybrano węzeł, pojawią się kolejne punkty kontrolne, pozwalające na edycję zagięcia linii (PPM resetuje do wartości domyślnych). Przeciąganie jednego z punktów kontrolnych krawędzi wpłynie na szerokość brzegu tylko w tej części kształtu.</p>
+</dd>
+<dd>
+<p>Rozważ dokładniejszą edycję ścieżek przy pomocy trybu ograniczonej edycji (Ctrl+LPM na ikonie &lsquo;pokaż i edytuj elementy maski&rsquo;). Pozwoli to na dostosowanie pojedynczych węzłów i segmentów bez ryzyka przypadkowej edycji całego kształtu.</p>
+</dd>
+<dt>pędzel</dt>
+<dd>Włącz malowanie pociągnięciami pędzla, klikając LPM na płótnie zdjęcia i przesuwając kursor przy wciśniętym przycisku. Pociągnięcie pędzla kończy się wraz ze zwolnieniem przycisku. W celu zmiany rozmiaru kształtu przewijaj kółkiem myszy przed rozpoczęciem operacji lub w jej dowolnym momencie. Możesz również korzystać z klawiatury, do zmniejszenia/zwiększenia rozmycia używając klawiszy &ldquo;<code>{</code>&rdquo; i &ldquo;<code>}</code>&rdquo;, zaś do zmniejszenia/zwiększenia krycia – klawiszy &ldquo;<code>&lt;</code>&rdquo; oraz &ldquo;<code>&gt;</code>&rdquo;.</dd>
+<dd>
+<p>Jeśli posiadasz tablet graficzny z wykrywaniem siły nacisku pióra, darktable potrafi przełożyć nacisk pióra na atrybuty kształtu pociągnięcia pędzla. Możesz to zmienić w opcji <a href="../../../preferences-settings/darkroom.md">ustawienia &gt; ciemnia &gt; sterowanie naciskiem pędzla dla masek cieniowanych</a>.</p>
+</dd>
+<dd>
+<p>Po podniesieniu pióra tabletu bądź zwolnieniu klawisza myszy, kształt pociągnięcia pędzla konwertowany jest na zbiór połączonych węzłów, określających finalny kształt. Opcja konfiguracyjna (<a href="../../../preferences-settings/darkroom.md">ustawienia &gt; ciemnia &gt; wygładzanie pociągnięć pędzla</a>) określa dokładność wygładzenia. Wyższy poziom wygładzenia prowadzi do mniejszej ilości węzłów – ułatwia to późniejszą edycję, kosztem niższej dokładności odwzorowania.</p>
+</dd>
+<dd>
+<p>Węzły i segmenty pociągnięcia pędzla mogą być modyfikowane indywidualnie. Po więcej szczegółów zajrzyj do dokumentacji kształtu ścieżki (powyżej).</p>
+</dd>
+</dl>
+<hr>
+<p><strong>Uwaga.</strong> Rendering skomplikowanego kształtu pędzla może zużywać znaczące ilości cykli procesora. O ile to możliwe, rozważ użycie kształtu koła, elipsy bądź ścieżki.</p>
+<hr>
+<dl>
+<dt>gradient</dt>
+<dd>Kształt gradientu to gradient liniowy, rozciągający się od zadanego punktu do krawędzi zdjęcia.</dd>
+<dd>
+<p>Kliknij w obszarze zdjęcia, żeby określić pozycję linii 50% krycia. Kropkowane linie wskazują strefę pomiędzy kryciem 100% a 0%. Pomiędzy tymi liniami krycie zmienia się liniowo.</p>
+</dd>
+<dd>
+<p>Linia posiada dwa węzły, które możesz przesunąć w celu zmiany obrotu gradientu. Możesz również ustawić kąt obrotu podczas umieszczania kształtu gradientu, klikając i przeciągając go.</p>
+</dd>
+<dd>
+<p>Linie gradientu można zakrzywiać kółkiem myszy, gdy kursor znajduje się w pobliżu środkowej linii. Możesz to wykorzystać do przeciwdziałania dystorsji, spowodowanej działaniem modułu <a href="../../../module-reference/processing-modules/lens-correction.md"><em>korekty perspektywy</em></a>.</p>
+</dd>
+<dd>
+<p>W zależności od modułu i oryginalnego zdjęcia, użycie kształtu gradientu może tworzyć artefakty bandingu. W takim wypadku dla likwidacji tego efektu rozważ użycie modułu <a href="../../../module-reference/processing-modules/dithering.md"><em>ditheringu</em></a>.</p>
+</dd>
+</dl>
+<h1 id="odwracanie-polaryzacji-maski-wektorowej"><a href="#odwracanie-polaryzacji-maski-wektorowej">🔗</a>odwracanie polaryzacji maski wektorowej</h1>
+<p>Kliknij na przyciskach &ldquo;<code>+/-</code>&rdquo; w celu odwrócenia polaryzacji całej maski wektorowej. Przykładowo okrągła maska domyślnie stosowana jest do obszaru wewnątrz narysowanego koła. Odwrócenie polaryzacji spowoduje jej zastosowanie do obszaru całego zdjęcia <em>za wyjątkiem</em> właśnie tego koła.</p>
+
+
+    
+    <h3></h3>
+    <ul>
+        
+        <li><a href="/dtdocs/en/darkroom/masking-and-blending/masks/drawn/">
+            English: drawn masks
+        </a></li>
+        
+        <li><a href="/dtdocs/de/darkroom/masking-and-blending/masks/drawn/">
+            German: Gezeichnete Masken
+        </a></li>
+        
+        <li><a href="/dtdocs/es/darkroom/masking-and-blending/masks/drawn/">
+            Espanol: máscaras dibujadas
+        </a></li>
+        
+        <li><a href="/dtdocs/it/darkroom/masking-and-blending/masks/drawn/">
+            Italian: maschere disegnate
+        </a></li>
+        
+        <li><a href="/dtdocs/pt_br/darkroom/masking-and-blending/masks/drawn/">
+            Português: máscaras desenhadas
+        </a></li>
+        
+        <li><a href="/dtdocs/uk/darkroom/masking-and-blending/masks/drawn/">
+            Ukrainian: намальовані маски
+        </a></li>
+        
+    </ul>
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/masking-and-blending/masks/overview/" class="next">&lt; przegląd</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/dtdocs/pl/darkroom/masking-and-blending/masks/parametric/" class="prev">maski parametryczne &gt;</a>
+	
+    </div>
+</div>
+
+
+
+      </div>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+

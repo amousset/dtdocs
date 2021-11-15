@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stół podświetlany on darktable 3.7 (development) user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/pl/lighttable/</link>
+    <description>Recent content in Stół podświetlany on darktable 3.7 (development) user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pl/lighttable/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>przegląd</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/overview/</guid>
+      <description>Widok stołu podświetlanego pozwala przeglądać twoją kolekcję zdjęć i zarządzać nią.
+Widok środkowy zawiera miniaturki twoich zdjęć – to, jak są wyświetlane, zależy od aktualnego trybu pracy .
+Kiedy kursor znajduje się nad miniaturką zdjęcia lub zaznaczono kilka zdjęć, przy pomocy skrótów klawiszowych możesz wykonać kilka rzeczy:
+0-5 ustawia ocenę zdjęcia jeśli zdjęcie posiada jedną gwiazdkę i wciśniesz klawisz 1, zdjęcie utraci ocenę R ocenia zdjęcie jako &amp;quot;odrzucone&amp;quot; F1-F5 ustawia kolorową etykietę Ctrl-C kopiuje stos historii Ctrl-V wkleja skopiowany stos historii D otwiera widok ciemni do wywołania zdjęcia W wyświetla pełnoekranowy podgląd zdjęcia, dopóki wciśnięty jest klawisz Ctrl-W wyświetla pełnoekranowy podgląd zdjęcia z zaznaczonymi wyostrzonymi obszarami </description>
+    </item>
+    
+    <item>
+      <title>układ widoku stołu podświetlanego</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/lighttable-view-layout/</guid>
+      <description>🔗lewy panel Od góry do dołu:
+ import Importuje zdjęcia z systemu plików lub podłączonego aparatu. kolekcje Filtruje zdjęcia, wyświetlane w środkowym panelu stołu podświetlanego; używane również do kontroli zdjęć, wyświetlanych w modułach rolki filmu oraz osi czasu. ostatnio używane kolekcje Udostępnia listę ostatnio użytych kolekcji zdjęć. informacje o obrazie Wyświetla informacje o obrazie. instalator skryptów lua (opcjonalnie) Instaluje skrypty lua.  🔗prawy panel Od góry do dołu:
+ wybór Wybiera zdjęcia na stole podświetlanym przy użyciu prostych kryteriów.</description>
+    </item>
+    
+    <item>
+      <title>cofnij/ponów</title>
+      <link>https://darktable-org.github.io/dtdocs/pl/lighttable/undo-redo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pl/lighttable/undo-redo/</guid>
+      <description>Większość zmian, wykonanych na stole podświetlanym, jest nagrywana i może zostać cofnięta do wcześniejszego stanu. Dotyczy to modyfikacji kolorowych etykiet, ocen, geolokalizacji, etykiet, metadanych, orientacji, kopiowania/wklejania historii, duplikowania zdjęć i stosowania stylu. Zauważ, że akcje cofnij/ponów nie mają licznika kroków w widoku stołu podświetlanego, ale są resetowane za każdym razem, kiedy przełączysz się na inny widok.
+Naciśnij Ctrl-Z, żeby anulować ostatnią modyfikację, lub Ctrl-Y, żeby powtórzyć ostatnią anulowaną modyfikację (jeśli taka istnieje).</description>
+    </item>
+    
+  </channel>
+</rss>
